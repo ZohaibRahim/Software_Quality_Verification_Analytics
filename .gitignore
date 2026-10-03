@@ -1,0 +1,47 @@
+# Secrets / local config
+.env
+.env.local
+config/*.ini
+config/*.yaml
+config/*.yml
+!config/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Power BI backups / cache
+powerbi/*.pbix.backup
+powerbi/.cache/
+
+# Data outputs (keep structure, ignore files)
+# NOTE: We intentionally commit the raw snapshot once it exists.
+# Un-comment the next two lines if datasets grow too large to commit.
+# data/raw/*.csv
+# data/processed/*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/

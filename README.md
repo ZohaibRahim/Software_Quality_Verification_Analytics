@@ -1,0 +1,159 @@
+# Software Quality Verification Analytics
+
+End-to-end defect analytics project built with **PostgreSQL, R, and Power BI**, using public Mozilla Firefox Bugzilla data as a proxy for internal Quality Verification telemetry.
+
+> Status: **Scaffolding complete — pipeline implementation in progress.** See `PROGRESS.md` for the live checklist.
+
+---
+
+## Overview
+
+Software Quality Verification Analytics models software defects into a dimensional reporting structure, validates analytical quality, measures defect-resolution performance, tests whether defect severity is associated with resolution time, and investigates changes in quality metrics through an interactive Power BI dashboard.
+
+## Business Problem
+
+Quality Verification teams need to answer questions such as:
+
+- How many defects are being discovered, and is the volume rising?
+- Which components produce the most defects?
+- What proportion are high severity?
+- How long do defects take to resolve, and does severity influence resolution time?
+- Why did a key quality metric suddenly move?
+- Can decision-makers trust the reported metrics?
+
+## Architecture
+
+```text
+Mozilla Bugzilla REST API
+          |
+          v
+      Raw CSV
+          |
+          v
+     PostgreSQL (staging)
+          |
+          v
+Cleaning / Transformation / Quarantine
+          |
+          v
+     Star Schema (fact_bug + dims)
+       /      \
+      v        v
+      R      Power BI
+      |         |
+      v         v
+Hypothesis   Dashboard
+Testing      + KPIs
+       \       /
+        v     v
+    Findings + Root-Cause Analysis
+```
+
+## Dataset
+
+- **Source:** Mozilla Bugzilla REST API (public).
+- **Target population:** ~2,000–3,000 Firefox defects resolved as FIXED since 2024-01-01.
+- **No sensitive fields collected** (no emails, user IDs, CC lists).
+
+## Data Pipeline
+
+| Stage | Tool | Artifact |
+|-------|------|----------|
+| Acquire | Python | `scripts/fetch_bugzilla_data.py` → `data/raw/firefox_bugs.csv` |
+| Stage | SQL | `sql/01_create_staging.sql` |
+| Clean | SQL | `sql/02_clean_transform.sql` |
+| Model | SQL | `sql/03_create_star_schema.sql`, `sql/04_load_star_schema.sql` |
+| Validate | SQL | `sql/05_qa_checks.sql` |
+| Analyze | SQL / R | `sql/06_analysis_queries.sql`, `r/hypothesis_test.R` |
+| Visualize | Power BI | `powerbi/quality_verification_dashboard.pbix` |
+
+## Data Model
+
+```text
+               dim_component
+                    |
+dim_severity ---- fact_bug ---- dim_priority
+                    |
+                 dim_date
+```
+
+## Quality Metrics (headline)
+
+- **Total Defects**
+- **Median Resolution Days**
+- **High-Severity Defects**
+- **High-Severity %**
+
+See `docs/methodology.md` for formal definitions once populated.
+
+## Data Quality & Validation
+
+Seven QA checks are implemented in `sql/05_qa_checks.sql` (unique IDs, non-negative durations, dimension integrity, severity whitelist, timestamp integrity, row reconciliation, dashboard reconciliation). See `PROGRESS.md` for status.
+
+## Statistical Analysis
+
+Wilcoxon rank-sum test comparing resolution-time distributions of **high-severity (S1+S2)** vs **lower-severity (S3+S4)** defects. Observational — results describe association, not causation.
+
+## Power BI Dashboard
+
+One polished page with 4 KPIs and 4 analytical visuals (defect arrival trend, severity mix, resolution by component, resolution by severity). Filters: Date, Component, Severity, Priority.
+
+## Root-Cause Investigation
+
+Documented in `docs/root_cause_analysis.md` once a meaningful metric movement is identified in the data.
+
+## Key Findings
+
+_To be populated from actual results. No fabricated numbers._
+
+## Limitations
+
+- Mozilla Firefox is a **public proxy**, not representative of any specific organization's processes.
+- `resolution_time` is wall-clock, not active engineering time.
+- Analysis is **observational**; associations ≠ causation.
+- Some Bugzilla records contain missing or unusual values; handling is documented transparently.
+
+## Repository Structure
+
+```text
+software-quality-verification-analytics/
+├── README.md
+├── PROGRESS.md
+├── .gitignore
+├── requirements.txt
+├── config/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── scripts/
+│   └── fetch_bugzilla_data.py
+├── sql/
+│   ├── 01_create_staging.sql
+│   ├── 02_clean_transform.sql
+│   ├── 03_create_star_schema.sql
+│   ├── 04_load_star_schema.sql
+│   ├── 05_qa_checks.sql
+│   └── 06_analysis_queries.sql
+├── r/
+│   └── hypothesis_test.R
+├── powerbi/
+│   └── quality_verification_dashboard.pbix
+├── docs/
+│   ├── dashboard_user_guide.md
+│   ├── root_cause_analysis.md
+│   └── methodology.md
+└── images/
+    └── dashboard.png
+```
+
+## How to Run
+
+1. `pip install -r requirements.txt`
+2. `python scripts/fetch_bugzilla_data.py` → produces `data/raw/firefox_bugs.csv`
+3. Load into PostgreSQL and execute `sql/01_` through `sql/06_` in order.
+4. Open `r/hypothesis_test.R` and run against the processed dataset.
+5. Open `powerbi/quality_verification_dashboard.pbix` and refresh.
+
+## Technologies
+
+PostgreSQL · SQL · R · Power BI · DAX · Python · REST API · Git/GitHub · Dimensional Modelling · Statistical Hypothesis Testing · Data Quality Validation · Root-Cause Analysis

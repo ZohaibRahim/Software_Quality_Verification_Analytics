@@ -1,0 +1,97 @@
+# Methodology & Metric Definitions
+
+Companion document to `README.md`. Every metric shown in Power BI must match
+this file, `sql/06_analysis_queries.sql`, and `r/hypothesis_test.R`.
+
+> Status: definitions are stable; actual numbers populate `PROGRESS.md` once
+> the pipeline runs.
+
+---
+
+## Data source
+
+- **System:** Mozilla Bugzilla REST API (`https://bugzilla.mozilla.org/rest/bug`).
+- **Scope:** `product = Firefox`, `resolution = FIXED`, `creation_time >= 2024-01-01`.
+- **Access:** public; no credentials.
+- **Sensitive fields excluded by design:** reporter email, assignee email, CC lists, comment authors, user IDs.
+
+## Timestamp conventions
+
+| Field | Definition |
+|---|---|
+| `creation_time` | Defect creation timestamp. |
+| `cf_last_resolved` | Last time the defect was moved to a resolved state. Preferred final-resolution timestamp. |
+| `resolution_hours` | `(cf_last_resolved − creation_time)` in hours. |
+| `resolution_days` | `resolution_hours / 24`. |
+
+> **Why `cf_last_resolved` and not the latest update:** a defect may be edited after resolution (status comments, tag edits). Using `cf_last_resolved` keeps the metric tied to the resolution event.
+
+## Severity grouping
+
+Original severity values are preserved. A derived `severity_group` is added:
+
+| severity | severity_group |
+|---|---|
+| S1, S2 | High |
+| S3, S4 | Lower |
+| anything else | Unclassified |
+
+## Headline metrics
+
+### Total Defects
+Count of valid FIXED Firefox defects in `fact_bug` after data-quality filtering.
+
+### Median Resolution Days
+`PERCENTILE_CONT(0.5)` of `resolution_days` across `fact_bug`.
+
+Chosen over the mean because defect-resolution times are typically right-skewed.
+
+### High-Severity Defects
+Count of `fact_bug` rows whose `severity_group = 'High'` (i.e. severity ∈ {S1, S2}).
+
+### High-Severity %
+`High-Severity Defects / Total Defects`.
+
+## Supporting metrics
+
+- Average Resolution Days (for comparison with the median only).
+- 75th Percentile Resolution Days.
+- Defects per Month (based on `creation_time`).
+- Defects by Component.
+- Median Resolution Days by Component.
+- Defects by Severity (S1–S4).
+
+## Data-quality rules
+
+Implemented in `sql/02_clean_transform.sql` and verified by `sql/05_qa_checks.sql`:
+
+1. Unique bug IDs in `fact_bug`.
+2. No negative `resolution_days`.
+3. Every fact row maps to valid `component`, `severity`, `priority`, and `date` dimensions.
+4. Severity values restricted to the whitelist {S1, S2, S3, S4}.
+5. `last_resolved_time ≥ creation_time` in staging.
+6. Row reconciliation: `raw = valid + quarantined`.
+7. Dashboard reconciliation: Power BI metrics match SQL outputs under equivalent filters.
+
+## Statistical analysis
+
+**Question:** Does the resolution-time distribution of High-severity defects differ from Lower-severity defects?
+
+- H₀: distributions do not differ.
+- H₁: distributions differ.
+- Method: Wilcoxon rank-sum test (`wilcox.test` in R), two-sided.
+- Significance level: α = 0.05.
+
+Choice of test:
+
+- Resolution times are typically skewed with heavy right tails → mean/variance assumptions are unsafe.
+- The Wilcoxon test does not assume normality and is robust to outliers.
+
+Interpretation rule: a significant p-value supports a difference in distributions. It does **not** establish causation. Severity is observational, not randomized.
+
+## Known limitations
+
+- Mozilla Firefox is a **public proxy**; results do not describe any specific private organization's QA process.
+- `resolution_days` is wall-clock, not active engineering effort — it includes triage waits, dependency blocks, release scheduling, etc.
+- All associations are observational — no causal claim is appropriate.
+- Some Bugzilla records are missing or anomalous; they are quarantined with a documented reason, not silently dropped.
