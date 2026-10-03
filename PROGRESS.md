@@ -8,9 +8,9 @@
 
 ## Current state
 
-- **Current step:** STEP 1 complete — repo scaffolding done.
-- **Next step:** STEP 2 — implement `scripts/fetch_bugzilla_data.py` to pull a small sample from the Bugzilla REST API and inspect the real schema.
-- **Blockers / open questions:** None.
+- **Current step:** STEP 2 complete; STEPS 3–4 in progress (50-row sample inspected, 3,000-row sample pending).
+- **Next step:** Run `scripts/fetch_bugzilla_data.py --limit 3000` to confirm at-scale severity distribution, then decide final pull size.
+- **Blockers / open questions:** PostgreSQL 16 install pending (blocks STEP 5+, not STEPS 2–4).
 
 ---
 
@@ -19,9 +19,9 @@
 Tick as each step completes. Keep this honest — do not tick ahead of real work.
 
 - [x] **STEP 1** Initialize repository and project structure.
-- [ ] **STEP 2** Create Bugzilla data-acquisition script.
-- [ ] **STEP 3** Download and inspect actual dataset (small sample first).
-- [ ] **STEP 4** Report real columns, values, missingness and severity distribution.
+- [x] **STEP 2** Create Bugzilla data-acquisition script.
+- [~] **STEP 3** Download and inspect actual dataset — 50-row sample done; 3,000-row sample pending.
+- [~] **STEP 4** Report real columns, values, missingness and severity distribution — initial findings logged (see Decisions log below).
 - [ ] **STEP 5** Create PostgreSQL staging table.
 - [ ] **STEP 6** Import raw data.
 - [ ] **STEP 7** Create cleaning/transformation SQL.
@@ -79,6 +79,9 @@ Append each non-trivial decision with date + rationale.
 
 - **2026-10-03** — Scaffolding uses the structure in master brief §7 verbatim (no deviations yet). Added `PROGRESS.md` as a resumable project log (not in the original brief but requested by the user).
 - **2026-10-03** — Data snapshots (`data/raw/*.csv`, `data/processed/*.csv`) are **not** ignored by git initially so the reviewed sample stays reproducible. If the raw CSV grows past a few MB, uncomment the lines in `.gitignore`.
+- **2026-10-03** — Environment: Python 3.12.7, Git 2.51.2, R + RStudio and Power BI Desktop installed. Fresh `.venv` created in-project with `requests`, `pandas`, `python-dateutil`. GitHub remote: `https://github.com/ZohaibRahim/Software_Quality_Verification_Analytics`. **PostgreSQL 16 pending install** (user is handling).
+- **2026-10-03** — 50-row Bugzilla sample inspected (`data/raw/firefox_bugs.csv`). All 12 requested fields returned. Severity values observed: `S2`, `S3`, `S4`, plus `--` and `N/A` (missing-severity, 52% of the sample). `S1` absent in this tiny slice. 50 rows span only 2024-01-01 → 2024-01-09, so a full 2024-01-01→today pull would be very large; a cap is needed. `cf_last_resolved` missing 0/50 in this slice. Priority `--` is common; handled by `COALESCE('Unspecified')`.
+- **2026-10-03** — Severity cleaning decision: map `--` and `N/A` to `severity_group = 'Unclassified'` and KEEP them in `fact_bug` (so dashboard counts/trends aren't biased), but EXCLUDE them from the Wilcoxon test and from the High-Severity % metric. Only genuinely unexpected codes (anything outside `{S1,S2,S3,S4,--,N/A}`) would be quarantined with reason `UNKNOWN_SEVERITY`. See `docs/methodology.md`.
 
 ---
 
