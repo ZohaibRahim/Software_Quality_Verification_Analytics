@@ -21,8 +21,7 @@ WHERE severity IS NOT NULL;
 
 -- ---------- dim_priority ----------------------------------------------------
 INSERT INTO dim_priority (priority)
-SELECT DISTINCT COALESCE(priority, 'Unspecified')
-FROM v_bugs_clean;
+SELECT DISTINCT priority FROM v_bugs_clean;
 
 -- ---------- dim_date --------------------------------------------------------
 INSERT INTO dim_date (date_key, full_date, year, quarter, month_number, month_name, year_month)
@@ -52,5 +51,5 @@ SELECT
 FROM v_bugs_clean c
 JOIN dim_component dc ON dc.component_name = c.component
 JOIN dim_severity  ds ON ds.severity       = c.severity
-JOIN dim_priority  dp ON dp.priority       = COALESCE(c.priority, 'Unspecified')
+JOIN dim_priority  dp ON dp.priority       = c.priority
 JOIN dim_date      dd ON dd.full_date      = c.created_date;

@@ -8,9 +8,9 @@
 
 ## Current state
 
-- **Current step:** STEPS 2–4 complete. 3,000-row dataset locked in as the project dataset.
-- **Next step:** STEP 5 — create `stg_bugs` in PostgreSQL and `\copy` the raw CSV in. **Needs PostgreSQL installed** (user is handling).
-- **Blockers / open questions:** PostgreSQL 16 install.
+- **Current step:** STEPS 5–11 complete. SQL pipeline end-to-end: staging → clean/quarantine → star schema → QA passing → R-ready export written to `data/processed/analysis_dataset.csv`.
+- **Next step:** STEP 12 — exploratory stats + Wilcoxon test in R. User runs `r/hypothesis_test.R` in RStudio; I'll walk through the output.
+- **Blockers / open questions:** None.
 
 ---
 
@@ -22,13 +22,13 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 - [x] **STEP 2** Create Bugzilla data-acquisition script.
 - [x] **STEP 3** Download and inspect actual dataset — 3,000-row sample saved to `data/raw/firefox_bugs.csv`.
 - [x] **STEP 4** Report real columns, values, missingness and severity distribution — see Decisions log and `docs/methodology.md`.
-- [ ] **STEP 5** Create PostgreSQL staging table.
-- [ ] **STEP 6** Import raw data.
-- [ ] **STEP 7** Create cleaning/transformation SQL.
-- [ ] **STEP 8** Create quarantine/data-quality logic.
-- [ ] **STEP 9** Build star schema.
-- [ ] **STEP 10** Run QA checks and record actual results.
-- [ ] **STEP 11** Generate processed analytical dataset for R.
+- [x] **STEP 5** Create PostgreSQL staging table (`stg_bugs`, 12 cols).
+- [x] **STEP 6** Import raw data (3,000 rows loaded via `\copy`).
+- [x] **STEP 7** Create cleaning/transformation SQL (`v_bugs_clean`).
+- [x] **STEP 8** Create quarantine/data-quality logic (`qa_quarantine`, 5 reason codes).
+- [x] **STEP 9** Build star schema (`fact_bug` 3000 + 4 dims).
+- [x] **STEP 10** Run QA checks — all 7 passed; metrics: 3000 defects, median 9.56 days, 139 high-severity.
+- [x] **STEP 11** Generate processed analytical dataset for R (`data/processed/analysis_dataset.csv`, 3000 rows).
 - [ ] **STEP 12** Perform exploratory statistics in R.
 - [ ] **STEP 13** Perform Wilcoxon hypothesis test.
 - [ ] **STEP 14** Interpret results.
@@ -83,6 +83,8 @@ Append each non-trivial decision with date + rationale.
 - **2026-10-03** — 50-row Bugzilla sample inspected (`data/raw/firefox_bugs.csv`). All 12 requested fields returned. Severity values observed: `S2`, `S3`, `S4`, plus `--` and `N/A` (missing-severity, 52% of the sample). `S1` absent in this tiny slice. 50 rows span only 2024-01-01 → 2024-01-09, so a full 2024-01-01→today pull would be very large; a cap is needed. `cf_last_resolved` missing 0/50 in this slice. Priority `--` is common; handled by `COALESCE('Unspecified')`.
 - **2026-10-03** — Severity cleaning decision: map `--` and `N/A` to `severity_group = 'Unclassified'` and KEEP them in `fact_bug` (so dashboard counts/trends aren't biased), but EXCLUDE them from the Wilcoxon test and from the High-Severity % metric. Only genuinely unexpected codes (anything outside `{S1,S2,S3,S4,--,N/A}`) would be quarantined with reason `UNKNOWN_SEVERITY`. See `docs/methodology.md`.
 - **2026-10-03** — 3,000-row sample locked as the project dataset. Rationale: brief §3 says "do not increase dataset size unnecessarily", and we have 1,173 clean S1–S4 defects (139 High + 1,034 Lower) — comfortable for Wilcoxon. Date range of this snapshot: 2024-01-01 → 2024-10-30. **Caveat to call out in the write-up:** S1 count is 1/3,000, so the "High" group is effectively S2 only.
+- **2026-10-03** — Local Postgres instance: 16.15 server on `localhost:5433`, user `postgres`, database `qa_project` (dedicated for this project). psql client bundled with Postgres 18.1. psql binary at `C:\Program Files\PostgreSQL\16\bin\psql.exe` (not on PATH; invoked by full path). Password stays with user, never committed.
+- **2026-10-03** — SQL pipeline ran clean: 0 rows quarantined out of 3,000; all 7 QA checks pass; dim counts {component: 44, severity: 6, priority: 6, date: 279}.
 
 ---
 
@@ -91,15 +93,24 @@ Append each non-trivial decision with date + rationale.
 **Do not fill in anything here until the pipeline has actually run.** No fabricated numbers.
 
 ### Dataset counts
-- Raw Bugzilla records retrieved: _TBD_
-- Valid analytical defects: _TBD_
-- Quarantined records: _TBD_
+- Raw Bugzilla records retrieved: 3,000
+- Valid analytical defects: 3,000
+- Quarantined records: 0
 
 ### QA results
-- Duplicate analytical bug IDs: _TBD_
-- Negative resolution durations: _TBD_
-- Broken dimensional relationships: _TBD_
-- QA rules implemented: _TBD_
+- Duplicate analytical bug IDs: 0
+- Negative resolution durations: 0
+- Broken dimensional relationships: 0
+- QA rules implemented: 7
+
+### Headline metrics (as of SQL pipeline run on 2026-10-03)
+- Total defects: 3,000
+- Median resolution days: 9.56
+- Average resolution days: _see 06_analysis_queries.sql_
+- High-severity defects (S1+S2): 139
+- High-severity %: 4.63%
+- Unique components: 44
+- Dates with activity: 279 (2024-01-01 → 2024-10-30)
 
 ### Statistical test
 - High-severity n: _TBD_

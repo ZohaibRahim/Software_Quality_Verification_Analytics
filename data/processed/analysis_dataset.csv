@@ -1,0 +1,3001 @@
+bug_id,severity,severity_group,resolution_days,resolution_hours,component_name,year_month
+1872560,--,Unclassified,3.3398,80.1553,Firefox View,2024-01
+1872607,S3,Lower,351.0204,8424.4894,Address Bar,2024-01
+1872764,S3,Lower,9.7754,234.6097,Screenshots,2024-01
+1872768,--,Unclassified,16.4177,394.0242,Messaging System,2024-01
+1872688,--,Unclassified,2.6318,63.1625,Messaging System,2024-01
+1872721,S3,Lower,8.2328,197.5869,PDF Viewer,2024-01
+1872739,S4,Lower,1.0815,25.9553,Settings UI,2024-01
+1872757,N/A,Unclassified,1.2731,30.5536,Search,2024-01
+1872743,S4,Lower,1.0609,25.4619,Settings UI,2024-01
+1872686,--,Unclassified,1.3383,32.1192,Messaging System,2024-01
+1872935,N/A,Unclassified,79.4504,1906.8097,Search,2024-01
+1872940,N/A,Unclassified,22.1834,532.4022,Search,2024-01
+1872925,S4,Lower,1.3153,31.5664,General,2024-01
+1872797,--,Unclassified,0.6466,15.5178,PDF Viewer,2024-01
+1872851,S4,Lower,13.6178,326.8272,Firefox View,2024-01
+1872860,--,Unclassified,37.2819,894.7658,Translations,2024-01
+1872878,N/A,Unclassified,6.4856,155.6539,Search,2024-01
+1872899,S4,Lower,30.5761,733.8275,Search,2024-01
+1872903,S4,Lower,1.3748,32.9953,General,2024-01
+1872909,--,Unclassified,23.0540,553.2967,Settings UI,2024-01
+1872922,S3,Lower,14.3606,344.6542,General,2024-01
+1872933,S4,Lower,0.0699,1.6778,Installer,2024-01
+1872954,--,Unclassified,1.1751,28.2022,Protections UI,2024-01
+1873002,S3,Lower,8.9299,214.3175,Settings UI,2024-01
+1873010,--,Unclassified,3.8711,92.9072,Messaging System,2024-01
+1873013,N/A,Unclassified,6.9012,165.6286,New Tab Page,2024-01
+1873019,S3,Lower,7.6680,184.0311,Messaging System,2024-01
+1873025,S3,Lower,91.8181,2203.6356,Firefox View,2024-01
+1873026,--,Unclassified,6.8219,163.7267,Messaging System,2024-01
+1873049,S2,High,67.2080,1612.9911,Tabbed Browser,2024-01
+1873055,N/A,Unclassified,0.4809,11.5428,Search,2024-01
+1873094,S4,Lower,6.9775,167.4597,Firefox View,2024-01
+1873194,S2,High,3.0009,72.0217,Messaging System,2024-01
+1873212,--,Unclassified,0.7935,19.0433,Firefox View,2024-01
+1873223,--,Unclassified,17.7347,425.6322,Installer,2024-01
+1873264,--,Unclassified,36.0868,866.0822,New Tab Page,2024-01
+1873345,S3,Lower,893.7865,21450.8764,PDF Viewer,2024-01
+1873433,--,Unclassified,280.9667,6743.2017,Messaging System,2024-01
+1873434,S2,High,1.0747,25.7922,Messaging System,2024-01
+1873443,--,Unclassified,108.9858,2615.6600,Messaging System,2024-01
+1873464,N/A,Unclassified,0.8279,19.8686,Search,2024-01
+1873471,N/A,Unclassified,0.7881,18.9147,Search,2024-01
+1873476,--,Unclassified,2.2473,53.9358,PDF Viewer,2024-01
+1873514,N/A,Unclassified,289.6399,6951.3569,Security,2024-01
+1873545,S3,Lower,1.2979,31.1486,Messaging System,2024-01
+1873547,--,Unclassified,2.5033,60.0781,Nimbus Desktop Client,2024-01
+1873645,S3,Lower,1.8169,43.6058,Messaging System,2024-01
+1873653,S4,Lower,1.7541,42.0994,Messaging System,2024-01
+1873659,S3,Lower,6.2752,150.6039,Installer,2024-01
+1873683,S4,Lower,7.4939,179.8525,Firefox View,2024-01
+1873719,S3,Lower,6.4271,154.2508,Site Permissions,2024-01
+1873727,S3,Lower,2.4186,58.0475,Migration,2024-01
+1873743,--,Unclassified,42.5589,1021.4136,Translations,2024-01
+1873766,--,Unclassified,4.0347,96.8319,Sync,2024-01
+1873788,S3,Lower,1.4404,34.5703,Address Bar,2024-01
+1873793,--,Unclassified,23.2019,556.8467,Messaging System,2024-01
+1873833,S3,Lower,63.6011,1526.4261,Screenshots,2024-01
+1873862,S3,Lower,107.9793,2591.5028,Screenshots,2024-01
+1873868,S3,Lower,561.1024,13466.4572,PDF Viewer,2024-01
+1873882,S4,Lower,6.9225,166.1406,Screenshots,2024-01
+1873942,--,Unclassified,98.7295,2369.5078,Firefox View,2024-01
+1873947,S3,Lower,57.5003,1380.0061,Screenshots,2024-01
+1873954,--,Unclassified,835.1450,20043.4797,Firefox View,2024-01
+1873957,--,Unclassified,92.1769,2212.2458,Firefox View,2024-01
+1873960,N/A,Unclassified,5.1459,123.5014,Security,2024-01
+1873969,N/A,Unclassified,12.4944,299.8647,New Tab Page,2024-01
+1873977,S3,Lower,7.4391,178.5381,Screenshots,2024-01
+1873987,--,Unclassified,13.6045,326.5083,Translations,2024-01
+1874013,S3,Lower,117.7164,2825.1928,PDF Viewer,2024-01
+1874014,S3,Lower,1.3614,32.6744,Screenshots,2024-01
+1874024,--,Unclassified,20.3340,488.0161,Messaging System,2024-01
+1874026,S3,Lower,35.2734,846.5619,Screenshots,2024-01
+1874053,S4,Lower,20.2322,485.5739,Private Browsing,2024-01
+1874255,S4,Lower,0.1496,3.5897,Settings UI,2024-01
+1874072,S3,Lower,0.8016,19.2389,Address Bar,2024-01
+1874108,--,Unclassified,0.8381,20.1153,Untriaged,2024-01
+1874154,S4,Lower,34.6574,831.7781,Screenshots,2024-01
+1874155,--,Unclassified,802.8897,19269.3519,Firefox View,2024-01
+1874162,--,Unclassified,7.9993,191.9831,Toolbars and Customization,2024-01
+1874177,--,Unclassified,0.6220,14.9286,Installer,2024-01
+1874184,--,Unclassified,7.8956,189.4942,Sync,2024-01
+1874186,N/A,Unclassified,6.5833,157.9994,Search,2024-01
+1874189,S3,Lower,7.8888,189.3303,Sync,2024-01
+1874200,S3,Lower,1.7375,41.6992,Address Bar,2024-01
+1874202,S3,Lower,18.2456,437.8956,Address Bar,2024-01
+1874215,S3,Lower,14.4792,347.5011,Sync,2024-01
+1874233,--,Unclassified,0.4808,11.5403,Sync,2024-01
+1874253,S3,Lower,6.4124,153.8969,Firefox View,2024-01
+1874264,--,Unclassified,7.5648,181.5547,Messaging System,2024-01
+1874276,S3,Lower,14.5394,348.9444,New Tab Page,2024-01
+1874277,S3,Lower,12.0442,289.0617,Search,2024-01
+1874290,S4,Lower,12.0099,288.2367,Address Bar,2024-01
+1874301,--,Unclassified,6.4304,154.3294,Menus,2024-01
+1874311,--,Unclassified,5.2043,124.9036,Firefox Accounts,2024-01
+1874344,N/A,Unclassified,1.2285,29.4850,Address Bar,2024-01
+1874380,S3,Lower,20.9584,503.0019,Screenshots,2024-01
+1874459,N/A,Unclassified,408.7527,9810.0639,Search,2024-01
+1874473,N/A,Unclassified,10.4163,249.9900,Search,2024-01
+1874543,S4,Lower,249.4143,5985.9436,Address Bar,2024-01
+1874546,--,Unclassified,4.6965,112.7164,Address Bar,2024-01
+1874599,S3,Lower,12.0439,289.0544,Tabbed Browser,2024-01
+1874624,N/A,Unclassified,25.9095,621.8292,Address Bar,2024-01
+1874663,S2,High,17.9654,431.1692,Screenshots,2024-01
+1874671,S3,Lower,17.9525,430.8589,Screenshots,2024-01
+1874693,S4,Lower,7.1299,171.1167,Tabbed Browser,2024-01
+1874742,--,Unclassified,78.6624,1887.8981,Session Restore,2024-01
+1874824,--,Unclassified,0.1040,2.4969,Settings UI,2024-01
+1874917,N/A,Unclassified,128.4475,3082.7408,Search,2024-01
+1874921,N/A,Unclassified,6.5010,156.0231,Search,2024-01
+1874933,S3,Lower,468.9414,11254.5939,Nimbus Desktop Client,2024-01
+1874939,--,Unclassified,463.3510,11120.4250,Nimbus Desktop Client,2024-01
+1874944,--,Unclassified,9.5844,230.0253,Installer,2024-01
+1874952,N/A,Unclassified,20.0094,480.2247,General,2024-01
+1874968,S3,Lower,3.4907,83.7764,Messaging System,2024-01
+1874990,--,Unclassified,2.3505,56.4111,Sync,2024-01
+1875034,S3,Lower,8.7569,210.1647,Screenshots,2024-01
+1875053,--,Unclassified,0.6891,16.5392,PDF Viewer,2024-01
+1875071,N/A,Unclassified,5.6510,135.6239,Search,2024-01
+1875083,--,Unclassified,828.2337,19877.6083,Firefox View,2024-01
+1875084,--,Unclassified,1.2642,30.3417,General,2024-01
+1875090,--,Unclassified,1.7467,41.9217,General,2024-01
+1875109,--,Unclassified,5.5379,132.9097,Screenshots,2024-01
+1875112,--,Unclassified,18.9934,455.8411,Messaging System,2024-01
+1875143,S3,Lower,7.5795,181.9081,Tabbed Browser,2024-01
+1875162,--,Unclassified,67.7863,1626.8706,Messaging System,2024-01
+1875203,S4,Lower,56.0585,1345.4039,Messaging System,2024-01
+1875204,S4,Lower,34.5161,828.3858,Messaging System,2024-01
+1875267,N/A,Unclassified,4.6980,112.7519,Search,2024-01
+1875286,--,Unclassified,0.9715,23.3164,Search,2024-01
+1875287,S3,Lower,53.7950,1291.0811,Search,2024-01
+1875337,--,Unclassified,4.4829,107.5886,Nimbus Desktop Client,2024-01
+1875357,--,Unclassified,7.6003,182.4067,PDF Viewer,2024-01
+1875383,--,Unclassified,5.4481,130.7533,Translations,2024-01
+1875404,--,Unclassified,4.1439,99.4528,Nimbus Desktop Client,2024-01
+1875481,--,Unclassified,81.8166,1963.5983,Data Loss Prevention,2024-01
+1875483,N/A,Unclassified,4.3120,103.4881,Search,2024-01
+1875486,S3,Lower,10.2920,247.0089,Screenshots,2024-01
+1875509,--,Unclassified,3.5343,84.8236,Translations,2024-01
+1875510,S3,Lower,4.6904,112.5703,Nimbus Desktop Client,2024-01
+1875533,S3,Lower,6.5467,157.1217,Address Bar,2024-01
+1875542,--,Unclassified,3.3361,80.0675,Translations,2024-01
+1875551,N/A,Unclassified,5.7016,136.8383,Tabbed Browser,2024-01
+1875553,S3,Lower,97.7296,2345.5094,Tabbed Browser,2024-01
+1875554,--,Unclassified,3.7535,90.0844,Shell Integration,2024-01
+1875587,N/A,Unclassified,3.1848,76.4350,Firefox View,2024-01
+1875654,S3,Lower,3.0003,72.0081,Search,2024-01
+1875678,S3,Lower,17.1388,411.3300,Sync,2024-01
+1875772,N/A,Unclassified,1.4860,35.6647,Address Bar,2024-01
+1875831,S2,High,60.7730,1458.5514,Tabbed Browser,2024-01
+1875852,--,Unclassified,0.5591,13.4186,Search,2024-01
+1875864,S3,Lower,49.0797,1177.9139,Messaging System,2024-01
+1875898,S3,Lower,36.8323,883.9761,Messaging System,2024-01
+1875945,N/A,Unclassified,0.9481,22.7533,Search,2024-01
+1875952,--,Unclassified,1.3929,33.4306,Address Bar,2024-01
+1875955,N/A,Unclassified,3.1423,75.4150,Search,2024-01
+1875957,S3,Lower,45.1701,1084.0817,Settings UI,2024-01
+1875958,--,Unclassified,20.7018,496.8431,Messaging System,2024-01
+1875960,--,Unclassified,77.6291,1863.0994,Remote Settings Client,2024-01
+1875963,N/A,Unclassified,62.6515,1503.6361,Address Bar,2024-01
+1875966,--,Unclassified,1.3231,31.7539,Address Bar,2024-01
+1876020,S2,High,1.4416,34.5978,Address Bar,2024-01
+1876039,--,Unclassified,0.3758,9.0197,Search,2024-01
+1876096,--,Unclassified,2.7878,66.9067,PDF Viewer,2024-01
+1876099,--,Unclassified,828.9523,19894.8553,Translations,2024-01
+1876104,--,Unclassified,9.7107,233.0564,New Tab Page,2024-01
+1876108,--,Unclassified,791.9691,19007.2594,Firefox View,2024-01
+1876109,--,Unclassified,798.1629,19155.9092,Firefox View,2024-01
+1876146,S4,Lower,1.5590,37.4153,Address Bar,2024-01
+1876159,--,Unclassified,2.5288,60.6914,New Tab Page,2024-01
+1876165,--,Unclassified,40.7798,978.7147,Firefox View,2024-01
+1876166,--,Unclassified,197.0553,4729.3278,Messaging System,2024-01
+1876168,--,Unclassified,57.4692,1379.2597,Messaging System,2024-01
+1876173,--,Unclassified,62.2306,1493.5347,Messaging System,2024-01
+1876176,--,Unclassified,58.2555,1398.1331,Messaging System,2024-01
+1876178,N/A,Unclassified,307.4329,7378.3903,Search,2024-01
+1876409,--,Unclassified,67.7518,1626.0425,Messaging System,2024-01
+1876186,S4,Lower,2.3972,57.5319,Nimbus Desktop Client,2024-01
+1876286,--,Unclassified,77.6220,1862.9272,Translations,2024-01
+1876342,S3,Lower,49.4620,1187.0892,Shell Integration,2024-01
+1876344,S3,Lower,49.4576,1186.9822,Shell Integration,2024-01
+1876381,N/A,Unclassified,1.5481,37.1533,Address Bar,2024-01
+1876406,--,Unclassified,5.9652,143.1650,Translations,2024-01
+1876410,N/A,Unclassified,5.2479,125.9497,Search,2024-01
+1876421,S4,Lower,9.3973,225.5344,Address Bar,2024-01
+1876493,S3,Lower,54.1641,1299.9375,Tabbed Browser,2024-01
+1876508,--,Unclassified,0.6683,16.0389,PDF Viewer,2024-01
+1876513,N/A,Unclassified,147.1606,3531.8542,Address Bar,2024-01
+1876518,S3,Lower,6.6984,160.7628,Bookmarks & History,2024-01
+1876522,S3,Lower,53.8515,1292.4367,Tabbed Browser,2024-01
+1876547,--,Unclassified,0.5343,12.8242,General,2024-01
+1876555,S3,Lower,63.2606,1518.2553,Enterprise Policies,2024-01
+1876556,N/A,Unclassified,4.5628,109.5081,Address Bar,2024-01
+1876558,S3,Lower,174.5120,4188.2872,Tabbed Browser,2024-01
+1876559,S3,Lower,5.5561,133.3472,General,2024-01
+1876564,--,Unclassified,8.0052,192.1256,PDF Viewer,2024-01
+1876582,N/A,Unclassified,168.0697,4033.6725,Tabbed Browser,2024-01
+1876588,--,Unclassified,7.9231,190.1550,PDF Viewer,2024-01
+1876599,N/A,Unclassified,146.9052,3525.7256,Messaging System,2024-01
+1876600,N/A,Unclassified,11.1070,266.5681,Messaging System,2024-01
+1876602,N/A,Unclassified,8.2469,197.9253,Messaging System,2024-01
+1876604,--,Unclassified,13.0928,314.2261,Tabbed Browser,2024-01
+1876725,--,Unclassified,0.0005,0.0108,Shell Integration,2024-01
+1876743,N/A,Unclassified,12.3329,295.9886,Address Bar,2024-01
+1876759,--,Unclassified,0.7557,18.1369,Address Bar,2024-01
+1876779,S3,Lower,4.5303,108.7264,Screenshots,2024-01
+1876801,--,Unclassified,0.6493,15.5828,Messaging System,2024-01
+1876862,S4,Lower,38.4727,923.3458,Firefox View,2024-01
+1876934,--,Unclassified,2.2712,54.5083,Headless,2024-01
+1876957,--,Unclassified,17.9029,429.6706,Bookmarks & History,2024-01
+1876972,S3,Lower,3.8816,93.1586,Settings UI,2024-01
+1877029,--,Unclassified,1.2467,29.9208,New Tab Page,2024-01
+1877120,S3,Lower,78.7678,1890.4264,Firefox View,2024-01
+1877160,S3,Lower,7.2191,173.2594,Messaging System,2024-01
+1877175,--,Unclassified,259.9234,6238.1617,Shell Integration,2024-01
+1877181,N/A,Unclassified,2.6614,63.8744,Search,2024-01
+1877196,--,Unclassified,7.5190,180.4556,Messaging System,2024-01
+1877197,--,Unclassified,4.7822,114.7728,New Tab Page,2024-01
+1877202,--,Unclassified,3.7768,90.6425,Messaging System,2024-01
+1877207,--,Unclassified,29.3149,703.5575,Messaging System,2024-01
+1877210,--,Unclassified,39.7355,953.6514,Messaging System,2024-01
+1877212,--,Unclassified,39.5015,948.0367,Messaging System,2024-01
+1877267,--,Unclassified,22.8615,548.6750,Messaging System,2024-01
+1877271,--,Unclassified,45.8814,1101.1531,Messaging System,2024-01
+1877295,--,Unclassified,46.4961,1115.9053,Messaging System,2024-01
+1877298,N/A,Unclassified,56.2646,1350.3500,Theme,2024-01
+1877302,S4,Lower,23.4664,563.1928,Disability Access,2024-01
+1877315,--,Unclassified,912.8900,21909.3589,Messaging System,2024-01
+1877426,S2,High,16.2881,390.9144,PDF Viewer,2024-01
+1877459,S3,Lower,2.0765,49.8369,Messaging System,2024-01
+1877465,--,Unclassified,32.2510,774.0233,New Tab Page,2024-01
+1877467,S3,Lower,87.0152,2088.3639,General,2024-01
+1877494,N/A,Unclassified,76.4232,1834.1578,Search,2024-01
+1877497,S3,Lower,84.6898,2032.5558,Shell Integration,2024-01
+1877498,S3,Lower,84.6896,2032.5494,Shell Integration,2024-01
+1877499,S3,Lower,84.6895,2032.5469,Shell Integration,2024-01
+1877500,S3,Lower,41.6535,999.6850,Shell Integration,2024-01
+1877507,--,Unclassified,26.9607,647.0558,Messaging System,2024-01
+1877512,S3,Lower,94.1279,2259.0692,Messaging System,2024-01
+1877536,N/A,Unclassified,8.1279,195.0700,Address Bar,2024-01
+1877538,S4,Lower,1.7176,41.2219,Firefox View,2024-01
+1877545,N/A,Unclassified,35.3165,847.5953,General,2024-01
+1877548,S3,Lower,21.9785,527.4850,Sync,2024-01
+1877557,S3,Lower,31.9951,767.8828,Messaging System,2024-01
+1877593,N/A,Unclassified,1.1884,28.5208,Search,2024-01
+1877594,S4,Lower,37.5640,901.5364,Firefox View,2024-01
+1877595,N/A,Unclassified,8.3598,200.6364,Address Bar,2024-01
+1877602,S4,Lower,2.0774,49.8569,Settings UI,2024-01
+1877603,S4,Lower,2.0660,49.5831,Settings UI,2024-01
+1877631,S3,Lower,5.7976,139.1428,Nimbus Desktop Client,2024-01
+1877677,S4,Lower,1.6864,40.4725,Firefox View,2024-01
+1877678,--,Unclassified,48.2767,1158.6397,Firefox View,2024-01
+1877695,N/A,Unclassified,497.2263,11933.4308,Enterprise Policies,2024-01
+1877721,N/A,Unclassified,604.2616,14502.2794,Search,2024-01
+1877735,S4,Lower,940.6536,22575.6856,Private Browsing,2024-01
+1877758,S4,Lower,0.5581,13.3944,Search,2024-01
+1877786,--,Unclassified,37.3871,897.2911,Firefox View,2024-01
+1877788,--,Unclassified,37.3860,897.2639,Messaging System,2024-01
+1877789,--,Unclassified,1.4346,34.4308,PDF Viewer,2024-01
+1877837,N/A,Unclassified,137.4860,3299.6644,Tabbed Browser,2024-01
+1877838,--,Unclassified,113.2787,2718.6886,Tabbed Browser,2024-01
+1877883,--,Unclassified,6.1148,146.7564,Enterprise Policies,2024-02
+1877920,N/A,Unclassified,6.3993,153.5836,Address Bar,2024-02
+1877995,S3,Lower,12.6415,303.3958,Messaging System,2024-02
+1878033,--,Unclassified,84.8968,2037.5239,Messaging System,2024-02
+1878036,S3,Lower,4.4960,107.9044,Messaging System,2024-02
+1878038,S3,Lower,140.3241,3367.7772,Tabbed Browser,2024-02
+1878051,S3,Lower,113.7441,2729.8581,Tabbed Browser,2024-02
+1878062,N/A,Unclassified,6.2241,149.3775,Search,2024-02
+1878072,S3,Lower,35.4901,851.7633,Messaging System,2024-02
+1878086,--,Unclassified,13.6768,328.2433,New Tab Page,2024-02
+1878121,S3,Lower,48.5825,1165.9800,Screenshots,2024-02
+1878141,--,Unclassified,5.3180,127.6314,Screenshots,2024-02
+1878147,S3,Lower,6.3402,152.1647,Site Permissions,2024-02
+1878190,S4,Lower,1.3932,33.4367,Address Bar,2024-02
+1878206,N/A,Unclassified,7.3095,175.4272,Address Bar,2024-02
+1878219,N/A,Unclassified,19.0173,456.4142,Search,2024-02
+1878264,N/A,Unclassified,11.4827,275.5858,Address Bar,2024-02
+1878277,S3,Lower,5.4617,131.0811,Search,2024-02
+1878279,S3,Lower,4.9520,118.8478,Settings UI,2024-02
+1878281,--,Unclassified,7.9464,190.7142,New Tab Page,2024-02
+1878310,--,Unclassified,4.8027,115.2639,Sync,2024-02
+1878327,--,Unclassified,6.2057,148.9378,Messaging System,2024-02
+1878394,--,Unclassified,0.5553,13.3275,Search,2024-02
+1878420,S3,Lower,515.4842,12371.6200,Sync,2024-02
+1878441,N/A,Unclassified,5.3829,129.1889,Address Bar,2024-02
+1878444,N/A,Unclassified,10.3669,248.8061,Address Bar,2024-02
+1878450,S3,Lower,5.1035,122.4831,Tabbed Browser,2024-02
+1878462,S4,Lower,1.1388,27.3311,Tabbed Browser,2024-02
+1878519,S3,Lower,17.2436,413.8469,Address Bar,2024-02
+1878554,--,Unclassified,3.1333,75.1989,Messaging System,2024-02
+1878556,--,Unclassified,3.1257,75.0178,Messaging System,2024-02
+1878636,N/A,Unclassified,8.3787,201.0886,Session Restore,2024-02
+1878645,--,Unclassified,0.5971,14.3297,Translations,2024-02
+1878650,S3,Lower,58.9502,1414.8036,Tabbed Browser,2024-02
+1878655,S3,Lower,163.0210,3912.5031,Translations,2024-02
+1878695,--,Unclassified,1.4969,35.9244,Translations,2024-02
+1878700,--,Unclassified,70.4659,1691.1817,Data Loss Prevention,2024-02
+1878701,--,Unclassified,16.5009,396.0219,Data Loss Prevention,2024-02
+1878710,--,Unclassified,162.4559,3898.9419,Translations,2024-02
+1878721,--,Unclassified,60.6243,1454.9836,Translations,2024-02
+1878727,N/A,Unclassified,8.4334,202.4017,Address Bar,2024-02
+1878728,N/A,Unclassified,3.6281,87.0753,Address Bar,2024-02
+1878731,--,Unclassified,7.4428,178.6272,Messaging System,2024-02
+1878746,S4,Lower,6.0728,145.7483,Firefox View,2024-02
+1878747,S4,Lower,9.3347,224.0317,New Tab Page,2024-02
+1878770,--,Unclassified,14.7910,354.9833,Messaging System,2024-02
+1878771,N/A,Unclassified,22.2804,534.7300,General,2024-02
+1878781,S3,Lower,309.4968,7427.9242,Search,2024-02
+1878783,--,Unclassified,10.2483,245.9583,New Tab Page,2024-02
+1878784,--,Unclassified,1.2511,30.0269,New Tab Page,2024-02
+1878808,--,Unclassified,3.3554,80.5306,Sync,2024-02
+1878814,--,Unclassified,1.5770,37.8492,Address Bar,2024-02
+1878818,N/A,Unclassified,1.2400,29.7611,Search,2024-02
+1878834,N/A,Unclassified,48.8406,1172.1747,Search,2024-02
+1878920,S3,Lower,50.6915,1216.5956,Tabbed Browser,2024-02
+1878925,S3,Lower,163.8633,3932.7194,Tabbed Browser,2024-02
+1878935,--,Unclassified,21.4405,514.5708,Messaging System,2024-02
+1878950,S4,Lower,1.6038,38.4900,Disability Access,2024-02
+1878956,S3,Lower,28.3436,680.2464,Nimbus Desktop Client,2024-02
+1878983,N/A,Unclassified,14.8725,356.9411,Address Bar,2024-02
+1879022,S3,Lower,28.4190,682.0561,Sync,2024-02
+1879035,S3,Lower,160.8956,3861.4936,PDF Viewer,2024-02
+1879068,S3,Lower,113.9940,2735.8564,Tabbed Browser,2024-02
+1879079,--,Unclassified,1.0186,24.4461,Messaging System,2024-02
+1879089,--,Unclassified,118.8234,2851.7617,Tabbed Browser,2024-02
+1879090,S2,High,0.9341,22.4192,Messaging System,2024-02
+1879091,--,Unclassified,0.3364,8.0742,New Tab Page,2024-02
+1879102,S3,Lower,8.1704,196.0886,PDF Viewer,2024-02
+1879103,S3,Lower,174.5370,4188.8886,Tabbed Browser,2024-02
+1879104,S3,Lower,160.7237,3857.3686,PDF Viewer,2024-02
+1879107,S3,Lower,8.1647,195.9533,PDF Viewer,2024-02
+1879108,S3,Lower,8.1615,195.8764,PDF Viewer,2024-02
+1879113,S3,Lower,8.1438,195.4503,PDF Viewer,2024-02
+1879122,--,Unclassified,0.2453,5.8881,Theme,2024-02
+1879126,N/A,Unclassified,6.0366,144.8775,Search,2024-02
+1879130,--,Unclassified,0.5307,12.7358,General,2024-02
+1879140,N/A,Unclassified,125.0931,3002.2339,Messaging System,2024-02
+1879144,--,Unclassified,96.0169,2304.4061,Messaging System,2024-02
+1879149,--,Unclassified,69.1799,1660.3178,Data Loss Prevention,2024-02
+1879152,--,Unclassified,29.4725,707.3392,Data Loss Prevention,2024-02
+1879181,--,Unclassified,33.5512,805.2289,Data Loss Prevention,2024-02
+1879182,--,Unclassified,7.3158,175.5800,Data Loss Prevention,2024-02
+1879191,N/A,Unclassified,20.3203,487.6881,Search,2024-02
+1879211,S3,Lower,6.2478,149.9464,Toolbars and Customization,2024-02
+1879220,N/A,Unclassified,1.4056,33.7339,Messaging System,2024-02
+1879222,S4,Lower,783.4004,18801.6086,Address Bar,2024-02
+1879223,--,Unclassified,1.3956,33.4956,PDF Viewer,2024-02
+1879226,S4,Lower,165.3730,3968.9519,Address Bar,2024-02
+1879232,N/A,Unclassified,1.3546,32.5108,Address Bar,2024-02
+1879270,S4,Lower,160.0592,3841.4214,Tabbed Browser,2024-02
+1879278,S3,Lower,2.0034,48.0822,Search,2024-02
+1879281,S3,Lower,7.3838,177.2111,PDF Viewer,2024-02
+1879313,S3,Lower,130.7603,3138.2467,Tabbed Browser,2024-02
+1879326,S4,Lower,111.7947,2683.0728,Tabbed Browser,2024-02
+1879341,N/A,Unclassified,18.7829,450.7889,Search,2024-02
+1879345,S4,Lower,74.6034,1790.4828,Tabbed Browser,2024-02
+1879368,N/A,Unclassified,4.9463,118.7100,Search,2024-02
+1879386,S3,Lower,4.4090,105.8150,Theme,2024-02
+1879390,S3,Lower,5.3740,128.9753,Messaging System,2024-02
+1879394,N/A,Unclassified,1.0626,25.5014,Address Bar,2024-02
+1879397,N/A,Unclassified,0.5441,13.0589,Address Bar,2024-02
+1879404,S3,Lower,5.3271,127.8506,Search,2024-02
+1879415,S3,Lower,4.4928,107.8283,Translations,2024-02
+1879609,--,Unclassified,19.6317,471.1619,Firefox View,2024-02
+1879443,N/A,Unclassified,0.0877,2.1050,Address Bar,2024-02
+1879448,N/A,Unclassified,0.3907,9.3772,Address Bar,2024-02
+1879515,N/A,Unclassified,103.1281,2475.0739,Search,2024-02
+1879559,S3,Lower,834.2361,20021.6672,PDF Viewer,2024-02
+1879563,S3,Lower,40.7455,977.8925,Screenshots,2024-02
+1879572,S3,Lower,5.4858,131.6589,Messaging System,2024-02
+1879587,--,Unclassified,3.6917,88.6017,Pocket,2024-02
+1879588,--,Unclassified,6.0774,145.8572,PDF Viewer,2024-02
+1879610,S2,High,6.3997,153.5931,Sync,2024-02
+1879614,N/A,Unclassified,5.6288,135.0906,Address Bar,2024-02
+1879621,N/A,Unclassified,244.1163,5858.7911,Search,2024-02
+1879625,N/A,Unclassified,18.3794,441.1047,Search,2024-02
+1879631,--,Unclassified,85.5736,2053.7656,Data Loss Prevention,2024-02
+1879637,N/A,Unclassified,4.0416,96.9975,Address Bar,2024-02
+1879638,S3,Lower,22.0742,529.7819,Messaging System,2024-02
+1879642,N/A,Unclassified,5.5696,133.6700,Address Bar,2024-02
+1879655,S3,Lower,18.2878,438.9069,Messaging System,2024-02
+1879667,N/A,Unclassified,158.9364,3814.4725,Search,2024-02
+1879737,N/A,Unclassified,3.5593,85.4233,Search,2024-02
+1879714,N/A,Unclassified,25.8018,619.2436,Search,2024-02
+1879815,S3,Lower,1.7958,43.0983,Theme,2024-02
+1879865,--,Unclassified,1.7854,42.8497,Messaging System,2024-02
+1879872,S2,High,0.6906,16.5756,Messaging System,2024-02
+1879881,S3,Lower,71.2833,1710.7983,Installer,2024-02
+1879883,S2,High,0.6700,16.0806,Messaging System,2024-02
+1879925,--,Unclassified,59.1294,1419.1056,Sidebar,2024-02
+1879926,--,Unclassified,43.4398,1042.5561,Sidebar,2024-02
+1879933,--,Unclassified,206.6106,4958.6536,Translations,2024-02
+1879941,S3,Lower,25.3367,608.0808,Search,2024-02
+1879963,S2,High,14.2713,342.5114,Shell Integration,2024-02
+1879975,S2,High,70.2062,1684.9483,Shell Integration,2024-02
+1879980,S3,Lower,70.8977,1701.5436,File Handling,2024-02
+1880020,N/A,Unclassified,1.8021,43.2508,Search,2024-02
+1880021,N/A,Unclassified,667.3399,16016.1583,Search,2024-02
+1880066,S4,Lower,7.3367,176.0803,Address Bar,2024-02
+1880067,S3,Lower,7.6298,183.1158,Firefox View,2024-02
+1880069,S3,Lower,17.3454,416.2903,Address Bar,2024-02
+1880078,S3,Lower,16.3052,391.3236,Address Bar,2024-02
+1880082,--,Unclassified,0.2786,6.6875,Shell Integration,2024-02
+1880101,--,Unclassified,188.0330,4512.7922,Sidebar,2024-02
+1880109,--,Unclassified,120.7282,2897.4758,Shell Integration,2024-02
+1880138,S4,Lower,167.1225,4010.9403,Firefox View,2024-02
+1880144,N/A,Unclassified,1.3904,33.3694,Address Bar,2024-02
+1880167,--,Unclassified,119.3069,2863.3647,Translations,2024-02
+1880368,S3,Lower,15.5714,373.7136,Installer,2024-02
+1880199,S3,Lower,9.1182,218.8369,Disability Access,2024-02
+1880212,N/A,Unclassified,41.0308,984.7383,Search,2024-02
+1880230,S4,Lower,155.5619,3733.4850,Private Browsing,2024-02
+1880308,--,Unclassified,818.1422,19635.4122,New Tab Page,2024-02
+1880314,--,Unclassified,72.7333,1745.6003,Data Loss Prevention,2024-02
+1880321,--,Unclassified,0.4941,11.8575,PDF Viewer,2024-02
+1880330,S3,Lower,0.1968,4.7231,Messaging System,2024-02
+1880334,--,Unclassified,14.0315,336.7553,Messaging System,2024-02
+1880335,--,Unclassified,0.3070,7.3675,Messaging System,2024-02
+1880357,--,Unclassified,9.6142,230.7403,Translations,2024-02
+1880371,S3,Lower,13.5467,325.1219,Messaging System,2024-02
+1880539,--,Unclassified,33.4134,801.9211,Sidebar,2024-02
+1880398,S4,Lower,84.8507,2036.4169,Screenshots,2024-02
+1880403,S3,Lower,0.3223,7.7344,Address Bar,2024-02
+1880409,N/A,Unclassified,9.2584,222.2022,Search,2024-02
+1880410,N/A,Unclassified,9.2499,221.9978,Search,2024-02
+1880416,S3,Lower,0.4802,11.5256,Address Bar,2024-02
+1880452,S2,High,28.4320,682.3669,General,2024-02
+1880480,S3,Lower,697.8043,16747.3036,Bookmarks & History,2024-02
+1880498,N/A,Unclassified,27.2473,653.9344,Address Bar,2024-02
+1880510,--,Unclassified,5.2106,125.0542,Address Bar,2024-02
+1880518,--,Unclassified,439.6941,10552.6583,New Tab Page,2024-02
+1880529,S4,Lower,75.1330,1803.1908,Screenshots,2024-02
+1880540,--,Unclassified,32.6103,782.6481,Sidebar,2024-02
+1880542,--,Unclassified,40.4163,969.9917,Sidebar,2024-02
+1880556,--,Unclassified,7.2739,174.5747,Sync,2024-02
+1880564,--,Unclassified,4.9582,118.9967,Messaging System,2024-02
+1880685,--,Unclassified,2.9795,71.5089,Messaging System,2024-02
+1880586,S3,Lower,5.0861,122.0653,Messaging System,2024-02
+1880644,S3,Lower,205.8823,4941.1758,Shell Integration,2024-02
+1880662,--,Unclassified,38.0294,912.7067,Address Bar,2024-02
+1880664,S2,High,4.6797,112.3131,Address Bar,2024-02
+1880667,S3,Lower,11.4849,275.6383,Address Bar,2024-02
+1880913,N/A,Unclassified,350.9355,8422.4528,Search,2024-02
+1880862,S3,Lower,8.9882,215.7169,Address Bar,2024-02
+1880865,S4,Lower,10.6996,256.7894,Address Bar,2024-02
+1880888,--,Unclassified,339.0466,8137.1183,Remote Settings Client,2024-02
+1880909,N/A,Unclassified,73.7098,1769.0364,General,2024-02
+1880914,N/A,Unclassified,55.6895,1336.5483,General,2024-02
+1881104,--,Unclassified,3.0865,74.0764,Messaging System,2024-02
+1880962,S4,Lower,372.3634,8936.7222,Enterprise Policies,2024-02
+1881106,S3,Lower,7.3914,177.3928,Messaging System,2024-02
+1880963,S4,Lower,372.1614,8931.8728,Enterprise Policies,2024-02
+1881071,S3,Lower,7.5152,180.3653,Address Bar,2024-02
+1881073,S3,Lower,1.7100,41.0411,Address Bar,2024-02
+1881082,--,Unclassified,1.0336,24.8058,Messaging System,2024-02
+1881092,--,Unclassified,21.0499,505.1969,Messaging System,2024-02
+1881101,--,Unclassified,1.4106,33.8533,New Tab Page,2024-02
+1881107,S4,Lower,49.6060,1190.5447,Firefox View,2024-02
+1881219,S3,Lower,10.1919,244.6050,PDF Viewer,2024-02
+1881335,N/A,Unclassified,6.8261,163.8272,Security,2024-02
+1881324,S4,Lower,6.3641,152.7383,Translations,2024-02
+1881259,--,Unclassified,149.7711,3594.5056,Translations,2024-02
+1881506,S3,Lower,32.6378,783.3069,Screenshots,2024-02
+1881389,S2,High,27.0679,649.6297,Settings UI,2024-02
+1881397,--,Unclassified,13.2641,318.3392,Shell Integration,2024-02
+1881405,N/A,Unclassified,27.0326,648.7825,Settings UI,2024-02
+1881408,--,Unclassified,6.5153,156.3669,Search,2024-02
+1881422,--,Unclassified,1.6240,38.9758,PDF Viewer,2024-02
+1881488,--,Unclassified,4.6942,112.6603,Tabbed Browser,2024-02
+1881524,S3,Lower,579.3343,13904.0233,Security,2024-02
+1881567,--,Unclassified,20.5250,492.6000,Shell Integration,2024-02
+1881573,--,Unclassified,2.1773,52.2553,New Tab Page,2024-02
+1881585,--,Unclassified,27.6300,663.1211,New Tab Page,2024-02
+1881588,--,Unclassified,49.1177,1178.8244,New Tab Page,2024-02
+1881606,N/A,Unclassified,5.3155,127.5722,Address Bar,2024-02
+1881607,N/A,Unclassified,1.5263,36.6306,Address Bar,2024-02
+1881819,--,Unclassified,1.0691,25.6586,New Tab Page,2024-02
+1881850,--,Unclassified,10.7652,258.3642,Private Browsing,2024-02
+1881851,S3,Lower,137.4516,3298.8378,Theme,2024-02
+1881642,--,Unclassified,123.8166,2971.5992,New Tab Page,2024-02
+1881643,--,Unclassified,28.2083,676.9994,New Tab Page,2024-02
+1881675,N/A,Unclassified,4.9325,118.3806,Search,2024-02
+1881684,S3,Lower,8.2578,198.1861,PDF Viewer,2024-02
+1881692,S3,Lower,7.0181,168.4356,PDF Viewer,2024-02
+1881739,N/A,Unclassified,159.8844,3837.2267,Search,2024-02
+1881743,S2,High,20.9163,501.9900,PDF Viewer,2024-02
+1881746,S2,High,28.0193,672.4633,PDF Viewer,2024-02
+1881782,S3,Lower,151.6553,3639.7278,Tabbed Browser,2024-02
+1881798,N/A,Unclassified,9.1746,220.1897,Protections UI,2024-02
+1881802,S3,Lower,6.6608,159.8586,PDF Viewer,2024-02
+1881803,--,Unclassified,10.1433,243.4394,General,2024-02
+1881640,--,Unclassified,117.7253,2825.4081,New Tab Page,2024-02
+1881816,--,Unclassified,25.3866,609.2778,New Tab Page,2024-02
+1881817,--,Unclassified,1.0725,25.7406,Messaging System,2024-02
+1881818,--,Unclassified,1.0708,25.6989,New Tab Page,2024-02
+1881874,N/A,Unclassified,5.9761,143.4269,Address Bar,2024-02
+1881901,S3,Lower,0.4505,10.8111,Messaging System,2024-02
+1881875,N/A,Unclassified,40.3538,968.4906,Address Bar,2024-02
+1881865,S4,Lower,101.8708,2444.8992,Translations,2024-02
+1881873,N/A,Unclassified,40.6296,975.1106,Address Bar,2024-02
+1881963,--,Unclassified,23.0516,553.2392,Private Browsing,2024-02
+1882099,--,Unclassified,1.5511,37.2269,Tabbed Browser,2024-02
+1882174,N/A,Unclassified,1.7916,42.9989,Address Bar,2024-02
+1882171,--,Unclassified,2.0108,48.2581,General,2024-02
+1882028,N/A,Unclassified,0.3040,7.2967,Toolbars and Customization,2024-02
+1882043,S3,Lower,2.2279,53.4700,Address Bar,2024-02
+1882067,S4,Lower,10.6413,255.3911,Messaging System,2024-02
+1882114,--,Unclassified,49.4884,1187.7222,Firefox View,2024-02
+1882339,N/A,Unclassified,35.7106,857.0533,Firefox Accounts,2024-02
+1882220,--,Unclassified,1.9242,46.1800,Address Bar,2024-02
+1882241,S3,Lower,890.4985,21371.9639,Bookmarks & History,2024-02
+1882248,S4,Lower,4.1851,100.4425,PDF Viewer,2024-02
+1882309,N/A,Unclassified,48.0768,1153.8422,Search,2024-02
+1882316,S4,Lower,240.5676,5773.6219,Security,2024-02
+1882334,--,Unclassified,1.0147,24.3519,Translations,2024-02
+1882341,S3,Lower,8.7208,209.3000,Translations,2024-02
+1882397,--,Unclassified,43.8340,1052.0153,New Tab Page,2024-02
+1882413,N/A,Unclassified,3.9272,94.2531,Installer,2024-02
+1882606,S3,Lower,21.5404,516.9694,Data Loss Prevention,2024-02
+1882607,--,Unclassified,890.1165,21362.7961,Data Loss Prevention,2024-02
+1882609,--,Unclassified,118.9192,2854.0600,Messaging System,2024-02
+1882427,N/A,Unclassified,397.7635,9546.3233,Screenshots,2024-02
+1882430,S4,Lower,10.0958,242.3000,Address Bar,2024-02
+1882478,N/A,Unclassified,0.4698,11.2753,Address Bar,2024-02
+1882528,N/A,Unclassified,5.7965,139.1167,Search,2024-02
+1882559,N/A,Unclassified,76.1968,1828.7236,Enterprise Policies,2024-02
+1882564,S2,High,125.1620,3003.8875,Address Bar,2024-02
+1882569,--,Unclassified,0.4513,10.8300,Theme,2024-02
+1882577,N/A,Unclassified,14.1428,339.4264,Search,2024-02
+1882583,--,Unclassified,1.1070,26.5689,PDF Viewer,2024-02
+1882596,--,Unclassified,5.5686,133.6453,Data Loss Prevention,2024-02
+1882597,S4,Lower,8.7709,210.5017,Firefox View,2024-02
+1882601,S3,Lower,9.2945,223.0692,Data Loss Prevention,2024-02
+1882603,--,Unclassified,21.5464,517.1144,Data Loss Prevention,2024-02
+1882604,--,Unclassified,3.0580,73.3922,Data Loss Prevention,2024-02
+1882605,S4,Lower,3.0542,73.3006,Firefox View,2024-02
+1882925,S3,Lower,7.2068,172.9639,Screenshots,2024-02
+1882874,S4,Lower,0.5597,13.4319,Translations,2024-02
+1882888,--,Unclassified,1.5273,36.6547,Sync,2024-02
+1882655,N/A,Unclassified,132.8699,3188.8786,Firefox View,2024-02
+1882662,--,Unclassified,12.3459,296.3006,Messaging System,2024-02
+1882677,--,Unclassified,1.6034,38.4811,Address Bar,2024-02
+1882776,--,Unclassified,144.8350,3476.0406,General,2024-02
+1882815,N/A,Unclassified,9.1884,220.5219,Address Bar,2024-02
+1882830,--,Unclassified,14.9934,359.8422,New Tab Page,2024-02
+1882844,--,Unclassified,46.8948,1125.4761,Search,2024-02
+1883076,S4,Lower,1.0380,24.9128,Messaging System,2024-03
+1883049,--,Unclassified,0.3323,7.9753,Tabbed Browser,2024-03
+1883050,--,Unclassified,0.3898,9.3564,PDF Viewer,2024-03
+1883012,--,Unclassified,3.3760,81.0242,Translations,2024-03
+1883015,--,Unclassified,3.3744,80.9856,Translations,2024-03
+1883124,--,Unclassified,64.9934,1559.8428,Data Loss Prevention,2024-03
+1882967,N/A,Unclassified,20.5935,494.2436,Address Bar,2024-03
+1882981,--,Unclassified,3.3033,79.2781,PDF Viewer,2024-03
+1883140,--,Unclassified,4.2868,102.8825,Private Browsing,2024-03
+1883010,--,Unclassified,0.4166,9.9975,PDF Viewer,2024-03
+1883199,S4,Lower,52.2594,1254.2261,Search,2024-03
+1883205,S4,Lower,2.6487,63.5689,Address Bar,2024-03
+1883235,S3,Lower,2.2360,53.6631,Firefox View,2024-03
+1883231,S3,Lower,67.7747,1626.5928,Firefox View,2024-03
+1883249,S4,Lower,737.9109,17709.8619,Address Bar,2024-03
+1883278,S3,Lower,10.2101,245.0417,Session Restore,2024-03
+1883497,--,Unclassified,771.7800,18522.7194,Firefox View,2024-03
+1883516,--,Unclassified,38.4889,923.7325,Messaging System,2024-03
+1883510,S4,Lower,70.9901,1703.7628,Data Loss Prevention,2024-03
+1883337,S4,Lower,1.7182,41.2364,Firefox View,2024-03
+1883378,S3,Lower,2.7920,67.0072,Address Bar,2024-03
+1883384,S3,Lower,21.0427,505.0253,Messaging System,2024-03
+1883392,N/A,Unclassified,640.5586,15373.4056,Search,2024-03
+1883394,S3,Lower,2.8854,69.2497,PDF Viewer,2024-03
+1883402,N/A,Unclassified,7.2369,173.6861,Search,2024-03
+1883424,S4,Lower,17.5137,420.3297,Firefox Accounts,2024-03
+1883452,N/A,Unclassified,23.6262,567.0286,General,2024-03
+1883466,--,Unclassified,1.6298,39.1158,Shell Integration,2024-03
+1883503,--,Unclassified,36.6478,879.5481,Profile Backup,2024-03
+1883482,S3,Lower,3.3709,80.9022,Address Bar,2024-03
+1883576,--,Unclassified,6.4207,154.0964,Messaging System,2024-03
+1883681,S3,Lower,2.5701,61.6833,Nimbus Desktop Client,2024-03
+1883682,S3,Lower,20.5449,493.0778,Nimbus Desktop Client,2024-03
+1883683,S3,Lower,2.5701,61.6822,Nimbus Desktop Client,2024-03
+1883685,S3,Lower,324.2794,7782.7067,Search,2024-03
+1883686,S3,Lower,77.5453,1861.0881,Nimbus Desktop Client,2024-03
+1883688,S3,Lower,20.5447,493.0739,Nimbus Desktop Client,2024-03
+1883690,S3,Lower,2.5699,61.6767,Nimbus Desktop Client,2024-03
+1883695,--,Unclassified,0.5500,13.1994,Nimbus Desktop Client,2024-03
+1883714,--,Unclassified,2.4898,59.7564,Firefox View,2024-03
+1883717,S3,Lower,20.4508,490.8197,Screenshots,2024-03
+1883722,--,Unclassified,17.6655,423.9717,Firefox View,2024-03
+1883728,--,Unclassified,35.8738,860.9700,New Tab Page,2024-03
+1883736,N/A,Unclassified,15.6110,374.6639,Profile Backup,2024-03
+1883739,N/A,Unclassified,17.6015,422.4367,Profile Backup,2024-03
+1883740,N/A,Unclassified,21.4092,513.8217,Profile Backup,2024-03
+1883747,N/A,Unclassified,21.3936,513.4461,Profile Backup,2024-03
+1883765,S3,Lower,20.2998,487.1958,Screenshots,2024-03
+1883776,S3,Lower,2.3024,55.2572,Search,2024-03
+1883597,N/A,Unclassified,6.5035,156.0836,Search,2024-03
+1883605,--,Unclassified,97.4740,2339.3764,PDF Viewer,2024-03
+1883609,S3,Lower,2.0718,49.7236,PDF Viewer,2024-03
+1883610,S4,Lower,1.9546,46.9103,Firefox View,2024-03
+1883628,S3,Lower,2.6529,63.6686,Firefox View,2024-03
+1883632,S4,Lower,1.9547,46.9117,PDF Viewer,2024-03
+1883642,N/A,Unclassified,13.7926,331.0233,Profile Backup,2024-03
+1883646,S3,Lower,42.5577,1021.3853,Nimbus Desktop Client,2024-03
+1883655,N/A,Unclassified,30.7751,738.6014,Profile Backup,2024-03
+1883656,S3,Lower,2.5703,61.6878,Nimbus Desktop Client,2024-03
+1883657,S3,Lower,2.5703,61.6878,Nimbus Desktop Client,2024-03
+1883658,S3,Lower,2.5703,61.6881,Nimbus Desktop Client,2024-03
+1883660,S3,Lower,8.5896,206.1508,Nimbus Desktop Client,2024-03
+1883661,S3,Lower,2.5702,61.6858,Nimbus Desktop Client,2024-03
+1883663,S3,Lower,2.5703,61.6864,Nimbus Desktop Client,2024-03
+1883664,S3,Lower,2.5703,61.6864,Nimbus Desktop Client,2024-03
+1883666,S3,Lower,2.5703,61.6867,Nimbus Desktop Client,2024-03
+1883667,S3,Lower,2.5703,61.6875,Nimbus Desktop Client,2024-03
+1883668,S3,Lower,44.2738,1062.5714,Nimbus Desktop Client,2024-03
+1883670,S3,Lower,2.5703,61.6867,Nimbus Desktop Client,2024-03
+1883671,S3,Lower,2.5703,61.6867,Nimbus Desktop Client,2024-03
+1883672,S3,Lower,2.5703,61.6869,Nimbus Desktop Client,2024-03
+1883673,S3,Lower,50.7749,1218.5981,Nimbus Desktop Client,2024-03
+1883674,S3,Lower,2.5702,61.6856,Nimbus Desktop Client,2024-03
+1883676,S3,Lower,1.7854,42.8500,Nimbus Desktop Client,2024-03
+1883677,S3,Lower,2.5702,61.6839,Nimbus Desktop Client,2024-03
+1883678,--,Unclassified,0.5681,13.6350,Screenshots,2024-03
+1883679,S3,Lower,2.5702,61.6844,Nimbus Desktop Client,2024-03
+1884007,--,Unclassified,1.2955,31.0914,New Tab Page,2024-03
+1884014,S2,High,0.4944,11.8661,Address Bar,2024-03
+1884039,S3,Lower,14.4137,345.9286,Nimbus Desktop Client,2024-03
+1884003,S4,Lower,35.2829,846.7894,Data Loss Prevention,2024-03
+1883901,--,Unclassified,0.8442,20.2600,PDF Viewer,2024-03
+1883911,N/A,Unclassified,2.5440,61.0553,Migration,2024-03
+1883916,N/A,Unclassified,6.7869,162.8856,Search,2024-03
+1883941,--,Unclassified,15.5279,372.6706,Sidebar,2024-03
+1883807,N/A,Unclassified,1.3488,32.3711,Address Bar,2024-03
+1883811,N/A,Unclassified,2.1093,50.6222,Search,2024-03
+1883814,--,Unclassified,5.5222,132.5331,Messaging System,2024-03
+1883820,--,Unclassified,8.7372,209.6939,Messaging System,2024-03
+1883845,S3,Lower,3.5127,84.3036,Address Bar,2024-03
+1883850,S4,Lower,1.0325,24.7797,Firefox View,2024-03
+1883876,S3,Lower,16.9291,406.2992,Firefox View,2024-03
+1883884,--,Unclassified,224.3659,5384.7806,PDF Viewer,2024-03
+1883890,S4,Lower,1.6599,39.8367,Firefox View,2024-03
+1883892,--,Unclassified,0.8694,20.8656,Tabbed Browser,2024-03
+1884180,S4,Lower,4.7011,112.8264,Screenshots,2024-03
+1884059,--,Unclassified,1.0897,26.1525,New Tab Page,2024-03
+1884094,S3,Lower,15.9721,383.3306,Address Bar,2024-03
+1884135,--,Unclassified,4.3244,103.7850,Settings UI,2024-03
+1884141,--,Unclassified,4.0961,98.3069,Nimbus Desktop Client,2024-03
+1884146,S3,Lower,8.1178,194.8264,Address Bar,2024-03
+1884170,--,Unclassified,0.5285,12.6831,Firefox View,2024-03
+1884172,--,Unclassified,5.7330,137.5917,Screenshots,2024-03
+1884181,N/A,Unclassified,5.2077,124.9853,Settings UI,2024-03
+1884219,N/A,Unclassified,1.3327,31.9836,Search,2024-03
+1884232,S4,Lower,6.5287,156.6897,Address Bar,2024-03
+1884265,--,Unclassified,18.2102,437.0436,Shell Integration,2024-03
+1884435,S4,Lower,0.3148,7.5544,Address Bar,2024-03
+1884460,N/A,Unclassified,10.7435,257.8442,Data Loss Prevention,2024-03
+1884278,S4,Lower,4.8442,116.2600,Firefox View,2024-03
+1884322,S3,Lower,2.0727,49.7447,Firefox View,2024-03
+1884370,S3,Lower,25.8013,619.2311,Settings UI,2024-03
+1884407,N/A,Unclassified,5.1759,124.2206,Profile Backup,2024-03
+1884417,S4,Lower,4.6446,111.4706,Tabbed Browser,2024-03
+1884479,S3,Lower,82.0804,1969.9297,Translations,2024-03
+1884722,S3,Lower,2.6827,64.3856,Translations,2024-03
+1884748,S2,High,17.4102,417.8444,Settings UI,2024-03
+1884727,--,Unclassified,3.9772,95.4528,Messaging System,2024-03
+1884781,--,Unclassified,0.5146,12.3508,Theme,2024-03
+1884784,S4,Lower,7.5137,180.3281,Shell Integration,2024-03
+1884785,--,Unclassified,14.2822,342.7719,Shell Integration,2024-03
+1884671,--,Unclassified,0.3185,7.6447,Sidebar,2024-03
+1884681,S4,Lower,703.6019,16886.4456,Disability Access,2024-03
+1884701,N/A,Unclassified,0.7393,17.7428,Search,2024-03
+1884705,--,Unclassified,2.2333,53.5992,Remote Settings Client,2024-03
+1884981,S2,High,35.6503,855.6083,Firefox View,2024-03
+1884995,N/A,Unclassified,1.4504,34.8086,Profile Backup,2024-03
+1885002,--,Unclassified,1.6079,38.5906,Search,2024-03
+1885037,--,Unclassified,1.3023,31.2542,Protections UI,2024-03
+1884854,S3,Lower,2.7182,65.2364,Address Bar,2024-03
+1884901,S3,Lower,24.9244,598.1856,Translations,2024-03
+1884914,S2,High,5.8856,141.2533,Messaging System,2024-03
+1884923,N/A,Unclassified,27.2263,653.4319,Search,2024-03
+1884936,S3,Lower,0.8106,19.4533,Screenshots,2024-03
+1884952,N/A,Unclassified,9.2463,221.9114,Search,2024-03
+1884970,S2,High,147.1981,3532.7547,Tabbed Browser,2024-03
+1884986,S2,High,35.6310,855.1450,Firefox View,2024-03
+1885146,S3,Lower,33.5816,805.9589,Tabbed Browser,2024-03
+1885193,N/A,Unclassified,0.6439,15.4531,Search,2024-03
+1885177,N/A,Unclassified,0.6938,16.6506,Search,2024-03
+1885169,N/A,Unclassified,2.7226,65.3419,Search,2024-03
+1885064,--,Unclassified,38.3586,920.6061,Sync,2024-03
+1885121,N/A,Unclassified,0.3944,9.4644,Search,2024-03
+1885134,S4,Lower,6.1466,147.5194,Firefox View,2024-03
+1885143,S3,Lower,56.6010,1358.4242,Tabbed Browser,2024-03
+1885158,--,Unclassified,34.5543,829.3036,Translations,2024-03
+1885423,N/A,Unclassified,1.0117,24.2811,Screenshots,2024-03
+1885264,S4,Lower,777.6246,18662.9906,Address Bar,2024-03
+1885302,N/A,Unclassified,6.3976,153.5433,Search,2024-03
+1885306,--,Unclassified,0.9042,21.7011,PDF Viewer,2024-03
+1885362,--,Unclassified,19.2422,461.8131,Enterprise Policies,2024-03
+1885366,N/A,Unclassified,4.7383,113.7186,Profile Backup,2024-03
+1885369,N/A,Unclassified,53.0207,1272.4961,Profile Backup,2024-03
+1885372,N/A,Unclassified,13.2348,317.6353,Profile Backup,2024-03
+1885385,--,Unclassified,27.4916,659.7981,Shell Integration,2024-03
+1885386,--,Unclassified,39.8879,957.3097,Shell Integration,2024-03
+1885391,N/A,Unclassified,55.9721,1343.3294,Search,2024-03
+1885403,--,Unclassified,0.9584,23.0022,Profile Backup,2024-03
+1885421,S3,Lower,1.0136,24.3264,Migration,2024-03
+1885438,S3,Lower,32.8756,789.0150,Messaging System,2024-03
+1885505,S2,High,468.1342,11235.2214,PDF Viewer,2024-03
+1885609,N/A,Unclassified,26.6273,639.0544,Profile Backup,2024-03
+1885614,N/A,Unclassified,32.3839,777.2125,Profile Backup,2024-03
+1885645,--,Unclassified,48.3088,1159.4114,Firefox Accounts,2024-03
+1885664,S3,Lower,38.0454,913.0903,Firefox View,2024-03
+1885499,S3,Lower,35.0008,840.0194,Installer,2024-03
+1885988,S3,Lower,7.8275,187.8597,Messaging System,2024-03
+1886016,--,Unclassified,4.5608,109.4597,Shell Integration,2024-03
+1886023,--,Unclassified,8.5371,204.8900,Data Loss Prevention,2024-03
+1886052,S4,Lower,0.0993,2.3825,File Handling,2024-03
+1885883,--,Unclassified,39.1450,939.4808,Sidebar,2024-03
+1885894,--,Unclassified,49.8119,1195.4861,Sidebar,2024-03
+1885897,S3,Lower,60.3366,1448.0786,Address Bar,2024-03
+1885929,N/A,Unclassified,28.5213,684.5108,Profile Backup,2024-03
+1885939,N/A,Unclassified,18.7199,449.2783,Profile Backup,2024-03
+1885941,N/A,Unclassified,30.7588,738.2106,Profile Backup,2024-03
+1885944,N/A,Unclassified,23.5265,564.6353,Profile Backup,2024-03
+1885953,N/A,Unclassified,276.7236,6641.3661,Search,2024-03
+1885955,--,Unclassified,50.8678,1220.8281,Profile Backup,2024-03
+1885958,--,Unclassified,14.0404,336.9697,Messaging System,2024-03
+1885992,N/A,Unclassified,1.1250,27.0003,Profile Backup,2024-03
+1885993,N/A,Unclassified,19.5900,470.1608,Profile Backup,2024-03
+1885962,--,Unclassified,10.1814,244.3542,Messaging System,2024-03
+1885981,--,Unclassified,1.4433,34.6381,Theme,2024-03
+1886095,N/A,Unclassified,16.6637,399.9278,Search,2024-03
+1886172,N/A,Unclassified,209.9213,5038.1117,Address Bar,2024-03
+1886174,N/A,Unclassified,21.8433,524.2389,Profile Backup,2024-03
+1886203,S3,Lower,17.2731,414.5533,Shell Integration,2024-03
+1886175,S2,High,2.3217,55.7206,Address Bar,2024-03
+1886222,N/A,Unclassified,92.2306,2213.5344,General,2024-03
+1886268,S4,Lower,1.5939,38.2525,Settings UI,2024-03
+1886255,--,Unclassified,8.6340,207.2161,Data Loss Prevention,2024-03
+1886199,S4,Lower,7.0818,169.9628,Enterprise Policies,2024-03
+1886186,S3,Lower,6.1081,146.5944,Address Bar,2024-03
+1886061,N/A,Unclassified,4.3791,105.0986,Search,2024-03
+1886114,S4,Lower,0.8351,20.0422,Firefox View,2024-03
+1886408,--,Unclassified,127.6865,3064.4764,Sidebar,2024-03
+1886358,S3,Lower,91.8735,2204.9636,Theme,2024-03
+1886362,S3,Lower,38.0857,914.0558,Messaging System,2024-03
+1886427,S3,Lower,2.0080,48.1922,PDF Viewer,2024-03
+1886503,S2,High,5.7259,137.4225,Messaging System,2024-03
+1886507,S2,High,5.0607,121.4564,Messaging System,2024-03
+1886552,S4,Lower,0.2152,5.1653,Profile Backup,2024-03
+1886558,S3,Lower,77.6175,1862.8192,Data Loss Prevention,2024-03
+1886586,S3,Lower,1.7076,40.9825,PDF Viewer,2024-03
+1886592,S4,Lower,0.0147,0.3519,Search,2024-03
+1886613,N/A,Unclassified,33.0133,792.3200,Profile Backup,2024-03
+1886614,N/A,Unclassified,33.5098,804.2361,Profile Backup,2024-03
+1886892,--,Unclassified,15.5638,373.5303,Session Restore,2024-03
+1886659,N/A,Unclassified,16.2726,390.5414,Session Restore,2024-03
+1886694,S4,Lower,0.4950,11.8808,Address Bar,2024-03
+1886701,S3,Lower,4.2972,103.1319,Messaging System,2024-03
+1886707,--,Unclassified,0.4557,10.9358,Theme,2024-03
+1886729,--,Unclassified,6.4032,153.6767,Theme,2024-03
+1886753,S3,Lower,13.5925,326.2194,Translations,2024-03
+1886761,S4,Lower,14.3101,343.4433,Address Bar,2024-03
+1886766,S3,Lower,5.9405,142.5728,Address Bar,2024-03
+1886796,--,Unclassified,0.2292,5.5017,PDF Viewer,2024-03
+1886807,S3,Lower,47.4828,1139.5875,Bookmarks & History,2024-03
+1886833,--,Unclassified,46.6482,1119.5564,New Tab Page,2024-03
+1886842,--,Unclassified,636.9225,15286.1394,Security,2024-03
+1886843,S3,Lower,14.6448,351.4750,Screenshots,2024-03
+1886847,--,Unclassified,134.6408,3231.3800,Sidebar,2024-03
+1886852,--,Unclassified,0.1089,2.6136,Session Restore,2024-03
+1886856,--,Unclassified,7.1108,170.6597,Messaging System,2024-03
+1886862,S3,Lower,35.3770,849.0489,Messaging System,2024-03
+1886872,--,Unclassified,0.3820,9.1686,PDF Viewer,2024-03
+1887038,--,Unclassified,35.2813,846.7519,Messaging System,2024-03
+1886959,S3,Lower,4.9835,119.6031,PDF Viewer,2024-03
+1886960,--,Unclassified,0.9941,23.8575,Theme,2024-03
+1886964,S4,Lower,4.9601,119.0414,PDF Viewer,2024-03
+1886975,S2,High,3.4386,82.5264,Address Bar,2024-03
+1886990,--,Unclassified,11.9097,285.8322,Sidebar,2024-03
+1886994,--,Unclassified,0.9011,21.6261,General,2024-03
+1886999,S3,Lower,354.2252,8501.4042,General,2024-03
+1887010,N/A,Unclassified,3.1819,76.3650,Search,2024-03
+1887011,S4,Lower,230.8546,5540.5097,Messaging System,2024-03
+1887029,--,Unclassified,14.8685,356.8439,Session Restore,2024-03
+1887039,--,Unclassified,20.2733,486.5583,Sidebar,2024-03
+1887066,--,Unclassified,3.5108,84.2594,Messaging System,2024-03
+1887077,S3,Lower,16.9431,406.6344,Messaging System,2024-03
+1887090,--,Unclassified,488.2161,11717.1875,Translations,2024-03
+1887093,S4,Lower,26.6920,640.6078,Screenshots,2024-03
+1887152,--,Unclassified,220.9949,5303.8772,Messaging System,2024-03
+1887179,--,Unclassified,122.9396,2950.5497,Data Loss Prevention,2024-03
+1887220,S3,Lower,39.9734,959.3619,Firefox View,2024-03
+1887227,N/A,Unclassified,4.2252,101.4044,Search,2024-03
+1887320,S3,Lower,10.0654,241.5686,PDF Viewer,2024-03
+1887467,--,Unclassified,1.5044,36.1058,Untriaged,2024-03
+1887308,S4,Lower,2.7616,66.2794,Translations,2024-03
+1887331,S4,Lower,2.5992,62.3803,Search,2024-03
+1887233,N/A,Unclassified,3.3948,81.4744,Search,2024-03
+1887237,S4,Lower,26.3620,632.6889,Firefox View,2024-03
+1887280,S4,Lower,7.6802,184.3253,Security,2024-03
+1887529,S3,Lower,11.0196,264.4694,Translations,2024-03
+1887543,--,Unclassified,15.4466,370.7194,Untriaged,2024-03
+1887736,S3,Lower,2.1352,51.2444,Bookmarks & History,2024-03
+1887739,S4,Lower,53.6031,1286.4736,Firefox Accounts,2024-03
+1887741,--,Unclassified,1.4218,34.1228,PDF Viewer,2024-03
+1887746,N/A,Unclassified,8.5735,205.7636,Profile Backup,2024-03
+1887752,N/A,Unclassified,23.5569,565.3650,Profile Backup,2024-03
+1887765,N/A,Unclassified,92.2672,2214.4119,Profile Backup,2024-03
+1887754,S4,Lower,0.0664,1.5942,Profile Backup,2024-03
+1887641,N/A,Unclassified,335.9611,8063.0664,Search,2024-03
+1887647,S2,High,3.3201,79.6825,Firefox View,2024-03
+1887655,--,Unclassified,3.6006,86.4153,New Tab Page,2024-03
+1887686,N/A,Unclassified,0.5109,12.2628,Search,2024-03
+1887692,S3,Lower,15.9694,383.2647,Messaging System,2024-03
+1887698,N/A,Unclassified,2.7074,64.9772,Search,2024-03
+1887711,N/A,Unclassified,3.1937,76.6486,Address Bar,2024-03
+1887732,S3,Lower,10.1408,243.3783,Nimbus Desktop Client,2024-03
+1887953,--,Unclassified,10.5754,253.8106,Translations,2024-03
+1887821,--,Unclassified,8.8199,211.6786,Normandy Client,2024-03
+1887925,--,Unclassified,0.5131,12.3156,Settings UI,2024-03
+1887943,N/A,Unclassified,7.6539,183.6931,Search,2024-03
+1887966,N/A,Unclassified,43.0413,1032.9906,Search,2024-03
+1888291,--,Unclassified,7.4258,178.2200,Data Loss Prevention,2024-03
+1888019,--,Unclassified,84.3499,2024.3972,Firefox Accounts,2024-03
+1888299,S3,Lower,117.4114,2817.8733,Sync,2024-03
+1888148,S3,Lower,56.8812,1365.1494,Tabbed Browser,2024-03
+1888196,--,Unclassified,8.6935,208.6444,Sidebar,2024-03
+1888221,N/A,Unclassified,6.6495,159.5892,Sync,2024-03
+1888228,--,Unclassified,0.0456,1.0947,Messaging System,2024-03
+1888250,--,Unclassified,0.5630,13.5128,PDF Viewer,2024-03
+1888259,--,Unclassified,6.5367,156.8811,Data Loss Prevention,2024-03
+1888263,S3,Lower,27.0132,648.3178,Installer,2024-03
+1888293,S4,Lower,329.7250,7913.3989,Data Loss Prevention,2024-03
+1888440,N/A,Unclassified,32.7700,786.4806,Profile Backup,2024-03
+1888348,--,Unclassified,6.0373,144.8953,Theme,2024-03
+1888412,N/A,Unclassified,140.3180,3367.6317,Profile Backup,2024-03
+1888419,N/A,Unclassified,5.8123,139.4961,Menus,2024-03
+1888436,N/A,Unclassified,25.7753,618.6067,Profile Backup,2024-03
+1888442,N/A,Unclassified,32.7697,786.4717,Profile Backup,2024-03
+1888444,N/A,Unclassified,28.5405,684.9714,Profile Backup,2024-03
+1888445,N/A,Unclassified,28.2184,677.2406,Profile Backup,2024-03
+1888446,N/A,Unclassified,32.7690,786.4550,Profile Backup,2024-03
+1888447,N/A,Unclassified,27.7656,666.3750,Profile Backup,2024-03
+1888448,N/A,Unclassified,36.7592,882.2208,Profile Backup,2024-03
+1888451,S3,Lower,784.7541,18834.0978,Enterprise Policies,2024-03
+1888454,--,Unclassified,12.7589,306.2144,New Tab Page,2024-03
+1888461,--,Unclassified,74.2260,1781.4244,PDF Viewer,2024-03
+1888463,S4,Lower,25.6215,614.9150,Tabbed Browser,2024-03
+1888477,S3,Lower,795.6885,19096.5239,Enterprise Policies,2024-03
+1888491,N/A,Unclassified,6.4201,154.0819,Profile Backup,2024-03
+1888498,--,Unclassified,4.6490,111.5764,Data Loss Prevention,2024-03
+1888506,N/A,Unclassified,11.0192,264.4606,Search,2024-03
+1888540,--,Unclassified,41.5718,997.7239,New Tab Page,2024-03
+1888548,S2,High,42.0381,1008.9139,Enterprise Policies,2024-03
+1888713,S4,Lower,24.0311,576.7472,Data Loss Prevention,2024-03
+1888594,S4,Lower,6.1030,146.4714,Address Bar,2024-03
+1888627,S3,Lower,4.9961,119.9053,Address Bar,2024-03
+1888657,S3,Lower,10.1173,242.8153,PDF Viewer,2024-03
+1888662,--,Unclassified,4.8000,115.1992,Data Loss Prevention,2024-03
+1888684,S2,High,147.6843,3544.4233,Translations,2024-03
+1888688,S3,Lower,10.1867,244.4817,Address Bar,2024-03
+1888699,--,Unclassified,0.6080,14.5917,New Tab Page,2024-03
+1888706,--,Unclassified,3.5954,86.2903,Theme,2024-03
+1888736,--,Unclassified,59.6362,1431.2686,Messaging System,2024-03
+1888732,--,Unclassified,4.3946,105.4703,PDF Viewer,2024-03
+1888841,S4,Lower,9.7111,233.0669,Session Restore,2024-03
+1888958,--,Unclassified,4.5939,110.2528,Installer,2024-04
+1888905,N/A,Unclassified,4.8917,117.4014,Address Bar,2024-04
+1888908,N/A,Unclassified,8.3676,200.8222,Address Bar,2024-04
+1888915,--,Unclassified,0.7866,18.8781,Data Loss Prevention,2024-04
+1888930,--,Unclassified,27.9060,669.7442,Messaging System,2024-04
+1888983,--,Unclassified,2.5173,60.4147,New Tab Page,2024-04
+1889247,S3,Lower,6.2538,150.0922,Search,2024-04
+1889037,S3,Lower,23.6659,567.9828,Search,2024-04
+1889118,--,Unclassified,0.1858,4.4581,PDF Viewer,2024-04
+1889122,S3,Lower,13.2926,319.0217,PDF Viewer,2024-04
+1889123,N/A,Unclassified,78.5730,1885.7508,Firefox Accounts,2024-04
+1889126,--,Unclassified,0.7977,19.1444,Translations,2024-04
+1889154,S4,Lower,1.4957,35.8975,Address Bar,2024-04
+1889157,S4,Lower,14.0869,338.0853,Normandy Client,2024-04
+1889194,S4,Lower,1.3848,33.2358,Theme,2024-04
+1889195,S3,Lower,255.0600,6121.4406,Messaging System,2024-04
+1889206,S3,Lower,742.9707,17831.2969,Translations,2024-04
+1889232,--,Unclassified,16.0387,384.9292,Shell Integration,2024-04
+1889233,S3,Lower,1.2932,31.0369,Sync,2024-04
+1889242,S3,Lower,1.9896,47.7494,Search,2024-04
+1889264,--,Unclassified,2.9168,70.0028,Messaging System,2024-04
+1889398,S3,Lower,19.6716,472.1183,Tabbed Browser,2024-04
+1889271,S3,Lower,33.7442,809.8611,Messaging System,2024-04
+1889337,--,Unclassified,78.0727,1873.7456,Messaging System,2024-04
+1889341,S2,High,8.0892,194.1397,Messaging System,2024-04
+1889344,N/A,Unclassified,0.7529,18.0686,General,2024-04
+1889360,S2,High,8.0152,192.3636,Messaging System,2024-04
+1889369,S4,Lower,29.6362,711.2692,Tabbed Browser,2024-04
+1889374,S4,Lower,19.8772,477.0533,Tabbed Browser,2024-04
+1889384,S4,Lower,15.8597,380.6325,Tabbed Browser,2024-04
+1889438,S3,Lower,1.6827,40.3842,Screenshots,2024-04
+1889450,--,Unclassified,1.6454,39.4903,Tabbed Browser,2024-04
+1889451,--,Unclassified,6.6509,159.6228,Data Loss Prevention,2024-04
+1889463,--,Unclassified,1.0982,26.3578,Theme,2024-04
+1889473,S3,Lower,1.5610,37.4633,Screenshots,2024-04
+1889753,--,Unclassified,665.0291,15960.6992,Translations,2024-04
+1889569,S3,Lower,511.8075,12283.3811,Enterprise Policies,2024-04
+1889586,S4,Lower,18.9719,455.3261,Tabbed Browser,2024-04
+1889606,S4,Lower,18.8883,453.3181,Tabbed Browser,2024-04
+1889616,S3,Lower,6.9765,167.4369,Messaging System,2024-04
+1889617,--,Unclassified,111.0650,2665.5594,Remote Settings Client,2024-04
+1889797,S3,Lower,2.9655,71.1708,Screenshots,2024-04
+1889623,S3,Lower,4.1419,99.4058,PDF Viewer,2024-04
+1889628,--,Unclassified,5.1155,122.7731,Translations,2024-04
+1889646,S3,Lower,55.7902,1338.9650,Tabbed Browser,2024-04
+1889666,N/A,Unclassified,3.2719,78.5261,Profile Backup,2024-04
+1889668,S3,Lower,68.8900,1653.3589,Tabbed Browser,2024-04
+1889677,N/A,Unclassified,4.5256,108.6142,Search,2024-04
+1889687,S3,Lower,0.7232,17.3569,Translations,2024-04
+1889697,--,Unclassified,0.7006,16.8142,Translations,2024-04
+1889702,N/A,Unclassified,6.9503,166.8067,Search,2024-04
+1889703,S3,Lower,0.6910,16.5839,Messaging System,2024-04
+1889769,S4,Lower,1.4936,35.8472,Firefox View,2024-04
+1889710,--,Unclassified,0.6815,16.3550,Normandy Client,2024-04
+1889718,--,Unclassified,19.1661,459.9861,Shell Integration,2024-04
+1889747,N/A,Unclassified,0.5794,13.9061,Profile Backup,2024-04
+1889752,N/A,Unclassified,2.0594,49.4267,Search,2024-04
+1890066,N/A,Unclassified,5.9265,142.2369,Shell Integration,2024-04
+1889820,N/A,Unclassified,4.6497,111.5919,Address Bar,2024-04
+1889837,S3,Lower,1.2749,30.5983,Translations,2024-04
+1889851,S3,Lower,17.9243,430.1825,Disability Access,2024-04
+1889866,S4,Lower,4.5743,109.7828,Toolbars and Customization,2024-04
+1889880,--,Unclassified,105.0521,2521.2503,Tabbed Browser,2024-04
+1889885,S3,Lower,1.0004,24.0092,Messaging System,2024-04
+1889894,N/A,Unclassified,3.5051,84.1228,Address Bar,2024-04
+1889910,N/A,Unclassified,6.4123,153.8956,Search,2024-04
+1889940,N/A,Unclassified,0.8070,19.3672,Search,2024-04
+1889941,S3,Lower,31.8172,763.6131,Session Restore,2024-04
+1889943,--,Unclassified,3.6001,86.4019,Translations,2024-04
+1890040,--,Unclassified,45.0002,1080.0036,Messaging System,2024-04
+1890055,--,Unclassified,5.7204,137.2900,Messaging System,2024-04
+1890078,--,Unclassified,2.6633,63.9194,PDF Viewer,2024-04
+1890079,N/A,Unclassified,2.3557,56.5378,Address Bar,2024-04
+1890089,S3,Lower,2.7428,65.8278,Translations,2024-04
+1890136,--,Unclassified,33.7242,809.3808,New Tab Page,2024-04
+1890294,--,Unclassified,1.8552,44.5256,Profile Backup,2024-04
+1890297,N/A,Unclassified,25.3583,608.5994,Profile Backup,2024-04
+1890299,--,Unclassified,14.6098,350.6342,Translations,2024-04
+1890322,--,Unclassified,91.9668,2207.2042,Profile Backup,2024-04
+1890335,S3,Lower,2.5748,61.7944,Shell Integration,2024-04
+1890357,S3,Lower,34.2550,822.1211,Shell Integration,2024-04
+1890367,S2,High,1.8469,44.3244,PDF Viewer,2024-04
+1890371,--,Unclassified,17.9935,431.8436,Sidebar,2024-04
+1890378,N/A,Unclassified,8.0405,192.9714,Search,2024-04
+1890385,S4,Lower,484.6933,11632.6392,Theme,2024-04
+1890397,--,Unclassified,2.6635,63.9236,Tabbed Browser,2024-04
+1890404,--,Unclassified,7.0810,169.9447,Translations,2024-04
+1890427,N/A,Unclassified,162.9993,3911.9833,Profile Backup,2024-04
+1890680,S4,Lower,57.2119,1373.0856,Sidebar,2024-04
+1890658,N/A,Unclassified,1.8169,43.6047,Search,2024-04
+1890462,N/A,Unclassified,1.7047,40.9117,Search,2024-04
+1890490,--,Unclassified,16.0421,385.0097,Translations,2024-04
+1890494,S3,Lower,7.8036,187.2867,Translations,2024-04
+1890498,S4,Lower,1.0299,24.7175,Installer,2024-04
+1890535,S3,Lower,12.9624,311.0986,PDF Viewer,2024-04
+1890547,N/A,Unclassified,280.8467,6740.3200,General,2024-04
+1890556,N/A,Unclassified,1.5829,37.9889,Theme,2024-04
+1890574,N/A,Unclassified,15.7586,378.2067,Profile Backup,2024-04
+1890585,N/A,Unclassified,7.5027,180.0658,Profile Backup,2024-04
+1890587,N/A,Unclassified,1.5122,36.2922,General,2024-04
+1890591,N/A,Unclassified,6.4788,155.4914,Profile Backup,2024-04
+1890595,S4,Lower,13.9476,334.7425,Settings UI,2024-04
+1890596,--,Unclassified,0.7026,16.8631,PDF Viewer,2024-04
+1890630,S3,Lower,0.6296,15.1103,Messaging System,2024-04
+1890634,--,Unclassified,829.5874,19910.0967,Shell Integration,2024-04
+1890644,--,Unclassified,0.6023,14.4561,Profile Backup,2024-04
+1890824,--,Unclassified,0.6959,16.7017,Theme,2024-04
+1890698,N/A,Unclassified,1.7768,42.6428,Search,2024-04
+1890718,N/A,Unclassified,13.5543,325.3031,General,2024-04
+1890721,S3,Lower,36.0044,864.1050,Screenshots,2024-04
+1890761,S4,Lower,55.8420,1340.2069,Address Bar,2024-04
+1890772,--,Unclassified,1.0393,24.9439,Tabbed Browser,2024-04
+1890784,N/A,Unclassified,14.5729,349.7497,Sync,2024-04
+1890791,--,Unclassified,0.5743,13.7828,New Tab Page,2024-04
+1890802,S3,Lower,9.2568,222.1628,Screenshots,2024-04
+1890863,S4,Lower,13.5383,324.9181,Translations,2024-04
+1890870,--,Unclassified,36.7413,881.7908,Messaging System,2024-04
+1891152,--,Unclassified,32.7759,786.6214,Messaging System,2024-04
+1890897,S3,Lower,0.8684,20.8428,Translations,2024-04
+1891049,--,Unclassified,1.2650,30.3597,Tabbed Browser,2024-04
+1891083,--,Unclassified,29.0431,697.0336,Messaging System,2024-04
+1891093,--,Unclassified,26.1486,627.5658,Messaging System,2024-04
+1891100,S3,Lower,27.8246,667.7900,Messaging System,2024-04
+1891104,S4,Lower,0.6686,16.0469,Shell Integration,2024-04
+1891108,--,Unclassified,0.6535,15.6850,New Tab Page,2024-04
+1891113,S3,Lower,95.8704,2300.8889,Sync,2024-04
+1891121,--,Unclassified,357.0339,8568.8136,Messaging System,2024-04
+1891124,S2,High,4.3125,103.4994,Profile Backup,2024-04
+1891126,--,Unclassified,42.7061,1024.9475,Messaging System,2024-04
+1891141,S3,Lower,6.5386,156.9275,Profile Backup,2024-04
+1891146,N/A,Unclassified,91.2923,2191.0158,Profile Backup,2024-04
+1891247,S4,Lower,4.0204,96.4906,Screenshots,2024-04
+1891210,--,Unclassified,5.8946,141.4711,Tabbed Browser,2024-04
+1891234,S2,High,33.2612,798.2689,File Handling,2024-04
+1891301,--,Unclassified,2.6063,62.5503,PDF Viewer,2024-04
+1891605,N/A,Unclassified,16.2810,390.7450,Settings UI,2024-04
+1891432,--,Unclassified,57.8166,1387.5981,PDF Viewer,2024-04
+1891494,--,Unclassified,1.5454,37.0897,New Tab Page,2024-04
+1891528,--,Unclassified,2.7157,65.1764,Translations,2024-04
+1891535,--,Unclassified,22.9237,550.1689,Messaging System,2024-04
+1891596,N/A,Unclassified,9.5322,228.7719,Profile Backup,2024-04
+1891602,--,Unclassified,2.5291,60.6972,Address Bar,2024-04
+1891604,--,Unclassified,1.4872,35.6931,Screenshots,2024-04
+1891854,N/A,Unclassified,69.5165,1668.3961,Profile Backup,2024-04
+1891634,N/A,Unclassified,55.7425,1337.8206,Search,2024-04
+1891714,--,Unclassified,3.0733,73.7589,Menus,2024-04
+1891769,--,Unclassified,1.7482,41.9567,New Tab Page,2024-04
+1891775,--,Unclassified,22.9933,551.8400,Sidebar,2024-04
+1891777,--,Unclassified,57.2254,1373.4103,Sidebar,2024-04
+1891780,--,Unclassified,1.7250,41.4003,Tabbed Browser,2024-04
+1891782,--,Unclassified,3.7103,89.0475,Translations,2024-04
+1891788,--,Unclassified,13.1743,316.1839,Remote Settings Client,2024-04
+1891792,--,Unclassified,112.9591,2711.0183,Translations,2024-04
+1891797,--,Unclassified,3.1758,76.2194,Tabbed Browser,2024-04
+1891799,N/A,Unclassified,50.4388,1210.5319,Search,2024-04
+1891813,S3,Lower,2.1453,51.4872,Nimbus Desktop Client,2024-04
+1891816,N/A,Unclassified,9.4031,225.6739,Session Restore,2024-04
+1891819,--,Unclassified,2.1167,50.8014,Tabbed Browser,2024-04
+1891863,N/A,Unclassified,57.0111,1368.2661,Address Bar,2024-04
+1891824,--,Unclassified,0.3772,9.0531,Translations,2024-04
+1891970,S4,Lower,706.8854,16965.2494,Firefox View,2024-04
+1891931,S2,High,10.2485,245.9644,Address Bar,2024-04
+1891982,N/A,Unclassified,6.8538,164.4908,Top Sites,2024-04
+1891985,N/A,Unclassified,28.2994,679.1850,Top Sites,2024-04
+1891992,N/A,Unclassified,35.3500,848.3997,Top Sites,2024-04
+1892000,N/A,Unclassified,28.2749,678.5967,Top Sites,2024-04
+1892002,N/A,Unclassified,42.3286,1015.8869,Top Sites,2024-04
+1892007,N/A,Unclassified,5.5828,133.9869,Profile Backup,2024-04
+1892012,--,Unclassified,30.7947,739.0736,Sidebar,2024-04
+1892033,--,Unclassified,37.7737,906.5689,Sidebar,2024-04
+1892053,S4,Lower,897.7228,21545.3475,Settings UI,2024-04
+1892057,--,Unclassified,1.1826,28.3833,Tabbed Browser,2024-04
+1892068,--,Unclassified,2.1377,51.3053,Translations,2024-04
+1892101,S4,Lower,488.5127,11724.3036,Address Bar,2024-04
+1892105,N/A,Unclassified,14.2851,342.8419,Profile Backup,2024-04
+1892125,S3,Lower,13.9297,334.3128,Screenshots,2024-04
+1892335,N/A,Unclassified,6.9745,167.3869,Profile Backup,2024-04
+1892138,S4,Lower,1.3571,32.5711,Profile Backup,2024-04
+1892148,N/A,Unclassified,8.5789,205.8944,Address Bar,2024-04
+1892150,N/A,Unclassified,5.7984,139.1611,Address Bar,2024-04
+1892220,S4,Lower,0.1061,2.5453,Shell Integration,2024-04
+1892249,N/A,Unclassified,27.2487,653.9683,Profile Backup,2024-04
+1892266,--,Unclassified,1.7487,41.9686,Tabbed Browser,2024-04
+1892267,N/A,Unclassified,0.7543,18.1031,Search,2024-04
+1892281,--,Unclassified,1.7028,40.8661,New Tab Page,2024-04
+1892304,N/A,Unclassified,7.0860,170.0650,Profile Backup,2024-04
+1892312,N/A,Unclassified,18.6011,446.4269,Profile Backup,2024-04
+1892332,S3,Lower,44.0242,1056.5800,Search,2024-04
+1892487,S2,High,7.7184,185.2406,New Tab Page,2024-04
+1892359,S3,Lower,4.1524,99.6578,Translations,2024-04
+1892377,--,Unclassified,0.6671,16.0111,Address Bar,2024-04
+1892394,S3,Lower,41.5531,997.2736,Tabbed Browser,2024-04
+1892402,S3,Lower,6.0095,144.2272,Messaging System,2024-04
+1892417,S3,Lower,395.7213,9497.3111,Messaging System,2024-04
+1892429,--,Unclassified,39.3940,945.4553,Sidebar,2024-04
+1892430,--,Unclassified,69.8843,1677.2242,Sidebar,2024-04
+1892479,N/A,Unclassified,18.2560,438.1436,Profile Backup,2024-04
+1892518,S4,Lower,0.0201,0.4825,Firefox Accounts,2024-04
+1892548,S4,Lower,194.5171,4668.4103,Messaging System,2024-04
+1892541,S3,Lower,3.1603,75.8469,Translations,2024-04
+1892546,S3,Lower,3.1497,75.5936,Translations,2024-04
+1892557,--,Unclassified,1.1231,26.9556,PDF Viewer,2024-04
+1892782,--,Unclassified,1.1574,27.7778,Installer,2024-04
+1892659,--,Unclassified,15.0770,361.8478,Tabbed Browser,2024-04
+1892729,N/A,Unclassified,175.8759,4221.0211,Address Bar,2024-04
+1892732,S2,High,0.7941,19.0583,Address Bar,2024-04
+1892738,S4,Lower,2.7733,66.5592,Tabbed Browser,2024-04
+1892758,--,Unclassified,704.2426,16901.8222,Tabbed Browser,2024-04
+1892761,--,Unclassified,850.9737,20423.3678,Session Restore,2024-04
+1892769,--,Unclassified,1.6973,40.7350,Messaging System,2024-04
+1892771,N/A,Unclassified,15.1989,364.7742,Profile Backup,2024-04
+1892772,--,Unclassified,3.4693,83.2628,Messaging System,2024-04
+1892836,--,Unclassified,2.4825,59.5806,Translations,2024-04
+1892962,--,Unclassified,6.2649,150.3583,Sidebar,2024-04
+1892846,--,Unclassified,2.4047,57.7119,Translations,2024-04
+1892848,--,Unclassified,2.3687,56.8481,Translations,2024-04
+1892853,--,Unclassified,2.3306,55.9350,Translations,2024-04
+1892904,S3,Lower,35.4094,849.8267,Sync,2024-04
+1892931,--,Unclassified,7.3585,176.6033,Sync,2024-04
+1892934,S3,Lower,57.3775,1377.0603,Address Bar,2024-04
+1892941,--,Unclassified,65.8287,1579.8894,Sidebar,2024-04
+1892953,--,Unclassified,217.5712,5221.7097,Sidebar,2024-04
+1892957,--,Unclassified,60.8019,1459.2453,Sidebar,2024-04
+1892959,N/A,Unclassified,15.5686,373.6475,Profile Backup,2024-04
+1892965,--,Unclassified,10.2938,247.0506,Sidebar,2024-04
+1892968,N/A,Unclassified,70.5382,1692.9175,Profile Backup,2024-04
+1893007,--,Unclassified,41.6855,1000.4519,New Tab Page,2024-04
+1893013,S4,Lower,41.6716,1000.1194,Firefox View,2024-04
+1893022,--,Unclassified,2.1033,50.4783,Translations,2024-04
+1893050,S4,Lower,196.5593,4717.4239,New Tab Page,2024-04
+1893053,S3,Lower,207.0488,4969.1711,New Tab Page,2024-04
+1893060,--,Unclassified,1.5430,37.0331,Translations,2024-04
+1893062,S3,Lower,1.5334,36.8011,Translations,2024-04
+1893067,S4,Lower,67.4941,1619.8586,Address Bar,2024-04
+1893068,N/A,Unclassified,52.5017,1260.0419,Menus,2024-04
+1893069,S4,Lower,35.0135,840.3233,Address Bar,2024-04
+1893071,S4,Lower,132.9801,3191.5219,Address Bar,2024-04
+1893076,--,Unclassified,1.4908,35.7792,Messaging System,2024-04
+1893083,N/A,Unclassified,730.4115,17529.8761,Address Bar,2024-04
+1893336,--,Unclassified,0.9081,21.7936,Translations,2024-04
+1893311,--,Unclassified,2.5389,60.9331,New Tab Page,2024-04
+1893341,--,Unclassified,21.3995,513.5881,Shell Integration,2024-04
+1893147,S2,High,0.9429,22.6292,Installer,2024-04
+1893159,N/A,Unclassified,7.3953,177.4878,General,2024-04
+1893173,N/A,Unclassified,7.3479,176.3500,Top Sites,2024-04
+1893214,--,Unclassified,35.3814,849.1528,Sidebar,2024-04
+1893228,N/A,Unclassified,37.1959,892.7022,Address Bar,2024-04
+1893269,N/A,Unclassified,15.6197,374.8733,Profile Backup,2024-04
+1893277,N/A,Unclassified,23.5888,566.1319,Profile Backup,2024-04
+1893288,--,Unclassified,19.0887,458.1289,Translations,2024-04
+1893295,N/A,Unclassified,65.5814,1573.9547,Profile Backup,2024-04
+1893299,N/A,Unclassified,49.0874,1178.0981,Profile Backup,2024-04
+1893301,N/A,Unclassified,56.3470,1352.3272,Profile Backup,2024-04
+1893310,S4,Lower,1.8321,43.9711,Address Bar,2024-04
+1893362,S4,Lower,1.0851,26.0428,Profile Backup,2024-04
+1893345,S3,Lower,9.3985,225.5650,Translations,2024-04
+1893458,S3,Lower,196.6156,4718.7750,Installer,2024-04
+1893460,S3,Lower,1.8240,43.7769,Screenshots,2024-04
+1893471,--,Unclassified,6.3103,151.4472,Translations,2024-04
+1893485,N/A,Unclassified,132.5264,3180.6325,Profile Backup,2024-04
+1893497,S4,Lower,0.5049,12.1169,Data Loss Prevention,2024-04
+1893504,--,Unclassified,0.4898,11.7547,Messaging System,2024-04
+1893505,--,Unclassified,20.6959,496.7014,Sidebar,2024-04
+1893535,S3,Lower,10.8593,260.6242,Messaging System,2024-04
+1893536,S4,Lower,2.0596,49.4297,Data Loss Prevention,2024-04
+1893734,--,Unclassified,172.0779,4129.8694,New Tab Page,2024-04
+1893564,--,Unclassified,0.6542,15.7003,Tabbed Browser,2024-04
+1893568,S3,Lower,62.3353,1496.0467,Tabbed Browser,2024-04
+1893614,--,Unclassified,4.0440,97.0564,Messaging System,2024-04
+1893616,S3,Lower,4.0189,96.4531,Messaging System,2024-04
+1893645,S2,High,3.1022,74.4536,PDF Viewer,2024-04
+1893655,--,Unclassified,50.3157,1207.5778,Tabbed Browser,2024-04
+1893656,--,Unclassified,74.3233,1783.7586,Tabbed Browser,2024-04
+1893661,--,Unclassified,7.8070,187.3678,Sidebar,2024-04
+1893671,--,Unclassified,6.4948,155.8753,Messaging System,2024-04
+1893672,S2,High,11.5088,276.2103,Sidebar,2024-04
+1893676,N/A,Unclassified,38.7497,929.9925,Tabbed Browser,2024-04
+1893680,--,Unclassified,8.2219,197.3244,Screenshots,2024-04
+1893704,--,Unclassified,5.1475,123.5406,New Tab Page,2024-04
+1893720,--,Unclassified,568.0695,13633.6689,New Tab Page,2024-04
+1893730,--,Unclassified,200.9555,4822.9314,New Tab Page,2024-04
+1893732,--,Unclassified,159.5829,3829.9886,New Tab Page,2024-04
+1893800,--,Unclassified,11.6564,279.7525,Screenshots,2024-04
+1893776,S3,Lower,4.8615,116.6756,Translations,2024-04
+1893789,--,Unclassified,2.4018,57.6422,PDF Viewer,2024-04
+1893823,S3,Lower,0.5100,12.2394,Address Bar,2024-04
+1893840,S2,High,12.8609,308.6611,Address Bar,2024-04
+1893871,S3,Lower,16.3585,392.6047,Address Bar,2024-04
+1894098,S3,Lower,36.0093,864.2233,Translations,2024-04
+1893936,S3,Lower,2.5480,61.1531,New Tab Page,2024-04
+1893940,S3,Lower,22.5340,540.8153,New Tab Page,2024-04
+1893945,S3,Lower,17.0026,408.0617,New Tab Page,2024-04
+1893958,S4,Lower,14.1254,339.0097,Translations,2024-04
+1893979,S3,Lower,0.9649,23.1578,Messaging System,2024-04
+1893985,--,Unclassified,1.3471,32.3306,Firefox Accounts,2024-04
+1894013,S3,Lower,645.6130,15494.7108,New Tab Page,2024-04
+1894020,N/A,Unclassified,46.2564,1110.1528,Profile Backup,2024-04
+1894024,S3,Lower,31.2703,750.4861,Shell Integration,2024-04
+1894061,S2,High,0.9219,22.1258,Session Restore,2024-04
+1894068,N/A,Unclassified,3.8933,93.4381,Enterprise Policies,2024-04
+1894085,--,Unclassified,14.7700,354.4792,Translations,2024-04
+1894091,S2,High,25.5603,613.4464,Translations,2024-04
+1894094,S3,Lower,45.7381,1097.7139,Translations,2024-04
+1894101,S2,High,3.2641,78.3383,Translations,2024-04
+1894336,S3,Lower,14.8343,356.0222,Messaging System,2024-04
+1894166,S3,Lower,422.3100,10135.4411,PDF Viewer,2024-04
+1894221,--,Unclassified,21.3971,513.5306,Sidebar,2024-04
+1894222,--,Unclassified,41.3880,993.3122,Sidebar,2024-04
+1894227,--,Unclassified,9.3684,224.8417,Remote Settings Client,2024-04
+1894233,S3,Lower,43.0736,1033.7656,Translations,2024-04
+1894243,S3,Lower,13.3206,319.6953,Messaging System,2024-04
+1894245,--,Unclassified,52.0725,1249.7411,Messaging System,2024-04
+1894246,--,Unclassified,1.3127,31.5056,General,2024-04
+1894260,S3,Lower,5.7764,138.6339,Data Loss Prevention,2024-04
+1894271,S3,Lower,30.2478,725.9478,Translations,2024-04
+1894272,--,Unclassified,8.2301,197.5231,Remote Settings Client,2024-04
+1894301,N/A,Unclassified,1.4465,34.7150,Profile Backup,2024-04
+1894373,N/A,Unclassified,756.4622,18155.0925,Enterprise Policies,2024-04
+1894389,N/A,Unclassified,1.4259,34.2208,General,2024-04
+1894393,--,Unclassified,0.9301,22.3231,Theme,2024-04
+1894556,N/A,Unclassified,13.0284,312.6822,General,2024-05
+1894414,--,Unclassified,47.2734,1134.5617,Menus,2024-05
+1894484,S2,High,2.7808,66.7392,Translations,2024-05
+1894516,S3,Lower,89.4289,2146.2925,Screenshots,2024-05
+1894517,--,Unclassified,1.4299,34.3175,New Tab Page,2024-05
+1894538,S3,Lower,293.4246,7042.1914,Data Loss Prevention,2024-05
+1894542,S3,Lower,40.0802,961.9247,Theme,2024-05
+1894740,S3,Lower,1.2314,29.5525,Screenshots,2024-05
+1894575,S3,Lower,15.2899,366.9581,Translations,2024-05
+1894614,S2,High,1.3185,31.6431,Address Bar,2024-05
+1894689,--,Unclassified,7.7677,186.4242,Installer,2024-05
+1894705,--,Unclassified,0.5317,12.7608,PDF Viewer,2024-05
+1894727,--,Unclassified,0.4955,11.8917,PDF Viewer,2024-05
+1894778,--,Unclassified,0.3679,8.8303,Translations,2024-05
+1894817,--,Unclassified,3.6580,87.7928,General,2024-05
+1894989,--,Unclassified,10.4114,249.8744,Translations,2024-05
+1894849,S2,High,11.1422,267.4139,PDF Viewer,2024-05
+1894865,S2,High,18.1122,434.6922,Shell Integration,2024-05
+1894892,--,Unclassified,0.0886,2.1261,General,2024-05
+1894910,N/A,Unclassified,31.1075,746.5792,Search,2024-05
+1894928,N/A,Unclassified,4.5615,109.4761,Search,2024-05
+1894935,S3,Lower,13.7063,328.9514,Translations,2024-05
+1894965,S3,Lower,727.4036,17457.6869,Translations,2024-05
+1894966,--,Unclassified,3.0612,73.4686,Messaging System,2024-05
+1894990,S2,High,33.6281,807.0736,Sidebar,2024-05
+1895050,S3,Lower,31.2922,751.0119,PDF Viewer,2024-05
+1895110,S2,High,47.8345,1148.0269,Address Bar,2024-05
+1895154,S3,Lower,2.4189,58.0539,Firefox Accounts,2024-05
+1895134,S4,Lower,156.8773,3765.0547,Search,2024-05
+1895248,--,Unclassified,294.2622,7062.2928,Data Loss Prevention,2024-05
+1895256,S4,Lower,113.3322,2719.9719,Data Loss Prevention,2024-05
+1895574,S4,Lower,1.4063,33.7511,File Handling,2024-05
+1895423,N/A,Unclassified,1.2778,30.6667,Address Bar,2024-05
+1895473,S3,Lower,14.4287,346.2894,Theme,2024-05
+1895490,--,Unclassified,7.3741,176.9778,Tabbed Browser,2024-05
+1895492,--,Unclassified,14.2345,341.6292,Installer,2024-05
+1895494,N/A,Unclassified,43.6216,1046.9183,Settings UI,2024-05
+1895496,S3,Lower,650.0496,15601.1906,PDF Viewer,2024-05
+1895516,S4,Lower,351.7781,8442.6756,Firefox View,2024-05
+1895521,S2,High,16.5464,397.1142,Firefox Accounts,2024-05
+1895530,S3,Lower,7.2513,174.0308,File Handling,2024-05
+1895534,--,Unclassified,2.2204,53.2900,New Tab Page,2024-05
+1895550,S4,Lower,320.9250,7702.1992,Nimbus Desktop Client,2024-05
+1895563,--,Unclassified,55.1530,1323.6708,Menus,2024-05
+1895564,--,Unclassified,0.9203,22.0872,Theme,2024-05
+1895778,S3,Lower,118.0901,2834.1617,Migration,2024-05
+1895641,--,Unclassified,1.0616,25.4781,Tabbed Browser,2024-05
+1895718,--,Unclassified,1.2866,30.8778,Search,2024-05
+1895732,--,Unclassified,6.2819,150.7661,Theme,2024-05
+1895740,N/A,Unclassified,38.2358,917.6592,Search,2024-05
+1895744,--,Unclassified,7.7078,184.9869,Shell Integration,2024-05
+1895755,--,Unclassified,302.6478,7263.5464,Messaging System,2024-05
+1895797,--,Unclassified,12.0461,289.1075,New Tab Page,2024-05
+1896004,--,Unclassified,8.0700,193.6803,New Tab Page,2024-05
+1895865,S2,High,1.1840,28.4150,Messaging System,2024-05
+1895866,S2,High,1.1829,28.3903,Messaging System,2024-05
+1895868,--,Unclassified,33.7601,810.2431,Sidebar,2024-05
+1895873,N/A,Unclassified,48.8796,1173.1108,Search,2024-05
+1895909,S3,Lower,5.0106,120.2533,PDF Viewer,2024-05
+1895932,--,Unclassified,116.7554,2802.1303,Sidebar,2024-05
+1895934,N/A,Unclassified,155.7633,3738.3189,Search,2024-05
+1895943,N/A,Unclassified,34.2296,821.5106,Profile Backup,2024-05
+1895952,N/A,Unclassified,336.9398,8086.5553,Settings UI,2024-05
+1895960,N/A,Unclassified,4.4582,106.9964,Search,2024-05
+1895981,N/A,Unclassified,34.1281,819.0744,Profile Backup,2024-05
+1896002,S3,Lower,6.0152,144.3653,Screenshots,2024-05
+1896030,S3,Lower,6.4077,153.7842,Shell Integration,2024-05
+1896128,S3,Lower,34.7978,835.1481,Address Bar,2024-05
+1896034,--,Unclassified,0.8941,21.4594,Theme,2024-05
+1896046,--,Unclassified,27.6272,663.0522,Messaging System,2024-05
+1896090,S2,High,38.9166,933.9986,Messaging System,2024-05
+1896109,S4,Lower,5.2849,126.8367,Theme,2024-05
+1896110,--,Unclassified,0.8709,20.9022,Search,2024-05
+1896140,S4,Lower,4.2780,102.6708,Screenshots,2024-05
+1896172,S3,Lower,81.4275,1954.2597,Tabbed Browser,2024-05
+1896182,--,Unclassified,5.0915,122.1969,New Tab Page,2024-05
+1896200,--,Unclassified,817.5140,19620.3364,PDF Viewer,2024-05
+1896265,N/A,Unclassified,13.7155,329.1719,Top Sites,2024-05
+1896249,N/A,Unclassified,4.5740,109.7769,General,2024-05
+1896416,--,Unclassified,3.0942,74.2611,Messaging System,2024-05
+1896421,--,Unclassified,350.5362,8412.8683,Sidebar,2024-05
+1896448,--,Unclassified,0.4873,11.6961,PDF Viewer,2024-05
+1896449,N/A,Unclassified,79.4846,1907.6303,Profile Backup,2024-05
+1896506,N/A,Unclassified,1.0401,24.9628,Profile Backup,2024-05
+1896521,S4,Lower,0.0493,1.1836,Tabbed Browser,2024-05
+1896527,N/A,Unclassified,15.9289,382.2925,Settings UI,2024-05
+1896360,--,Unclassified,0.7132,17.1158,Settings UI,2024-05
+1896358,S4,Lower,3.2911,78.9869,Installer,2024-05
+1896364,S2,High,51.2331,1229.5944,Messaging System,2024-05
+1896720,S3,Lower,17.6352,423.2442,Nimbus Desktop Client,2024-05
+1896764,S3,Lower,99.9955,2399.8925,Toolbars and Customization,2024-05
+1896772,N/A,Unclassified,72.2426,1733.8228,Profile Backup,2024-05
+1896783,N/A,Unclassified,91.7266,2201.4389,General,2024-05
+1896775,S3,Lower,91.7563,2202.1514,General,2024-05
+1896577,--,Unclassified,29.2267,701.4411,PDF Viewer,2024-05
+1896597,S2,High,25.4669,611.2044,Messaging System,2024-05
+1896623,S4,Lower,16.4022,393.6525,Sidebar,2024-05
+1896658,S4,Lower,1.7911,42.9869,Sidebar,2024-05
+1896673,--,Unclassified,7.5269,180.6456,New Tab Page,2024-05
+1896677,--,Unclassified,37.3096,895.4300,New Tab Page,2024-05
+1896678,--,Unclassified,3.7384,89.7222,New Tab Page,2024-05
+1896681,--,Unclassified,9.5202,228.4850,New Tab Page,2024-05
+1896714,S3,Lower,17.6420,423.4081,Nimbus Desktop Client,2024-05
+1896715,N/A,Unclassified,20.6517,495.6417,Profile Backup,2024-05
+1896718,S3,Lower,34.6515,831.6361,Nimbus Desktop Client,2024-05
+1896957,--,Unclassified,7.1346,171.2300,Installer,2024-05
+1896791,S4,Lower,2.3251,55.8014,Session Restore,2024-05
+1896804,S3,Lower,134.2640,3222.3364,Nimbus Desktop Client,2024-05
+1896856,--,Unclassified,153.1008,3674.4197,Migration,2024-05
+1896864,--,Unclassified,19.4426,466.6214,Translations,2024-05
+1896868,S2,High,12.4825,299.5797,Installer,2024-05
+1896988,S4,Lower,28.0292,672.7011,Sidebar,2024-05
+1896914,S3,Lower,28.3066,679.3572,Sidebar,2024-05
+1896944,--,Unclassified,9.7046,232.9108,Installer,2024-05
+1896991,--,Unclassified,0.0076,0.1819,PDF Viewer,2024-05
+1897244,N/A,Unclassified,81.9598,1967.0364,Address Bar,2024-05
+1897046,--,Unclassified,25.6553,615.7281,Messaging System,2024-05
+1897049,--,Unclassified,2.2727,54.5436,Search,2024-05
+1897095,S3,Lower,76.5035,1836.0847,Screenshots,2024-05
+1897109,S3,Lower,26.7897,642.9525,Address Bar,2024-05
+1897152,S3,Lower,13.3639,320.7344,Address Bar,2024-05
+1897228,N/A,Unclassified,210.7194,5057.2653,Search,2024-05
+1897231,N/A,Unclassified,825.4893,19811.7436,Search,2024-05
+1897232,--,Unclassified,20.7044,496.9064,New Tab Page,2024-05
+1897233,--,Unclassified,19.1853,460.4481,New Tab Page,2024-05
+1897245,N/A,Unclassified,64.6778,1552.2664,Address Bar,2024-05
+1897278,N/A,Unclassified,20.3843,489.2242,Profile Backup,2024-05
+1897319,N/A,Unclassified,6.9485,166.7642,Address Bar,2024-05
+1897320,N/A,Unclassified,13.8955,333.4931,Search,2024-05
+1897321,--,Unclassified,12.9763,311.4303,Messaging System,2024-05
+1897508,N/A,Unclassified,6.9481,166.7533,Search,2024-05
+1897371,S4,Lower,10.6142,254.7397,Screenshots,2024-05
+1897411,--,Unclassified,209.9846,5039.6297,Sidebar,2024-05
+1897475,S2,High,4.5543,109.3022,Tabbed Browser,2024-05
+1897477,--,Unclassified,12.2854,294.8506,General,2024-05
+1897482,S3,Lower,6.5405,156.9728,Translations,2024-05
+1897495,--,Unclassified,6.5009,156.0206,Translations,2024-05
+1897498,N/A,Unclassified,25.5254,612.6100,Profile Backup,2024-05
+1897499,--,Unclassified,4.2255,101.4125,Tabbed Browser,2024-05
+1897503,--,Unclassified,4.2153,101.1678,Tabbed Browser,2024-05
+1897812,--,Unclassified,70.0389,1680.9344,Messaging System,2024-05
+1897746,--,Unclassified,0.4569,10.9658,PDF Viewer,2024-05
+1897769,--,Unclassified,108.2590,2598.2161,Messaging System,2024-05
+1897771,--,Unclassified,4.2948,103.0753,Messaging System,2024-05
+1897799,S3,Lower,365.9856,8783.6556,New Tab Page,2024-05
+1897804,S3,Lower,29.0265,696.6356,Messaging System,2024-05
+1897836,--,Unclassified,1.3820,33.1669,Address Bar,2024-05
+1898094,--,Unclassified,49.4898,1187.7550,Shell Integration,2024-05
+1897857,N/A,Unclassified,1.1768,28.2436,Address Bar,2024-05
+1897909,S4,Lower,127.0262,3048.6289,PDF Viewer,2024-05
+1897934,--,Unclassified,1.6740,40.1767,PDF Viewer,2024-05
+1897976,S2,High,52.3259,1255.8228,Sidebar,2024-05
+1898027,S3,Lower,8.9646,215.1506,Screenshots,2024-05
+1898053,S3,Lower,823.7974,19771.1386,PDF Viewer,2024-05
+1898096,S4,Lower,288.2891,6918.9394,Disability Access,2024-05
+1898361,--,Unclassified,41.3400,992.1606,Messaging System,2024-05
+1898155,N/A,Unclassified,119.5753,2869.8083,Address Bar,2024-05
+1898173,--,Unclassified,63.2604,1518.2497,Messaging System,2024-05
+1898187,--,Unclassified,12.1392,291.3411,New Tab Page,2024-05
+1898197,--,Unclassified,1.7439,41.8528,Tabbed Browser,2024-05
+1898231,--,Unclassified,0.3970,9.5286,Tabbed Browser,2024-05
+1898250,--,Unclassified,117.3389,2816.1339,Sidebar,2024-05
+1898251,--,Unclassified,96.8177,2323.6247,Sidebar,2024-05
+1898257,--,Unclassified,715.8178,17179.6264,Sidebar,2024-05
+1898275,--,Unclassified,1.7957,43.0964,New Tab Page,2024-05
+1898287,--,Unclassified,0.5354,12.8503,New Tab Page,2024-05
+1898307,N/A,Unclassified,316.2336,7589.6069,Search,2024-05
+1898317,--,Unclassified,19.0168,456.4022,Messaging System,2024-05
+1898346,S3,Lower,6.8561,164.5467,Messaging System,2024-05
+1898380,--,Unclassified,37.5107,900.2567,PDF Viewer,2024-05
+1898437,S3,Lower,15.5744,373.7867,Address Bar,2024-05
+1898450,--,Unclassified,0.4963,11.9122,Tabbed Browser,2024-05
+1898454,--,Unclassified,761.0097,18264.2319,Tabbed Browser,2024-05
+1898503,S2,High,4.9338,118.4100,New Tab Page,2024-05
+1898512,S4,Lower,0.6052,14.5236,Sidebar,2024-05
+1898580,--,Unclassified,0.4509,10.8225,Sync,2024-05
+1898598,S4,Lower,12.9980,311.9525,Translations,2024-05
+1898609,S3,Lower,111.5352,2676.8444,Messaging System,2024-05
+1898818,--,Unclassified,6.4999,155.9986,New Tab Page,2024-05
+1898690,--,Unclassified,5.2595,126.2283,Tabbed Browser,2024-05
+1898697,--,Unclassified,4.5173,108.4144,Tabbed Browser,2024-05
+1898704,--,Unclassified,38.1865,916.4761,Theme,2024-05
+1898705,--,Unclassified,5.1785,124.2847,Theme,2024-05
+1898711,N/A,Unclassified,7.4319,178.3667,Address Bar,2024-05
+1898713,--,Unclassified,4.4342,106.4217,Theme,2024-05
+1898718,S3,Lower,5.4165,129.9953,Data Loss Prevention,2024-05
+1898733,S3,Lower,21.3629,512.7092,Data Loss Prevention,2024-05
+1898757,S3,Lower,56.0522,1345.2533,Translations,2024-05
+1898764,--,Unclassified,17.2899,414.9567,General,2024-05
+1898765,S4,Lower,17.1865,412.4750,Translations,2024-05
+1898789,--,Unclassified,11.6743,280.1833,Messaging System,2024-05
+1898792,--,Unclassified,18.6550,447.7203,Installer,2024-05
+1898802,S3,Lower,5.9115,141.8756,PDF Viewer,2024-05
+1898806,--,Unclassified,4.7324,113.5772,Messaging System,2024-05
+1898808,--,Unclassified,58.8294,1411.9044,Messaging System,2024-05
+1898884,--,Unclassified,12.4481,298.7539,General,2024-05
+1899030,--,Unclassified,24.6202,590.8844,Messaging System,2024-05
+1899019,--,Unclassified,282.7005,6784.8122,Messaging System,2024-05
+1899027,--,Unclassified,227.6313,5463.1519,Messaging System,2024-05
+1899164,--,Unclassified,2.0053,48.1267,Messaging System,2024-05
+1899377,S3,Lower,55.8521,1340.4497,Messaging System,2024-05
+1899255,--,Unclassified,1.0671,25.6100,Translations,2024-05
+1899305,S4,Lower,8.9735,215.3644,Data Loss Prevention,2024-05
+1899336,--,Unclassified,62.1844,1492.4264,Sidebar,2024-05
+1899340,--,Unclassified,1.2258,29.4183,New Tab Page,2024-05
+1899346,--,Unclassified,106.6931,2560.6344,Sidebar,2024-05
+1899439,--,Unclassified,20.6934,496.6406,Messaging System,2024-05
+1899352,--,Unclassified,120.6990,2896.7756,Sidebar,2024-05
+1899354,S3,Lower,2.1860,52.4644,Translations,2024-05
+1899357,--,Unclassified,71.2441,1709.8583,Messaging System,2024-05
+1899373,--,Unclassified,1.9068,45.7625,PDF Viewer,2024-05
+1899375,--,Unclassified,19.7769,474.6450,Messaging System,2024-05
+1899410,--,Unclassified,0.7494,17.9856,Sync,2024-05
+1899518,--,Unclassified,202.9708,4871.2986,General,2024-05
+1899451,S4,Lower,2.8512,68.4278,Address Bar,2024-05
+1899453,--,Unclassified,23.8101,571.4428,Sync,2024-05
+1899491,S4,Lower,14.6020,350.4486,Data Loss Prevention,2024-05
+1899545,S4,Lower,1.8218,43.7233,Tabbed Browser,2024-05
+1899551,S2,High,6.1065,146.5553,Messaging System,2024-05
+1899556,S3,Lower,44.7924,1075.0183,Tabbed Browser,2024-05
+1899561,S3,Lower,1.2983,31.1597,Theme,2024-05
+1899562,--,Unclassified,233.3036,5599.2872,New Tab Page,2024-05
+1899566,S3,Lower,34.2693,822.4625,Tabbed Browser,2024-05
+1899573,N/A,Unclassified,12.2517,294.0397,Search,2024-05
+1899574,N/A,Unclassified,68.9530,1654.8717,Search,2024-05
+1899576,S3,Lower,20.5112,492.2683,Sidebar,2024-05
+1899580,N/A,Unclassified,70.7289,1697.4944,Sidebar,2024-05
+1899582,--,Unclassified,47.4956,1139.8947,Sidebar,2024-05
+1899598,N/A,Unclassified,126.6948,3040.6747,Sidebar,2024-05
+1899599,--,Unclassified,139.4744,3347.3847,Sidebar,2024-05
+1899601,N/A,Unclassified,7.6717,184.1206,Shell Integration,2024-05
+1899625,N/A,Unclassified,1.0883,26.1186,Search,2024-05
+1899641,S3,Lower,189.5652,4549.5642,Translations,2024-05
+1899663,N/A,Unclassified,1.4686,35.2467,Search,2024-05
+1899887,S4,Lower,19.5553,469.3272,Shell Integration,2024-05
+1899682,S3,Lower,13.0851,314.0417,Shell Integration,2024-05
+1899703,S3,Lower,6.7787,162.6878,Data Loss Prevention,2024-05
+1899714,S3,Lower,5.9829,143.5892,Data Loss Prevention,2024-05
+1899731,--,Unclassified,216.1519,5187.6461,PDF Viewer,2024-05
+1899737,--,Unclassified,173.7635,4170.3244,Messaging System,2024-05
+1899747,S3,Lower,153.6741,3688.1794,Messaging System,2024-05
+1899757,S2,High,17.8208,427.6986,Messaging System,2024-05
+1899764,S3,Lower,6.8298,163.9150,Data Loss Prevention,2024-05
+1899782,--,Unclassified,29.7894,714.9467,New Tab Page,2024-05
+1899788,--,Unclassified,7.7602,186.2442,New Tab Page,2024-05
+1899796,--,Unclassified,239.0676,5737.6217,New Tab Page,2024-05
+1899801,S3,Lower,1.7600,42.2389,Screenshots,2024-05
+1899804,S3,Lower,20.2437,485.8492,PDF Viewer,2024-05
+1899810,N/A,Unclassified,3.8612,92.6697,Search,2024-05
+1899848,--,Unclassified,5.1335,123.2047,New Tab Page,2024-05
+1899853,N/A,Unclassified,111.1324,2667.1781,Security,2024-05
+1900091,S4,Lower,6.0455,145.0922,Translations,2024-05
+1899951,--,Unclassified,0.7324,17.5781,Theme,2024-05
+1899971,--,Unclassified,6.2422,149.8122,Data Loss Prevention,2024-05
+1900002,--,Unclassified,4.4188,106.0514,Tabbed Browser,2024-05
+1900011,S4,Lower,4.7638,114.3322,Tabbed Browser,2024-05
+1900021,S4,Lower,4.9649,119.1567,Messaging System,2024-05
+1900023,S3,Lower,14.3603,344.6461,Translations,2024-05
+1900025,--,Unclassified,4.9840,119.6169,Messaging System,2024-05
+1900029,S3,Lower,4.8467,116.3206,Messaging System,2024-05
+1900035,--,Unclassified,54.8603,1316.6483,Shell Integration,2024-05
+1900094,N/A,Unclassified,54.6888,1312.5303,Search,2024-05
+1900103,--,Unclassified,16.6375,399.3006,New Tab Page,2024-05
+1900107,S4,Lower,12.1494,291.5858,Translations,2024-05
+1900121,--,Unclassified,20.8666,500.7978,Messaging System,2024-05
+1900124,--,Unclassified,39.5681,949.6350,Settings UI,2024-05
+1900125,S3,Lower,591.0547,14185.3133,Profile Backup,2024-05
+1900126,--,Unclassified,19.3293,463.9036,Sidebar,2024-05
+1900127,--,Unclassified,5.5448,133.0744,Translations,2024-05
+1900131,--,Unclassified,6.3095,151.4281,Firefox Accounts,2024-05
+1900132,N/A,Unclassified,5.5202,132.4836,Security,2024-05
+1900137,--,Unclassified,3.9911,95.7875,New Tab Page,2024-05
+1900266,--,Unclassified,3.5136,84.3258,New Tab Page,2024-06
+1900282,--,Unclassified,43.2924,1039.0186,Tabbed Browser,2024-06
+1900240,S3,Lower,2.2862,54.8692,New Tab Page,2024-06
+1900332,--,Unclassified,1.3798,33.1153,Tabbed Browser,2024-06
+1900348,S3,Lower,235.1465,5643.5156,New Tab Page,2024-06
+1900366,S4,Lower,1.7829,42.7892,Messaging System,2024-06
+1900496,N/A,Unclassified,139.8131,3355.5136,Address Bar,2024-06
+1900388,--,Unclassified,0.7640,18.3369,PDF Viewer,2024-06
+1900390,--,Unclassified,1.7505,42.0117,Data Loss Prevention,2024-06
+1900401,S3,Lower,0.7319,17.5653,Nimbus Desktop Client,2024-06
+1900418,S3,Lower,18.1852,436.4436,New Tab Page,2024-06
+1900419,S3,Lower,15.9909,383.7828,New Tab Page,2024-06
+1900423,S2,High,11.6540,279.6950,New Tab Page,2024-06
+1900432,--,Unclassified,1.1129,26.7103,Translations,2024-06
+1900381,--,Unclassified,28.0062,672.1494,General,2024-06
+1900497,N/A,Unclassified,36.9054,885.7300,Address Bar,2024-06
+1900321,--,Unclassified,0.9688,23.2522,Address Bar,2024-06
+1900618,S4,Lower,1.5777,37.8636,Profile Backup,2024-06
+1900663,S4,Lower,28.1727,676.1436,General,2024-06
+1900511,S3,Lower,15.1211,362.9058,Messaging System,2024-06
+1900513,--,Unclassified,14.3357,344.0564,Sync,2024-06
+1900575,--,Unclassified,0.9253,22.2081,Address Bar,2024-06
+1900651,--,Unclassified,1.7103,41.0464,New Tab Page,2024-06
+1900588,S4,Lower,5.7669,138.4056,Messaging System,2024-06
+1900599,--,Unclassified,0.3347,8.0333,Tabbed Browser,2024-06
+1900601,--,Unclassified,3.8460,92.3033,Address Bar,2024-06
+1900702,--,Unclassified,434.5200,10428.4789,New Tab Page,2024-06
+1900709,--,Unclassified,2.2879,54.9094,New Tab Page,2024-06
+1900609,--,Unclassified,0.3144,7.5458,Theme,2024-06
+1900611,N/A,Unclassified,7.6316,183.1589,Top Sites,2024-06
+1900699,--,Unclassified,0.5356,12.8533,New Tab Page,2024-06
+1900613,N/A,Unclassified,1.5879,38.1097,Top Sites,2024-06
+1900638,N/A,Unclassified,0.7688,18.4508,Search,2024-06
+1900832,S3,Lower,37.2456,893.8942,New Tab Page,2024-06
+1900725,S4,Lower,90.6407,2175.3772,Bookmarks & History,2024-06
+1900749,S4,Lower,28.5902,686.1639,Tabbed Browser,2024-06
+1900783,--,Unclassified,0.6456,15.4942,Theme,2024-06
+1900784,--,Unclassified,0.6423,15.4158,Theme,2024-06
+1900794,S4,Lower,0.1302,3.1236,Tabbed Browser,2024-06
+1900798,S3,Lower,7.8094,187.4264,Data Loss Prevention,2024-06
+1900822,--,Unclassified,8.2598,198.2347,New Tab Page,2024-06
+1900825,--,Unclassified,0.7304,17.5292,General,2024-06
+1900835,S3,Lower,6.7033,160.8781,Toolbars and Customization,2024-06
+1900839,S3,Lower,16.2170,389.2081,Shell Integration,2024-06
+1900842,--,Unclassified,1.4743,35.3839,Theme,2024-06
+1900851,--,Unclassified,5.1802,124.3236,Theme,2024-06
+1900854,--,Unclassified,2.6736,64.1675,New Tab Page,2024-06
+1900861,--,Unclassified,1.4376,34.5017,New Tab Page,2024-06
+1900867,S4,Lower,27.1413,651.3900,Tabbed Browser,2024-06
+1900877,S4,Lower,1.3795,33.1069,Profile Backup,2024-06
+1900892,N/A,Unclassified,16.0545,385.3078,Profile Backup,2024-06
+1900900,S3,Lower,0.7706,18.4947,Address Bar,2024-06
+1900907,--,Unclassified,13.9626,335.1031,PDF Viewer,2024-06
+1901161,S4,Lower,185.6117,4454.6806,Address Bar,2024-06
+1900931,--,Unclassified,1.1400,27.3603,New Tab Page,2024-06
+1900951,S4,Lower,5.9297,142.3136,Shell Integration,2024-06
+1900979,S4,Lower,55.4546,1330.9094,Sidebar,2024-06
+1900984,S3,Lower,12.4504,298.8106,Messaging System,2024-06
+1901001,--,Unclassified,7.8798,189.1158,Theme,2024-06
+1901008,--,Unclassified,0.6440,15.4550,Theme,2024-06
+1901030,--,Unclassified,35.9330,862.3908,Messaging System,2024-06
+1901036,S4,Lower,20.0127,480.3039,Messaging System,2024-06
+1901054,--,Unclassified,0.5188,12.4511,New Tab Page,2024-06
+1901057,S2,High,0.5173,12.4153,Search,2024-06
+1901061,S3,Lower,216.5052,5196.1258,Address Bar,2024-06
+1901065,S3,Lower,1.7117,41.0817,Data Loss Prevention,2024-06
+1901068,--,Unclassified,0.4921,11.8097,Settings UI,2024-06
+1901069,N/A,Unclassified,0.4916,11.7981,Search,2024-06
+1901070,N/A,Unclassified,3.1765,76.2356,Search,2024-06
+1901129,S4,Lower,11.0458,265.0983,Theme,2024-06
+1901132,N/A,Unclassified,15.0436,361.0472,Profile Backup,2024-06
+1901134,--,Unclassified,11.5382,276.9158,New Tab Page,2024-06
+1901262,--,Unclassified,4.5274,108.6572,Sidebar,2024-06
+1901184,S3,Lower,8.2052,196.9247,Settings UI,2024-06
+1901191,--,Unclassified,0.6641,15.9378,Settings UI,2024-06
+1901194,--,Unclassified,0.6279,15.0692,Settings UI,2024-06
+1901197,S3,Lower,27.0753,649.8083,Data Loss Prevention,2024-06
+1901208,N/A,Unclassified,2.4717,59.3214,Search,2024-06
+1901223,--,Unclassified,142.0400,3408.9606,PDF Viewer,2024-06
+1901227,--,Unclassified,3.8925,93.4211,PDF Viewer,2024-06
+1901253,S3,Lower,12.2446,293.8697,PDF Viewer,2024-06
+1901261,--,Unclassified,54.2193,1301.2636,Messaging System,2024-06
+1901264,S3,Lower,12.4899,299.7575,Settings UI,2024-06
+1901266,--,Unclassified,101.0312,2424.7483,Messaging System,2024-06
+1901272,--,Unclassified,26.6704,640.0903,Messaging System,2024-06
+1901273,--,Unclassified,33.0838,794.0106,Messaging System,2024-06
+1901274,--,Unclassified,661.1952,15868.6853,Sidebar,2024-06
+1901276,--,Unclassified,117.0368,2808.8839,Messaging System,2024-06
+1901296,S3,Lower,34.7814,834.7544,Messaging System,2024-06
+1901297,--,Unclassified,18.1081,434.5939,Messaging System,2024-06
+1901298,S3,Lower,24.1116,578.6775,Theme,2024-06
+1901308,N/A,Unclassified,60.3235,1447.7644,Profile Backup,2024-06
+1901314,--,Unclassified,3.0473,73.1347,Translations,2024-06
+1901351,--,Unclassified,4.1376,99.3033,Translations,2024-06
+1901488,S3,Lower,46.9622,1127.0922,Translations,2024-06
+1901499,S3,Lower,8.6760,208.2231,Messaging System,2024-06
+1901512,N/A,Unclassified,31.1449,747.4783,Address Bar,2024-06
+1901518,N/A,Unclassified,15.3309,367.9408,Address Bar,2024-06
+1901519,N/A,Unclassified,15.3301,367.9214,Address Bar,2024-06
+1901520,N/A,Unclassified,14.8296,355.9097,Profile Backup,2024-06
+1901523,N/A,Unclassified,12.8301,307.9225,Profile Backup,2024-06
+1901526,N/A,Unclassified,17.8210,427.7031,Profile Backup,2024-06
+1901528,N/A,Unclassified,12.8240,307.7761,Profile Backup,2024-06
+1901531,S3,Lower,0.3137,7.5297,Nimbus Desktop Client,2024-06
+1901533,--,Unclassified,822.8157,19747.5775,Messaging System,2024-06
+1901534,N/A,Unclassified,14.8126,355.5028,Profile Backup,2024-06
+1901541,S4,Lower,16.7958,403.0981,Profile Backup,2024-06
+1901545,--,Unclassified,4.2522,102.0522,Theme,2024-06
+1901551,--,Unclassified,51.5407,1236.9758,Sidebar,2024-06
+1901565,--,Unclassified,2.7140,65.1369,Shell Integration,2024-06
+1901617,--,Unclassified,108.0795,2593.9086,Messaging System,2024-06
+1901621,--,Unclassified,44.5657,1069.5767,Shell Integration,2024-06
+1901626,--,Unclassified,1.3546,32.5100,Translations,2024-06
+1901629,--,Unclassified,45.8339,1100.0133,Messaging System,2024-06
+1901660,N/A,Unclassified,77.5108,1860.2603,Session Restore,2024-06
+1901640,N/A,Unclassified,505.0308,12120.7392,Profile Backup,2024-06
+1901888,--,Unclassified,2.9278,70.2675,Theme,2024-06
+1901666,--,Unclassified,218.1083,5234.5994,Sync,2024-06
+1901667,S4,Lower,10.3478,248.3475,Firefox Accounts,2024-06
+1901904,S4,Lower,6.4195,154.0672,New Tab Page,2024-06
+1901673,S4,Lower,10.4367,250.4811,Sidebar,2024-06
+1901728,--,Unclassified,113.4135,2721.9247,Tabbed Browser,2024-06
+1901758,N/A,Unclassified,27.8334,668.0022,Profile Backup,2024-06
+1901826,S3,Lower,122.6348,2943.2353,Tabbed Browser,2024-06
+1901839,N/A,Unclassified,6.8902,165.3656,Search,2024-06
+1901840,--,Unclassified,3.0763,73.8314,Private Browsing,2024-06
+1901868,--,Unclassified,6.5145,156.3475,Sync,2024-06
+1901871,N/A,Unclassified,64.9931,1559.8353,Address Bar,2024-06
+1901885,S4,Lower,0.9746,23.3911,Sidebar,2024-06
+1901899,--,Unclassified,2.4313,58.3503,General,2024-06
+1902008,S4,Lower,0.3542,8.5003,Sidebar,2024-06
+1901922,S4,Lower,26.5460,637.1042,Protections UI,2024-06
+1901983,N/A,Unclassified,6.4334,154.4014,Address Bar,2024-06
+1902012,S3,Lower,7.3113,175.4708,PDF Viewer,2024-06
+1902020,S4,Lower,9.3320,223.9669,Profile Backup,2024-06
+1902032,--,Unclassified,189.5821,4549.9714,Sidebar,2024-06
+1902051,S4,Lower,2.1991,52.7772,Sidebar,2024-06
+1902052,S3,Lower,54.2444,1301.8667,Address Bar,2024-06
+1902056,--,Unclassified,105.7265,2537.4350,Sidebar,2024-06
+1902063,S4,Lower,44.6651,1071.9625,New Tab Page,2024-06
+1902099,--,Unclassified,15.8990,381.5756,New Tab Page,2024-06
+1902109,--,Unclassified,8.1609,195.8614,New Tab Page,2024-06
+1902122,--,Unclassified,21.9469,526.7247,Messaging System,2024-06
+1902125,--,Unclassified,20.0169,480.4047,Messaging System,2024-06
+1902134,N/A,Unclassified,5.5309,132.7414,Security,2024-06
+1902154,S3,Lower,5.4634,131.1206,New Tab Page,2024-06
+1902439,S4,Lower,341.4750,8195.4011,Shell Integration,2024-06
+1902537,N/A,Unclassified,36.4030,873.6717,Address Bar,2024-06
+1902210,S2,High,0.4692,11.2617,Menus,2024-06
+1902237,S3,Lower,34.2654,822.3700,Address Bar,2024-06
+1902252,S3,Lower,42.6821,1024.3703,Tabbed Browser,2024-06
+1902254,S3,Lower,0.9119,21.8850,Translations,2024-06
+1902303,S3,Lower,12.2975,295.1397,Screenshots,2024-06
+1902314,S3,Lower,4.7887,114.9297,Toolbars and Customization,2024-06
+1902323,N/A,Unclassified,7.3272,175.8519,Search,2024-06
+1902330,S3,Lower,11.2434,269.8428,Address Bar,2024-06
+1902191,--,Unclassified,4.7761,114.6269,General,2024-06
+1902336,N/A,Unclassified,29.7157,713.1769,Profile Backup,2024-06
+1902341,S3,Lower,2.2101,53.0422,Screenshots,2024-06
+1902342,S4,Lower,81.9945,1967.8675,Bookmarks & History,2024-06
+1902424,--,Unclassified,4.9520,118.8481,Messaging System,2024-06
+1902430,--,Unclassified,19.3122,463.4925,Tabbed Browser,2024-06
+1902686,N/A,Unclassified,672.6985,16144.7650,Private Browsing,2024-06
+1902753,--,Unclassified,0.0038,0.0914,Menus,2024-06
+1902551,S4,Lower,0.8410,20.1844,Shell Integration,2024-06
+1902583,S4,Lower,0.6709,16.1022,Translations,2024-06
+1902619,S4,Lower,47.7841,1146.8175,Tabbed Browser,2024-06
+1902639,S3,Lower,11.6906,280.5739,Tabbed Browser,2024-06
+1902649,--,Unclassified,1.8561,44.5456,PDF Viewer,2024-06
+1902656,--,Unclassified,53.3337,1280.0083,Sidebar,2024-06
+1902667,--,Unclassified,144.2828,3462.7864,Sidebar,2024-06
+1902683,S3,Lower,1.2581,30.1944,Screenshots,2024-06
+1902711,S3,Lower,1.6473,39.5358,Translations,2024-06
+1902859,--,Unclassified,31.2191,749.2575,Translations,2024-06
+1902826,S4,Lower,9.1556,219.7347,Translations,2024-06
+1902854,S4,Lower,717.7660,17226.3831,Translations,2024-06
+1902921,--,Unclassified,331.6849,7960.4381,New Tab Page,2024-06
+1902885,S2,High,25.1739,604.1736,Search,2024-06
+1903112,N/A,Unclassified,371.6518,8919.6439,Session Restore,2024-06
+1902948,--,Unclassified,1.2787,30.6883,New Tab Page,2024-06
+1902969,S3,Lower,12.0939,290.2536,Data Loss Prevention,2024-06
+1903042,S3,Lower,30.6102,734.6453,Tabbed Browser,2024-06
+1903045,--,Unclassified,10.0827,241.9850,Remote Settings Client,2024-06
+1903064,N/A,Unclassified,11.8028,283.2661,Profile Backup,2024-06
+1903087,S3,Lower,0.7791,18.6986,Translations,2024-06
+1903092,S3,Lower,4.1552,99.7247,Translations,2024-06
+1903111,N/A,Unclassified,2.4195,58.0678,Search,2024-06
+1903114,--,Unclassified,0.6390,15.3356,Translations,2024-06
+1903117,N/A,Unclassified,21.5992,518.3814,Profile Backup,2024-06
+1903123,--,Unclassified,3.1123,74.6950,New Tab Page,2024-06
+1903127,N/A,Unclassified,17.3350,416.0411,Profile Backup,2024-06
+1903145,S4,Lower,15.2681,366.4350,Address Bar,2024-06
+1903146,S3,Lower,9.7365,233.6767,Address Bar,2024-06
+1903151,S4,Lower,0.9637,23.1281,Translations,2024-06
+1903160,--,Unclassified,3.4484,82.7628,Address Bar,2024-06
+1903381,N/A,Unclassified,3.1238,74.9722,Profile Backup,2024-06
+1903391,--,Unclassified,0.6036,14.4861,Translations,2024-06
+1903221,--,Unclassified,0.3141,7.5378,Theme,2024-06
+1903416,--,Unclassified,6.5219,156.5253,Messaging System,2024-06
+1903228,--,Unclassified,0.2922,7.0139,Tours,2024-06
+1903236,--,Unclassified,0.2717,6.5217,Theme,2024-06
+1903238,--,Unclassified,0.2676,6.4214,Theme,2024-06
+1903393,--,Unclassified,0.6037,14.4886,Translations,2024-06
+1903241,--,Unclassified,0.2630,6.3122,Theme,2024-06
+1903247,--,Unclassified,8.9402,214.5658,Search,2024-06
+1903266,S3,Lower,31.8812,765.1492,Address Bar,2024-06
+1903291,S3,Lower,44.0569,1057.3667,Tabbed Browser,2024-06
+1903392,--,Unclassified,0.6036,14.4872,Translations,2024-06
+1903310,--,Unclassified,23.5737,565.7697,Firefox Accounts,2024-06
+1903313,--,Unclassified,4.0002,96.0036,Firefox Accounts,2024-06
+1903354,--,Unclassified,9.6877,232.5039,New Tab Page,2024-06
+1903364,S4,Lower,1.1706,28.0953,Address Bar,2024-06
+1903376,N/A,Unclassified,105.6372,2535.2933,Address Bar,2024-06
+1903378,--,Unclassified,3.1356,75.2539,Menus,2024-06
+1903643,--,Unclassified,3.5948,86.2761,Messaging System,2024-06
+1903500,--,Unclassified,0.5599,13.4381,Theme,2024-06
+1903529,S3,Lower,36.6954,880.6894,Messaging System,2024-06
+1903541,--,Unclassified,1.4436,34.6469,Theme,2024-06
+1903544,--,Unclassified,0.6492,15.5803,Toolbars and Customization,2024-06
+1903579,--,Unclassified,0.5823,13.9742,Settings UI,2024-06
+1903584,S3,Lower,0.5777,13.8650,Nimbus Desktop Client,2024-06
+1903588,S3,Lower,145.8138,3499.5322,PDF Viewer,2024-06
+1903589,S3,Lower,5.0006,120.0150,PDF Viewer,2024-06
+1903590,S3,Lower,321.5631,7717.5136,Nimbus Desktop Client,2024-06
+1903599,--,Unclassified,0.5398,12.9547,Address Bar,2024-06
+1903602,N/A,Unclassified,6.5244,156.5847,Profile Backup,2024-06
+1903606,N/A,Unclassified,9.7511,234.0267,Profile Backup,2024-06
+1903608,S3,Lower,1.5136,36.3256,Search,2024-06
+1903629,N/A,Unclassified,3.6733,88.1583,Profile Backup,2024-06
+1903633,S3,Lower,34.1254,819.0094,Address Bar,2024-06
+1903649,--,Unclassified,11.8445,284.2678,New Tab Page,2024-06
+1903658,S4,Lower,155.7555,3738.1322,Firefox Accounts,2024-06
+1903888,--,Unclassified,4.0483,97.1589,Tabbed Browser,2024-06
+1903903,S4,Lower,242.2703,5814.4881,Address Bar,2024-06
+1903684,S4,Lower,7.3180,175.6319,Messaging System,2024-06
+1903697,--,Unclassified,5.1650,123.9594,Messaging System,2024-06
+1903708,--,Unclassified,132.9222,3190.1333,Messaging System,2024-06
+1903721,S4,Lower,49.0498,1177.1956,Bookmarks & History,2024-06
+1903731,S3,Lower,4.2148,101.1558,PDF Viewer,2024-06
+1903770,S3,Lower,4.0949,98.2786,PDF Viewer,2024-06
+1903771,S3,Lower,0.9049,21.7167,Messaging System,2024-06
+1903775,S4,Lower,4.3709,104.9008,Address Bar,2024-06
+1903805,--,Unclassified,0.3589,8.6142,Search,2024-06
+1903809,--,Unclassified,0.3494,8.3856,Theme,2024-06
+1903812,--,Unclassified,1.2970,31.1275,Theme,2024-06
+1903813,S4,Lower,0.5521,13.2497,Toolbars and Customization,2024-06
+1903820,S3,Lower,4.7625,114.3008,Settings UI,2024-06
+1903826,N/A,Unclassified,544.7313,13073.5519,Address Bar,2024-06
+1903833,--,Unclassified,392.3446,9416.2714,Messaging System,2024-06
+1903834,--,Unclassified,32.9632,791.1164,Messaging System,2024-06
+1903838,S3,Lower,0.4789,11.4944,Translations,2024-06
+1903841,S3,Lower,8.7025,208.8600,Messaging System,2024-06
+1903843,--,Unclassified,4.8783,117.0783,Messaging System,2024-06
+1903853,--,Unclassified,4.8418,116.2022,Messaging System,2024-06
+1903885,S3,Lower,2.5700,61.6797,Messaging System,2024-06
+1903954,--,Unclassified,2.2932,55.0372,Sync,2024-06
+1903938,--,Unclassified,7.6405,183.3722,Firefox Accounts,2024-06
+1903951,--,Unclassified,29.2945,703.0678,Sync,2024-06
+1903996,--,Unclassified,0.5349,12.8378,Toolbars and Customization,2024-06
+1904001,--,Unclassified,7.2812,174.7489,Theme,2024-06
+1904014,N/A,Unclassified,17.2537,414.0892,Search,2024-06
+1904029,--,Unclassified,0.4188,10.0522,Menus,2024-06
+1904036,N/A,Unclassified,5.8689,140.8531,Address Bar,2024-06
+1904066,--,Unclassified,20.9563,502.9519,Messaging System,2024-06
+1904077,--,Unclassified,7.7547,186.1117,Theme,2024-06
+1904080,S3,Lower,25.0621,601.4908,Messaging System,2024-06
+1904089,S4,Lower,25.4886,611.7272,Settings UI,2024-06
+1904094,N/A,Unclassified,38.4336,922.4064,Settings UI,2024-06
+1904104,--,Unclassified,3.9265,94.2367,Messaging System,2024-06
+1904120,--,Unclassified,3.1402,75.3642,PDF Viewer,2024-06
+1904146,N/A,Unclassified,12.5113,300.2700,Profile Backup,2024-06
+1904147,N/A,Unclassified,6.5243,156.5833,Profile Backup,2024-06
+1904160,S3,Lower,17.4856,419.6547,File Handling,2024-06
+1904210,S3,Lower,38.3107,919.4561,Sidebar,2024-06
+1904262,S3,Lower,137.6177,3302.8250,PDF Viewer,2024-06
+1904228,--,Unclassified,2.2630,54.3119,Untriaged,2024-06
+1904441,--,Unclassified,226.2928,5431.0269,Messaging System,2024-06
+1904302,--,Unclassified,2.9432,70.6361,Bookmarks & History,2024-06
+1904337,N/A,Unclassified,3.8325,91.9808,Profile Backup,2024-06
+1904341,N/A,Unclassified,331.8095,7963.4272,Search,2024-06
+1904345,S4,Lower,9.3184,223.6417,Messaging System,2024-06
+1904355,--,Unclassified,22.5713,541.7108,Translations,2024-06
+1904386,S3,Lower,2.6823,64.3764,Messaging System,2024-06
+1904388,--,Unclassified,2.8744,68.9844,Messaging System,2024-06
+1904389,S3,Lower,6.9687,167.2486,Messaging System,2024-06
+1904415,--,Unclassified,529.0537,12697.2894,Translations,2024-06
+1904426,--,Unclassified,14.5821,349.9708,PDF Viewer,2024-06
+1904436,--,Unclassified,44.0507,1057.2158,Shell Integration,2024-06
+1904656,--,Unclassified,20.1630,483.9131,New Tab Page,2024-06
+1904681,S3,Lower,1.8204,43.6903,Messaging System,2024-06
+1904727,S3,Lower,1.4402,34.5636,Profile Backup,2024-06
+1904714,N/A,Unclassified,13.5255,324.6114,Settings UI,2024-06
+1904478,S4,Lower,0.7821,18.7714,Settings UI,2024-06
+1904585,--,Unclassified,3.8264,91.8336,PDF Viewer,2024-06
+1904594,--,Unclassified,3.7999,91.1967,New Tab Page,2024-06
+1904613,N/A,Unclassified,689.2466,16541.9192,Search,2024-06
+1904623,S3,Lower,204.1802,4900.3236,Translations,2024-06
+1904630,--,Unclassified,20.2182,485.2378,Messaging System,2024-06
+1904633,--,Unclassified,23.7417,569.8017,New Tab Page,2024-06
+1904640,--,Unclassified,13.7202,329.2844,Sidebar,2024-06
+1904655,--,Unclassified,6.6808,160.3383,PDF Viewer,2024-06
+1904657,--,Unclassified,21.6605,519.8517,New Tab Page,2024-06
+1904973,N/A,Unclassified,14.5145,348.3475,Profile Backup,2024-06
+1904770,--,Unclassified,1.0845,26.0269,PDF Viewer,2024-06
+1904779,--,Unclassified,3.0538,73.2922,PDF Viewer,2024-06
+1904798,N/A,Unclassified,14.2404,341.7686,Protections UI,2024-06
+1904802,--,Unclassified,0.9398,22.5542,Theme,2024-06
+1904828,--,Unclassified,42.3981,1017.5550,Sidebar,2024-06
+1904829,S3,Lower,13.3790,321.0950,Address Bar,2024-06
+1904848,--,Unclassified,1.8383,44.1200,Search,2024-06
+1904860,--,Unclassified,714.5987,17150.3697,Sidebar,2024-06
+1904868,--,Unclassified,5.8093,139.4236,Sidebar,2024-06
+1904876,--,Unclassified,0.7857,18.8561,New Tab Page,2024-06
+1904879,--,Unclassified,76.0567,1825.3606,Messaging System,2024-06
+1904910,--,Unclassified,0.7027,16.8658,New Tab Page,2024-06
+1904911,S3,Lower,0.9543,22.9033,Address Bar,2024-06
+1904925,N/A,Unclassified,14.1492,339.5808,Profile Backup,2024-06
+1904945,--,Unclassified,140.1332,3363.1958,Messaging System,2024-06
+1904949,N/A,Unclassified,8.0342,192.8203,Profile Backup,2024-06
+1904961,S4,Lower,5.0829,121.9894,Screenshots,2024-06
+1905220,--,Unclassified,0.5159,12.3819,New Tab Page,2024-06
+1905233,N/A,Unclassified,40.7830,978.7914,Profile Backup,2024-06
+1905027,--,Unclassified,167.3309,4015.9414,Keyboard Navigation,2024-06
+1905032,N/A,Unclassified,3.5502,85.2039,Private Browsing,2024-06
+1905090,--,Unclassified,27.8009,667.2211,Messaging System,2024-06
+1905095,N/A,Unclassified,11.7995,283.1892,Search,2024-06
+1905100,N/A,Unclassified,4.7835,114.8033,Address Bar,2024-06
+1905119,S3,Lower,19.2420,461.8092,Messaging System,2024-06
+1905126,--,Unclassified,1.7074,40.9783,Search,2024-06
+1905154,S3,Lower,18.4135,441.9239,Profile Backup,2024-06
+1905155,S4,Lower,5.8414,140.1947,Messaging System,2024-06
+1905157,N/A,Unclassified,29.6140,710.7364,Profile Backup,2024-06
+1905172,S3,Lower,27.2527,654.0650,Sync,2024-06
+1905175,S3,Lower,7.4041,177.6989,Messaging System,2024-06
+1905204,S4,Lower,5.7593,138.2242,Messaging System,2024-06
+1905212,S2,High,515.0730,12361.7531,Sidebar,2024-06
+1905216,N/A,Unclassified,469.8230,11275.7511,Profile Backup,2024-06
+1905379,--,Unclassified,5.2404,125.7697,Messaging System,2024-06
+1905413,S4,Lower,0.0515,1.2361,Profile Backup,2024-06
+1905258,--,Unclassified,11.8385,284.1236,New Tab Page,2024-06
+1905259,--,Unclassified,5.8294,139.9053,New Tab Page,2024-06
+1905311,--,Unclassified,3.1537,75.6883,Theme,2024-06
+1905315,--,Unclassified,363.0836,8714.0058,Messaging System,2024-06
+1905319,--,Unclassified,5.8745,140.9881,New Tab Page,2024-06
+1905322,N/A,Unclassified,3.3973,81.5353,Security,2024-06
+1905323,N/A,Unclassified,516.3437,12392.2483,Security,2024-06
+1905353,N/A,Unclassified,4.0509,97.2219,Address Bar,2024-06
+1905382,--,Unclassified,3.2151,77.1628,Remote Settings Client,2024-06
+1905464,N/A,Unclassified,12.2888,294.9308,Address Bar,2024-06
+1905510,S4,Lower,20.5388,492.9306,Address Bar,2024-06
+1905468,--,Unclassified,10.1543,243.7025,Screenshots,2024-06
+1905623,S3,Lower,9.5140,228.3353,PDF Viewer,2024-07
+1905572,--,Unclassified,4.6724,112.1369,Address Bar,2024-07
+1905630,--,Unclassified,121.7755,2922.6122,Sidebar,2024-07
+1905632,--,Unclassified,0.4813,11.5522,General,2024-07
+1905635,--,Unclassified,0.4718,11.3228,Theme,2024-07
+1905662,--,Unclassified,0.3923,9.4156,Firefox View,2024-07
+1905668,--,Unclassified,2.9292,70.3011,Messaging System,2024-07
+1905672,S2,High,0.9240,22.1769,Messaging System,2024-07
+1905692,--,Unclassified,0.8184,19.6411,Sidebar,2024-07
+1905704,--,Unclassified,0.3017,7.2417,General,2024-07
+1905721,S3,Lower,0.7470,17.9289,New Tab Page,2024-07
+1905726,--,Unclassified,0.9586,23.0075,Theme,2024-07
+1905737,S4,Lower,217.0700,5209.6792,Messaging System,2024-07
+1905781,--,Unclassified,323.9428,7774.6269,Messaging System,2024-07
+1905958,N/A,Unclassified,303.6298,7287.1161,Session Restore,2024-07
+1905974,--,Unclassified,20.5544,493.3067,Sync,2024-07
+1905864,--,Unclassified,1.9770,47.4472,PDF Viewer,2024-07
+1905869,--,Unclassified,15.4701,371.2828,Sidebar,2024-07
+1905892,S3,Lower,10.4122,249.8917,Address Bar,2024-07
+1905922,--,Unclassified,0.2844,6.8261,Translations,2024-07
+1905923,--,Unclassified,22.7865,546.8756,PDF Viewer,2024-07
+1905924,--,Unclassified,653.9338,15694.4114,PDF Viewer,2024-07
+1905933,S4,Lower,1.0868,26.0833,Shell Integration,2024-07
+1905937,--,Unclassified,6.7587,162.2078,Launcher Process,2024-07
+1905944,S4,Lower,392.0077,9408.1844,Tabbed Browser,2024-07
+1905946,S4,Lower,244.5265,5868.6350,New Tab Page,2024-07
+1906192,--,Unclassified,0.0134,0.3219,Address Bar,2024-07
+1906017,--,Unclassified,6.4078,153.7867,Address Bar,2024-07
+1906022,S3,Lower,1.6228,38.9469,General,2024-07
+1906037,S4,Lower,1.1137,26.7281,Theme,2024-07
+1906048,S4,Lower,645.9971,15503.9314,Address Bar,2024-07
+1906054,S4,Lower,41.2836,990.8061,Address Bar,2024-07
+1906103,S2,High,1.2896,30.9497,Address Bar,2024-07
+1906110,S3,Lower,14.0837,338.0081,Address Bar,2024-07
+1906122,S3,Lower,1.5786,37.8867,Sidebar,2024-07
+1906123,S3,Lower,28.5576,685.3814,Tabbed Browser,2024-07
+1906138,--,Unclassified,0.2071,4.9711,New Tab Page,2024-07
+1906140,N/A,Unclassified,34.1672,820.0119,Sidebar,2024-07
+1906169,N/A,Unclassified,5.6050,134.5211,Profile Backup,2024-07
+1906185,N/A,Unclassified,0.4992,11.9819,Address Bar,2024-07
+1906320,N/A,Unclassified,0.1905,4.5728,General,2024-07
+1906318,N/A,Unclassified,43.2626,1038.3017,Profile Backup,2024-07
+1906271,S3,Lower,50.9202,1222.0853,Address Bar,2024-07
+1906326,S4,Lower,4.7322,113.5733,Profile Backup,2024-07
+1906289,--,Unclassified,13.1250,314.9997,File Handling,2024-07
+1906460,--,Unclassified,0.0620,1.4872,Profile Backup,2024-07
+1906501,--,Unclassified,2.9694,71.2667,PDF Viewer,2024-07
+1906541,S4,Lower,108.4611,2603.0653,Address Bar,2024-07
+1906622,S3,Lower,25.9464,622.7142,Sidebar,2024-07
+1906632,S3,Lower,24.9908,599.7781,Sidebar,2024-07
+1906665,S4,Lower,3.3266,79.8375,Search,2024-07
+1906642,S4,Lower,24.9573,598.9747,Sidebar,2024-07
+1906666,S4,Lower,3.7639,90.3336,Search,2024-07
+1906729,--,Unclassified,2.0967,50.3197,PDF Viewer,2024-07
+1906742,S4,Lower,1.5421,37.0103,Data Loss Prevention,2024-07
+1906708,--,Unclassified,1.0872,26.0922,Messaging System,2024-07
+1906714,S4,Lower,2.4371,58.4900,Profile Backup,2024-07
+1906739,N/A,Unclassified,3.3310,79.9447,Profile Backup,2024-07
+1906617,S3,Lower,197.7372,4745.6939,Sidebar,2024-07
+1906945,N/A,Unclassified,1.4145,33.9486,Search,2024-07
+1906813,S3,Lower,488.9808,11735.5403,Sidebar,2024-07
+1906875,--,Unclassified,6.3133,151.5200,Search,2024-07
+1906881,S3,Lower,78.0696,1873.6706,Sidebar,2024-07
+1906888,--,Unclassified,73.3106,1759.4547,Sidebar,2024-07
+1906902,S2,High,22.5377,540.9039,New Tab Page,2024-07
+1906912,N/A,Unclassified,9.2391,221.7383,Profile Backup,2024-07
+1906933,S4,Lower,6.8222,163.7336,Messaging System,2024-07
+1906936,S4,Lower,6.1235,146.9639,Messaging System,2024-07
+1906937,N/A,Unclassified,9.8726,236.9417,Messaging System,2024-07
+1906939,S4,Lower,62.9947,1511.8719,Messaging System,2024-07
+1906950,--,Unclassified,7.8595,188.6286,Messaging System,2024-07
+1907207,--,Unclassified,14.4552,346.9253,PDF Viewer,2024-07
+1907212,--,Unclassified,8.7021,208.8514,Sync,2024-07
+1906989,--,Unclassified,20.0998,482.3944,New Tab Page,2024-07
+1907000,--,Unclassified,7.2301,173.5214,PDF Viewer,2024-07
+1907034,S3,Lower,54.4802,1307.5253,Search,2024-07
+1907035,S3,Lower,1.7446,41.8700,General,2024-07
+1907079,--,Unclassified,20.6017,494.4408,Messaging System,2024-07
+1907097,N/A,Unclassified,6.3072,151.3722,Search,2024-07
+1907103,--,Unclassified,2.3180,55.6314,Tabbed Browser,2024-07
+1907125,--,Unclassified,9.0022,216.0519,New Tab Page,2024-07
+1907136,N/A,Unclassified,1.4449,34.6781,Profile Backup,2024-07
+1907146,S3,Lower,15.3988,369.5722,Address Bar,2024-07
+1907147,S3,Lower,43.1387,1035.3283,Address Bar,2024-07
+1907152,--,Unclassified,16.5939,398.2547,New Tab Page,2024-07
+1907185,N/A,Unclassified,8.0418,193.0022,Search,2024-07
+1907186,S3,Lower,4.9328,118.3883,Messaging System,2024-07
+1907218,N/A,Unclassified,0.3891,9.3375,Address Bar,2024-07
+1907227,N/A,Unclassified,1.3804,33.1306,Address Bar,2024-07
+1907231,--,Unclassified,1.1183,26.8397,Address Bar,2024-07
+1907240,N/A,Unclassified,12.7508,306.0186,Address Bar,2024-07
+1907242,N/A,Unclassified,21.7614,522.2728,Address Bar,2024-07
+1907256,--,Unclassified,1.3760,33.0250,Shell Integration,2024-07
+1907269,--,Unclassified,20.8190,499.6567,File Handling,2024-07
+1907303,S3,Lower,5.8932,141.4364,Data Loss Prevention,2024-07
+1907325,--,Unclassified,19.6325,471.1806,Sidebar,2024-07
+1907327,--,Unclassified,139.1647,3339.9517,Remote Settings Client,2024-07
+1907346,--,Unclassified,438.0521,10513.2500,PDF Viewer,2024-07
+1907368,--,Unclassified,39.5175,948.4197,Messaging System,2024-07
+1907371,--,Unclassified,12.2217,293.3197,New Tab Page,2024-07
+1907392,--,Unclassified,0.4715,11.3169,New Tab Page,2024-07
+1907413,--,Unclassified,13.9235,334.1644,Messaging System,2024-07
+1907417,--,Unclassified,4.9465,118.7158,Messaging System,2024-07
+1907419,S4,Lower,4.3881,105.3153,New Tab Page,2024-07
+1907420,--,Unclassified,21.9121,525.8906,Messaging System,2024-07
+1907431,N/A,Unclassified,13.0642,313.5414,Security,2024-07
+1907434,N/A,Unclassified,5.5198,132.4761,Address Bar,2024-07
+1907436,S3,Lower,1.5185,36.4442,Nimbus Desktop Client,2024-07
+1907446,--,Unclassified,19.2459,461.9025,New Tab Page,2024-07
+1907447,--,Unclassified,0.2628,6.3081,New Tab Page,2024-07
+1907649,S3,Lower,12.5894,302.1461,Nimbus Desktop Client,2024-07
+1907625,N/A,Unclassified,10.6722,256.1339,Profile Backup,2024-07
+1907466,S3,Lower,8.3492,200.3803,Data Loss Prevention,2024-07
+1907468,N/A,Unclassified,7.3662,176.7886,Address Bar,2024-07
+1907633,S4,Lower,312.6363,7503.2711,Nimbus Desktop Client,2024-07
+1907474,S3,Lower,35.8059,859.3406,Page Info Window,2024-07
+1907476,--,Unclassified,7.5685,181.6444,Sync,2024-07
+1907501,S3,Lower,18.8863,453.2711,Theme,2024-07
+1907584,--,Unclassified,130.6784,3136.2814,New Tab Page,2024-07
+1907585,--,Unclassified,2.7629,66.3094,New Tab Page,2024-07
+1907587,N/A,Unclassified,11.8147,283.5531,Search,2024-07
+1907588,N/A,Unclassified,5.0485,121.1642,Search,2024-07
+1907591,--,Unclassified,75.8074,1819.3778,Translations,2024-07
+1907594,S4,Lower,707.7941,16987.0575,Messaging System,2024-07
+1907709,S3,Lower,4.8480,116.3519,Settings UI,2024-07
+1907717,--,Unclassified,5.3916,129.3992,Tabbed Browser,2024-07
+1907696,N/A,Unclassified,4.3075,103.3797,Address Bar,2024-07
+1907756,S3,Lower,22.1845,532.4292,Bookmarks & History,2024-07
+1907958,S3,Lower,18.7324,449.5786,PDF Viewer,2024-07
+1907968,S3,Lower,0.4331,10.3933,Nimbus Desktop Client,2024-07
+1907990,N/A,Unclassified,3.8736,92.9669,Address Bar,2024-07
+1908019,S3,Lower,98.2423,2357.8164,Sidebar,2024-07
+1907874,--,Unclassified,91.9500,2206.7997,Address Bar,2024-07
+1907878,S2,High,1.3672,32.8131,Address Bar,2024-07
+1907902,--,Unclassified,16.5907,398.1758,Messaging System,2024-07
+1907911,--,Unclassified,16.2875,390.9000,New Tab Page,2024-07
+1907917,--,Unclassified,1.5703,37.6869,PDF Viewer,2024-07
+1907931,--,Unclassified,11.7578,282.1875,File Handling,2024-07
+1907948,--,Unclassified,233.0991,5594.3786,Messaging System,2024-07
+1907966,S3,Lower,7.2948,175.0742,New Tab Page,2024-07
+1908162,N/A,Unclassified,14.5270,348.6478,Tabbed Browser,2024-07
+1908205,N/A,Unclassified,294.4440,7066.6556,Screenshots,2024-07
+1908237,--,Unclassified,2.0682,49.6361,Messaging System,2024-07
+1908210,--,Unclassified,2.9374,70.4975,Messaging System,2024-07
+1908045,S3,Lower,4.2273,101.4558,Translations,2024-07
+1908163,--,Unclassified,8.7609,210.2628,New Tab Page,2024-07
+1908496,--,Unclassified,26.9204,646.0889,File Handling,2024-07
+1908282,S4,Lower,3.2628,78.3067,Sync,2024-07
+1908283,S4,Lower,0.7241,17.3792,Address Bar,2024-07
+1908298,S3,Lower,600.5962,14414.3094,Installer,2024-07
+1908312,S2,High,0.5283,12.6800,Settings UI,2024-07
+1908358,--,Unclassified,25.9526,622.8619,Messaging System,2024-07
+1908401,--,Unclassified,1.2931,31.0336,PDF Viewer,2024-07
+1908404,--,Unclassified,21.7700,522.4794,Tabbed Browser,2024-07
+1908405,--,Unclassified,37.2656,894.3733,Tabbed Browser,2024-07
+1908407,--,Unclassified,40.7628,978.3075,Tabbed Browser,2024-07
+1908408,--,Unclassified,48.2421,1157.8100,Tabbed Browser,2024-07
+1908411,--,Unclassified,42.2665,1014.3964,Tabbed Browser,2024-07
+1908412,--,Unclassified,19.2826,462.7825,Tabbed Browser,2024-07
+1908413,--,Unclassified,43.2600,1038.2411,Tabbed Browser,2024-07
+1908415,--,Unclassified,51.7551,1242.1222,Tabbed Browser,2024-07
+1908416,--,Unclassified,22.2723,534.5342,Tabbed Browser,2024-07
+1908417,--,Unclassified,189.1564,4539.7531,Tabbed Browser,2024-07
+1908418,--,Unclassified,84.2677,2022.4247,Session Restore,2024-07
+1908419,--,Unclassified,40.7575,978.1803,Tabbed Browser,2024-07
+1908422,--,Unclassified,118.2676,2838.4233,Session Restore,2024-07
+1908423,--,Unclassified,91.2652,2190.3644,Session Restore,2024-07
+1908424,--,Unclassified,64.7354,1553.6497,Session Restore,2024-07
+1908426,--,Unclassified,76.7678,1842.4272,Tabbed Browser,2024-07
+1908431,--,Unclassified,155.0294,3720.7056,Tabbed Browser,2024-07
+1908433,--,Unclassified,84.2602,2022.2450,Tabbed Browser,2024-07
+1908437,--,Unclassified,117.8538,2828.4914,Tabbed Browser,2024-07
+1908438,--,Unclassified,93.6246,2246.9911,Tabbed Browser,2024-07
+1908439,S2,High,232.7307,5585.5378,Tabbed Browser,2024-07
+1908441,--,Unclassified,238.2500,5717.9994,Tabbed Browser,2024-07
+1908448,--,Unclassified,320.4552,7690.9258,Private Browsing,2024-07
+1908451,N/A,Unclassified,321.5158,7716.3783,Address Bar,2024-07
+1908469,--,Unclassified,7.6942,184.6603,New Tab Page,2024-07
+1908471,--,Unclassified,133.4787,3203.4897,Sidebar,2024-07
+1908483,--,Unclassified,1.1861,28.4669,PDF Viewer,2024-07
+1908486,--,Unclassified,14.4439,346.6547,New Tab Page,2024-07
+1908502,--,Unclassified,0.6291,15.0986,New Tab Page,2024-07
+1908520,--,Unclassified,14.0707,337.6972,Messaging System,2024-07
+1908545,S3,Lower,2.5024,60.0583,Translations,2024-07
+1908548,S4,Lower,420.2792,10086.7000,Sync,2024-07
+1908555,N/A,Unclassified,495.9633,11903.1192,Profile Backup,2024-07
+1908566,N/A,Unclassified,18.9314,454.3542,Tabbed Browser,2024-07
+1908778,--,Unclassified,474.8727,11396.9442,Messaging System,2024-07
+1908785,N/A,Unclassified,1.4783,35.4803,Settings UI,2024-07
+1908584,S4,Lower,11.7124,281.0967,Keyboard Navigation,2024-07
+1908640,--,Unclassified,20.1707,484.0964,Remote Settings Client,2024-07
+1908670,--,Unclassified,10.3097,247.4317,New Tab Page,2024-07
+1908681,--,Unclassified,7.5620,181.4872,Sync,2024-07
+1908686,--,Unclassified,1.7650,42.3603,Firefox Accounts,2024-07
+1908696,--,Unclassified,0.7521,18.0514,New Tab Page,2024-07
+1908699,--,Unclassified,47.4960,1139.9033,Remote Settings Client,2024-07
+1908708,--,Unclassified,638.6451,15327.4817,Messaging System,2024-07
+1908710,--,Unclassified,1.6841,40.4172,New Tab Page,2024-07
+1908718,S4,Lower,183.6579,4407.7897,Address Bar,2024-07
+1908727,N/A,Unclassified,110.4646,2651.1506,Profile Backup,2024-07
+1908732,N/A,Unclassified,111.4389,2674.5336,Profile Backup,2024-07
+1908750,S2,High,0.8922,21.4136,Address Bar,2024-07
+1908939,--,Unclassified,3.2557,78.1369,PDF Viewer,2024-07
+1908989,--,Unclassified,81.5713,1957.7114,Sidebar,2024-07
+1908873,S3,Lower,18.3900,441.3608,Tabbed Browser,2024-07
+1908905,S3,Lower,195.8389,4700.1342,Sidebar,2024-07
+1908908,S3,Lower,32.8281,787.8756,Sidebar,2024-07
+1908922,S3,Lower,60.0594,1441.4247,Address Bar,2024-07
+1908924,S4,Lower,34.3049,823.3178,Address Bar,2024-07
+1908976,--,Unclassified,0.0177,0.4236,General,2024-07
+1908926,S2,High,59.1128,1418.7083,Messaging System,2024-07
+1908929,S4,Lower,189.2675,4542.4211,Address Bar,2024-07
+1908934,S3,Lower,46.5449,1117.0772,Translations,2024-07
+1908938,--,Unclassified,2.2307,53.5361,PDF Viewer,2024-07
+1908965,S3,Lower,3.1638,75.9322,Settings UI,2024-07
+1909017,N/A,Unclassified,125.4858,3011.6589,Search,2024-07
+1909035,--,Unclassified,1.6128,38.7078,PDF Viewer,2024-07
+1909097,--,Unclassified,0.9111,21.8675,PDF Viewer,2024-07
+1909325,N/A,Unclassified,2.5381,60.9144,PDF Viewer,2024-07
+1909329,--,Unclassified,2.5344,60.8258,PDF Viewer,2024-07
+1909189,S3,Lower,56.1922,1348.6122,Address Bar,2024-07
+1909193,--,Unclassified,0.4111,9.8669,PDF Viewer,2024-07
+1909201,N/A,Unclassified,0.8762,21.0283,Search,2024-07
+1909204,S3,Lower,4.8484,116.3628,Translations,2024-07
+1909211,S4,Lower,9.3323,223.9758,Bookmarks & History,2024-07
+1909218,--,Unclassified,10.1548,243.7158,New Tab Page,2024-07
+1909233,--,Unclassified,15.1367,363.2808,Messaging System,2024-07
+1909245,--,Unclassified,0.7778,18.6667,New Tab Page,2024-07
+1909256,--,Unclassified,0.7509,18.0208,New Tab Page,2024-07
+1909310,--,Unclassified,1.8686,44.8456,PDF Viewer,2024-07
+1909301,S3,Lower,24.1242,578.9811,Address Bar,2024-07
+1909520,--,Unclassified,0.6564,15.7547,New Tab Page,2024-07
+1909563,N/A,Unclassified,0.4800,11.5197,Address Bar,2024-07
+1909565,N/A,Unclassified,0.4666,11.1989,Address Bar,2024-07
+1909430,--,Unclassified,1.2335,29.6042,PDF Viewer,2024-07
+1909439,--,Unclassified,83.9867,2015.6817,Address Bar,2024-07
+1909440,N/A,Unclassified,21.1594,507.8244,General,2024-07
+1909444,S2,High,13.2214,317.3125,Address Bar,2024-07
+1909461,S3,Lower,4.3032,103.2758,Address Bar,2024-07
+1909466,S3,Lower,225.6108,5414.6600,Nimbus Desktop Client,2024-07
+1909480,S4,Lower,2.0629,49.5092,Messaging System,2024-07
+1909531,--,Unclassified,9.9036,237.6869,Messaging System,2024-07
+1909760,--,Unclassified,5.1903,124.5667,New Tab Page,2024-07
+1909676,S4,Lower,1.0025,24.0611,Address Bar,2024-07
+1909671,--,Unclassified,2.7589,66.2125,Settings UI,2024-07
+1909747,S3,Lower,27.6242,662.9811,Installer,2024-07
+1909604,--,Unclassified,10.0983,242.3586,PDF Viewer,2024-07
+1909632,S3,Lower,97.6734,2344.1628,Translations,2024-07
+1909704,--,Unclassified,29.1739,700.1739,Sidebar,2024-07
+1909926,S3,Lower,4.4462,106.7089,Screenshots,2024-07
+1909783,--,Unclassified,2.3318,55.9639,Sync,2024-07
+1909843,--,Unclassified,12.4583,298.9992,Sidebar,2024-07
+1909850,--,Unclassified,0.7165,17.1967,Sync,2024-07
+1909900,--,Unclassified,3.8075,91.3789,New Tab Page,2024-07
+1909915,--,Unclassified,83.5280,2004.6714,New Tab Page,2024-07
+1909929,N/A,Unclassified,34.1483,819.5586,Search,2024-07
+1909965,--,Unclassified,76.6029,1838.4697,Shell Integration,2024-07
+1909979,N/A,Unclassified,13.5577,325.3858,Search,2024-07
+1909987,--,Unclassified,1.5023,36.0542,New Tab Page,2024-07
+1909996,S4,Lower,101.9860,2447.6650,Downloads Panel,2024-07
+1910203,S2,High,45.3867,1089.2817,Theme,2024-07
+1910177,S3,Lower,26.3470,632.3286,Translations,2024-07
+1910202,S4,Lower,52.9093,1269.8222,Sidebar,2024-07
+1910023,N/A,Unclassified,1.2180,29.2314,Address Bar,2024-07
+1910053,--,Unclassified,4.2800,102.7194,General,2024-07
+1910059,S4,Lower,454.2541,10902.0972,Profile Backup,2024-07
+1910065,S3,Lower,465.1941,11164.6578,PDF Viewer,2024-07
+1910103,--,Unclassified,621.8638,14924.7300,Sidebar,2024-07
+1910109,S3,Lower,3.2918,79.0036,Settings UI,2024-07
+1910152,--,Unclassified,3.4108,81.8603,Sidebar,2024-07
+1910169,S4,Lower,724.6377,17391.3058,Translations,2024-07
+1910209,N/A,Unclassified,10.6401,255.3633,Address Bar,2024-07
+1910312,S4,Lower,11.9970,287.9292,Settings UI,2024-07
+1910431,S3,Lower,105.7231,2537.3550,PDF Viewer,2024-07
+1910464,N/A,Unclassified,2.0727,49.7436,Firefox Accounts,2024-07
+1910351,--,Unclassified,3.4468,82.7242,Sidebar,2024-07
+1910358,--,Unclassified,60.4383,1450.5200,Sidebar,2024-07
+1910389,--,Unclassified,1.5897,38.1533,Remote Settings Client,2024-07
+1910410,S3,Lower,0.4859,11.6611,Nimbus Desktop Client,2024-07
+1910429,S3,Lower,2.4858,59.6589,Nimbus Desktop Client,2024-07
+1910452,--,Unclassified,44.6295,1071.1092,Data Loss Prevention,2024-07
+1910625,--,Unclassified,36.9827,887.5836,Messaging System,2024-07
+1910525,--,Unclassified,1.0220,24.5272,New Tab Page,2024-07
+1910526,--,Unclassified,2.0347,48.8328,New Tab Page,2024-07
+1910576,--,Unclassified,1.4725,35.3392,Tabbed Browser,2024-07
+1910581,S3,Lower,29.7205,713.2908,Sidebar,2024-07
+1910601,N/A,Unclassified,1.1742,28.1817,Tabbed Browser,2024-07
+1910623,S2,High,2.7827,66.7842,Settings UI,2024-07
+1910633,--,Unclassified,51.7505,1242.0131,Messaging System,2024-07
+1910641,--,Unclassified,69.5259,1668.6222,Messaging System,2024-07
+1910664,--,Unclassified,756.9561,18166.9472,Tabbed Browser,2024-07
+1910665,--,Unclassified,22.9655,551.1722,Address Bar,2024-07
+1910682,--,Unclassified,2.6455,63.4925,New Tab Page,2024-07
+1910685,--,Unclassified,2.6384,63.3208,Sidebar,2024-07
+1910689,--,Unclassified,1.1301,27.1214,New Tab Page,2024-07
+1910694,S3,Lower,415.5927,9974.2247,Session Restore,2024-07
+1910733,--,Unclassified,28.0488,673.1719,Sidebar,2024-07
+1910757,--,Unclassified,0.2898,6.9544,New Tab Page,2024-07
+1910759,--,Unclassified,1.3059,31.3414,New Tab Page,2024-07
+1910776,--,Unclassified,0.7478,17.9472,New Tab Page,2024-07
+1910967,--,Unclassified,1.5807,37.9364,New Tab Page,2024-07
+1910968,N/A,Unclassified,35.3718,848.9228,Profile Backup,2024-07
+1910901,--,Unclassified,1.8140,43.5350,Tabbed Browser,2024-07
+1910902,--,Unclassified,603.8147,14491.5519,Sidebar,2024-07
+1910904,--,Unclassified,0.6002,14.4047,New Tab Page,2024-07
+1910909,--,Unclassified,75.8927,1821.4239,Shell Integration,2024-07
+1910826,S4,Lower,1.6344,39.2267,Address Bar,2024-07
+1910910,S2,High,37.7970,907.1275,Shell Integration,2024-07
+1910920,S3,Lower,1.7375,41.6997,Screenshots,2024-07
+1910923,S4,Lower,1.7250,41.3994,Normandy Client,2024-07
+1910953,N/A,Unclassified,6.1339,147.2128,Profile Backup,2024-07
+1910964,S3,Lower,586.1005,14066.4125,Installer,2024-07
+1910966,--,Unclassified,60.8996,1461.5894,New Tab Page,2024-07
+1911162,--,Unclassified,1.6413,39.3903,New Tab Page,2024-08
+1911184,--,Unclassified,1.5754,37.8100,PDF Viewer,2024-08
+1911194,--,Unclassified,1.5253,36.6067,Sidebar,2024-08
+1911022,S3,Lower,135.2420,3245.8086,Address Bar,2024-08
+1911068,--,Unclassified,25.9199,622.0778,Sidebar,2024-08
+1911070,S2,High,39.8861,957.2664,Shell Integration,2024-08
+1911091,--,Unclassified,0.8208,19.6986,New Tab Page,2024-08
+1911108,--,Unclassified,0.7622,18.2919,PDF Viewer,2024-08
+1911113,--,Unclassified,0.7391,17.7375,New Tab Page,2024-08
+1911117,S4,Lower,0.7230,17.3525,Search,2024-08
+1911123,--,Unclassified,1.7309,41.5408,Messaging System,2024-08
+1911166,--,Unclassified,0.6066,14.5583,New Tab Page,2024-08
+1911246,S4,Lower,585.5561,14053.3458,Shell Integration,2024-08
+1911342,S3,Lower,14.2223,341.3347,Translations,2024-08
+1911344,--,Unclassified,0.7351,17.6417,New Tab Page,2024-08
+1911321,S3,Lower,12.0773,289.8561,Settings UI,2024-08
+1911403,--,Unclassified,4.5322,108.7731,Untriaged,2024-08
+1911613,--,Unclassified,1.0090,24.2153,New Tab Page,2024-08
+1911639,N/A,Unclassified,59.1607,1419.8569,Address Bar,2024-08
+1911683,N/A,Unclassified,0.7326,17.5822,Address Bar,2024-08
+1911659,--,Unclassified,22.1281,531.0742,New Tab Page,2024-08
+1911535,S2,High,1.8946,45.4706,Messaging System,2024-08
+1911546,--,Unclassified,1.2077,28.9856,New Tab Page,2024-08
+1911626,--,Unclassified,39.0861,938.0661,Sidebar,2024-08
+1911890,S3,Lower,7.0446,169.0714,Translations,2024-08
+1911729,--,Unclassified,0.6009,14.4208,Menus,2024-08
+1911738,S3,Lower,6.5803,157.9272,PDF Viewer,2024-08
+1911749,--,Unclassified,72.9903,1751.7672,Sidebar,2024-08
+1911764,S4,Lower,35.0647,841.5539,PDF Viewer,2024-08
+1911777,--,Unclassified,1.8681,44.8353,Address Bar,2024-08
+1911795,S3,Lower,2.5820,61.9675,PDF Viewer,2024-08
+1911826,--,Unclassified,0.5190,12.4561,Enterprise Policies,2024-08
+1911877,S4,Lower,77.1570,1851.7692,Messaging System,2024-08
+1911878,--,Unclassified,14.6480,351.5522,Messaging System,2024-08
+1911881,S3,Lower,749.1533,17979.6783,Messaging System,2024-08
+1911889,--,Unclassified,38.1086,914.6072,Theme,2024-08
+1911896,S3,Lower,7.0140,168.3367,Translations,2024-08
+1911897,S3,Lower,7.0116,168.2789,Translations,2024-08
+1911908,--,Unclassified,2.0028,48.0664,New Tab Page,2024-08
+1912051,N/A,Unclassified,37.3281,895.8739,Search,2024-08
+1912053,S4,Lower,383.9023,9213.6561,Toolbars and Customization,2024-08
+1911924,S3,Lower,7.6936,184.6472,Tabbed Browser,2024-08
+1911980,S3,Lower,62.1892,1492.5406,PDF Viewer,2024-08
+1911981,N/A,Unclassified,20.5469,493.1247,Search,2024-08
+1912001,S2,High,39.9380,958.5122,PDF Viewer,2024-08
+1912017,S4,Lower,8.1746,196.1914,Sidebar,2024-08
+1912020,--,Unclassified,434.4134,10425.9219,Sidebar,2024-08
+1912024,S3,Lower,0.8977,21.5458,PDF Viewer,2024-08
+1912040,--,Unclassified,7.1415,171.3958,Address Bar,2024-08
+1912045,N/A,Unclassified,11.8305,283.9328,Address Bar,2024-08
+1912229,S3,Lower,13.0029,312.0703,Sidebar,2024-08
+1912174,--,Unclassified,19.7775,474.6603,Address Bar,2024-08
+1912184,--,Unclassified,19.7769,474.6458,General,2024-08
+1912192,S4,Lower,0.5220,12.5283,Shell Integration,2024-08
+1912245,S3,Lower,15.9444,382.6647,Data Loss Prevention,2024-08
+1912275,--,Unclassified,6.1331,147.1956,Tabbed Browser,2024-08
+1912281,--,Unclassified,0.3384,8.1211,Sidebar,2024-08
+1912312,S3,Lower,1.7199,41.2781,Sidebar,2024-08
+1912333,S3,Lower,27.4386,658.5256,Messaging System,2024-08
+1912351,--,Unclassified,18.9666,455.1981,Messaging System,2024-08
+1912537,S3,Lower,52.0011,1248.0256,File Handling,2024-08
+1912500,--,Unclassified,6.1800,148.3206,PDF Viewer,2024-08
+1912513,--,Unclassified,3.6306,87.1333,Sidebar,2024-08
+1912529,N/A,Unclassified,6.0548,145.3147,Profile Backup,2024-08
+1912377,S3,Lower,0.6346,15.2300,Sidebar,2024-08
+1912384,S3,Lower,13.6074,326.5786,Data Loss Prevention,2024-08
+1912391,S2,High,31.0626,745.5028,Tabbed Browser,2024-08
+1912403,--,Unclassified,73.7575,1770.1797,General,2024-08
+1912405,S3,Lower,10.2576,246.1825,Protections UI,2024-08
+1912416,S3,Lower,81.7108,1961.0583,Address Bar,2024-08
+1912493,--,Unclassified,7.2226,173.3425,Sidebar,2024-08
+1912601,--,Unclassified,2.1979,52.7497,PDF Viewer,2024-08
+1912565,S2,High,10.1445,243.4678,Address Bar,2024-08
+1912562,S4,Lower,34.5294,828.7064,Sidebar,2024-08
+1912790,S3,Lower,14.7305,353.5317,Shell Integration,2024-08
+1912762,--,Unclassified,612.9923,14711.8156,PDF Viewer,2024-08
+1912765,S2,High,14.7757,354.6164,PDF Viewer,2024-08
+1912808,S4,Lower,17.1495,411.5875,Translations,2024-08
+1913022,--,Unclassified,2.3027,55.2658,Address Bar,2024-08
+1912902,--,Unclassified,7.9355,190.4511,Sidebar,2024-08
+1912893,--,Unclassified,0.4156,9.9744,Remote Settings Client,2024-08
+1913234,S4,Lower,43.2347,1037.6317,Address Bar,2024-08
+1913053,S3,Lower,1.6665,39.9964,Theme,2024-08
+1913142,S2,High,36.3525,872.4603,Remote Settings Client,2024-08
+1913157,--,Unclassified,13.3122,319.4928,Sidebar,2024-08
+1913179,S4,Lower,8.2525,198.0611,Address Bar,2024-08
+1913180,S4,Lower,9.2422,221.8117,Settings UI,2024-08
+1913193,S3,Lower,61.9529,1486.8694,Address Bar,2024-08
+1913197,S3,Lower,10.6776,256.2628,Address Bar,2024-08
+1913199,S4,Lower,30.6492,735.5806,Address Bar,2024-08
+1913200,S4,Lower,28.6482,687.5561,Address Bar,2024-08
+1913204,S3,Lower,26.6244,638.9856,Address Bar,2024-08
+1913205,S3,Lower,30.6345,735.2269,Address Bar,2024-08
+1913312,N/A,Unclassified,36.8862,885.2697,Address Bar,2024-08
+1913279,S2,High,25.9784,623.4811,Tabbed Browser,2024-08
+1913362,N/A,Unclassified,14.2215,341.3169,Toolbars and Customization,2024-08
+1913507,N/A,Unclassified,3.6970,88.7283,Address Bar,2024-08
+1913453,--,Unclassified,0.4169,10.0064,PDF Viewer,2024-08
+1913502,N/A,Unclassified,55.0878,1322.1069,Address Bar,2024-08
+1913478,--,Unclassified,4.3375,104.1008,Address Bar,2024-08
+1913452,--,Unclassified,7.9130,189.9131,New Tab Page,2024-08
+1913431,S3,Lower,39.9944,959.8653,Messaging System,2024-08
+1913769,--,Unclassified,5.7698,138.4750,Data Loss Prevention,2024-08
+1913760,S3,Lower,6.8108,163.4581,Data Loss Prevention,2024-08
+1913762,--,Unclassified,1.2964,31.1147,General,2024-08
+1913779,--,Unclassified,8.2421,197.8097,Sidebar,2024-08
+1913811,--,Unclassified,3.8466,92.3178,Messaging System,2024-08
+1914047,--,Unclassified,2.5388,60.9303,New Tab Page,2024-08
+1914045,--,Unclassified,1.3356,32.0547,New Tab Page,2024-08
+1913858,S4,Lower,135.8040,3259.2969,File Handling,2024-08
+1914053,--,Unclassified,7.0455,169.0925,New Tab Page,2024-08
+1913880,--,Unclassified,2.6490,63.5756,PDF Viewer,2024-08
+1913906,S4,Lower,2.4594,59.0261,Sidebar,2024-08
+1913971,S3,Lower,22.7687,546.4483,Sidebar,2024-08
+1914050,--,Unclassified,2.5305,60.7331,New Tab Page,2024-08
+1914068,S3,Lower,15.2658,366.3781,Data Loss Prevention,2024-08
+1913973,--,Unclassified,1.5528,37.2678,New Tab Page,2024-08
+1913974,--,Unclassified,140.7729,3378.5503,New Tab Page,2024-08
+1914055,--,Unclassified,3.5301,84.7228,New Tab Page,2024-08
+1914143,N/A,Unclassified,567.9647,13631.1517,Search,2024-08
+1914113,--,Unclassified,0.9067,21.7597,Messaging System,2024-08
+1914195,--,Unclassified,1.3069,31.3658,New Tab Page,2024-08
+1914145,N/A,Unclassified,13.9565,334.9569,Search,2024-08
+1914138,--,Unclassified,33.7541,810.0981,Sidebar,2024-08
+1914249,--,Unclassified,33.5069,804.1667,Translations,2024-08
+1914159,S3,Lower,57.3365,1376.0769,Translations,2024-08
+1914193,--,Unclassified,1.5535,37.2833,New Tab Page,2024-08
+1914098,--,Unclassified,1.8332,43.9958,New Tab Page,2024-08
+1914359,S3,Lower,42.9606,1031.0533,Sidebar,2024-08
+1914330,--,Unclassified,0.8250,19.8011,Firefox View,2024-08
+1914350,--,Unclassified,1.9941,47.8589,New Tab Page,2024-08
+1914380,--,Unclassified,0.0627,1.5044,Search,2024-08
+1914387,--,Unclassified,222.6257,5343.0164,Data Loss Prevention,2024-08
+1914390,S3,Lower,28.8252,691.8050,Address Bar,2024-08
+1914432,N/A,Unclassified,119.2126,2861.1017,Sidebar,2024-08
+1914438,S4,Lower,20.6738,496.1703,Sidebar,2024-08
+1914452,--,Unclassified,42.1441,1011.4583,Tabbed Browser,2024-08
+1914455,--,Unclassified,4.6427,111.4236,Sidebar,2024-08
+1914457,--,Unclassified,368.9395,8854.5478,Sidebar,2024-08
+1914480,S3,Lower,5.5578,133.3883,PDF Viewer,2024-08
+1914487,--,Unclassified,1.5248,36.5947,New Tab Page,2024-08
+1914643,N/A,Unclassified,60.9847,1463.6328,Messaging System,2024-08
+1914647,N/A,Unclassified,24.0380,576.9125,Messaging System,2024-08
+1914687,--,Unclassified,1.9682,47.2372,Menus,2024-08
+1914519,--,Unclassified,1.3888,33.3303,Tabbed Browser,2024-08
+1914534,--,Unclassified,1.2964,31.1131,New Tab Page,2024-08
+1914535,N/A,Unclassified,61.6897,1480.5531,Address Bar,2024-08
+1914536,N/A,Unclassified,5.2876,126.9028,Address Bar,2024-08
+1914542,N/A,Unclassified,5.2469,125.9261,Address Bar,2024-08
+1914544,S2,High,1.2319,29.5658,Tabbed Browser,2024-08
+1914545,N/A,Unclassified,14.7336,353.6053,Address Bar,2024-08
+1914604,S4,Lower,17.8705,428.8908,Address Bar,2024-08
+1914605,S4,Lower,18.8746,452.9911,Address Bar,2024-08
+1914619,--,Unclassified,109.2841,2622.8178,Messaging System,2024-08
+1914623,--,Unclassified,26.2265,629.4369,Messaging System,2024-08
+1914634,--,Unclassified,0.7695,18.4686,New Tab Page,2024-08
+1914779,N/A,Unclassified,2.0227,48.5458,Tabbed Browser,2024-08
+1914798,S3,Lower,1.7172,41.2122,Bookmarks & History,2024-08
+1914793,S4,Lower,57.0774,1369.8575,Protections UI,2024-08
+1914756,S3,Lower,2.7577,66.1836,Tabbed Browser,2024-08
+1914781,--,Unclassified,2.0182,48.4361,Tabbed Browser,2024-08
+1914912,S4,Lower,4.3714,104.9136,Data Loss Prevention,2024-08
+1914874,--,Unclassified,1.9467,46.7217,New Tab Page,2024-08
+1914915,--,Unclassified,0.9184,22.0419,New Tab Page,2024-08
+1914919,--,Unclassified,16.8126,403.5028,Messaging System,2024-08
+1914926,N/A,Unclassified,22.3110,535.4633,Profile Backup,2024-08
+1914936,N/A,Unclassified,22.2917,535.0014,Profile Backup,2024-08
+1914938,S3,Lower,22.1144,530.7464,Sidebar,2024-08
+1914940,N/A,Unclassified,22.2882,534.9172,Profile Backup,2024-08
+1914952,--,Unclassified,0.7623,18.2956,Tabbed Browser,2024-08
+1914987,--,Unclassified,1.1924,28.6178,General,2024-08
+1915000,--,Unclassified,1.6517,39.6411,PDF Viewer,2024-08
+1915007,S3,Lower,44.1366,1059.2778,Sidebar,2024-08
+1915019,--,Unclassified,21.0759,505.8208,Messaging System,2024-08
+1915023,--,Unclassified,1.5370,36.8886,New Tab Page,2024-08
+1915032,--,Unclassified,3.2866,78.8775,New Tab Page,2024-08
+1915111,--,Unclassified,3.5426,85.0217,Sidebar,2024-08
+1915172,--,Unclassified,48.5827,1165.9847,Session Restore,2024-08
+1915280,S3,Lower,222.7316,5345.5586,Tours,2024-08
+1915174,--,Unclassified,160.2869,3846.8850,Session Restore,2024-08
+1915289,N/A,Unclassified,187.7015,4504.8367,Search,2024-08
+1915291,S3,Lower,1.6832,40.3967,Address Bar,2024-08
+1915196,--,Unclassified,1.9924,47.8178,New Tab Page,2024-08
+1915198,--,Unclassified,3.7145,89.1481,New Tab Page,2024-08
+1915230,S3,Lower,16.4149,393.9583,Sidebar,2024-08
+1915232,S4,Lower,4.1281,99.0753,Sidebar,2024-08
+1915235,S3,Lower,1.3959,33.5022,Messaging System,2024-08
+1915241,--,Unclassified,0.5993,14.3828,New Tab Page,2024-08
+1915250,N/A,Unclassified,17.5614,421.4731,Address Bar,2024-08
+1915252,N/A,Unclassified,238.5595,5725.4292,Search,2024-08
+1915266,S4,Lower,1.3009,31.2211,Tabbed Browser,2024-08
+1915273,N/A,Unclassified,29.4941,707.8586,Address Bar,2024-08
+1915405,--,Unclassified,0.5830,13.9928,Tabbed Browser,2024-08
+1915430,S2,High,243.4931,5843.8353,Firefox Accounts,2024-08
+1915434,S3,Lower,2.2644,54.3464,PDF Viewer,2024-08
+1915486,N/A,Unclassified,1.0099,24.2367,Migration,2024-08
+1915507,N/A,Unclassified,13.9218,334.1222,Address Bar,2024-08
+1915458,N/A,Unclassified,22.6151,542.7617,Search,2024-08
+1915306,S3,Lower,1.1176,26.8222,Theme,2024-08
+1915317,N/A,Unclassified,9.7840,234.8164,Address Bar,2024-08
+1915335,--,Unclassified,1.3768,33.0422,Sidebar,2024-08
+1915350,S3,Lower,13.0186,312.4461,Data Loss Prevention,2024-08
+1915351,S3,Lower,61.8179,1483.6289,Data Loss Prevention,2024-08
+1915381,--,Unclassified,0.3974,9.5375,Firefox Accounts,2024-08
+1915387,--,Unclassified,0.3761,9.0267,Theme,2024-08
+1915415,--,Unclassified,0.5628,13.5083,Tabbed Browser,2024-08
+1915741,--,Unclassified,287.4812,6899.5492,Shell Integration,2024-08
+1915523,--,Unclassified,197.1404,4731.3697,Menus,2024-08
+1915556,--,Unclassified,0.3291,7.8986,Theme,2024-08
+1915565,--,Unclassified,0.5187,12.4481,Theme,2024-08
+1915599,--,Unclassified,6.6828,160.3867,Tabbed Browser,2024-08
+1915664,--,Unclassified,1.2764,30.6342,Sidebar,2024-08
+1915692,--,Unclassified,1.2059,28.9414,PDF Viewer,2024-08
+1915705,--,Unclassified,0.4075,9.7794,New Tab Page,2024-08
+1915706,--,Unclassified,0.4042,9.7000,New Tab Page,2024-08
+1915707,--,Unclassified,6.4065,153.7567,Nimbus Desktop Client,2024-08
+1915722,--,Unclassified,39.8525,956.4594,Messaging System,2024-08
+1915727,--,Unclassified,8.5217,204.5217,New Tab Page,2024-08
+1915736,--,Unclassified,617.0031,14808.0750,Shell Integration,2024-08
+1915737,--,Unclassified,215.2664,5166.3942,Shell Integration,2024-08
+1915738,--,Unclassified,223.4845,5363.6292,Shell Integration,2024-08
+1915739,--,Unclassified,186.2932,4471.0378,Shell Integration,2024-08
+1915740,--,Unclassified,215.7331,5177.5939,Shell Integration,2024-08
+1915742,--,Unclassified,290.9821,6983.5694,Shell Integration,2024-08
+1915862,S3,Lower,26.8465,644.3150,Sidebar,2024-08
+1916004,--,Unclassified,2.9778,71.4661,Sidebar,2024-08
+1915881,--,Unclassified,13.1735,316.1644,Messaging System,2024-08
+1915766,N/A,Unclassified,13.2807,318.7372,Address Bar,2024-08
+1915768,S3,Lower,5.0473,121.1356,Translations,2024-08
+1915805,S3,Lower,27.0333,648.7981,Sidebar,2024-08
+1915806,--,Unclassified,13.5001,324.0017,Screenshots,2024-08
+1915811,--,Unclassified,0.5281,12.6756,Sidebar,2024-08
+1915821,--,Unclassified,1.4577,34.9853,Sidebar,2024-08
+1915851,S4,Lower,0.3831,9.1933,Toolbars and Customization,2024-08
+1915856,N/A,Unclassified,19.3264,463.8328,Search,2024-08
+1916074,S3,Lower,87.2509,2094.0217,Address Bar,2024-08
+1916064,--,Unclassified,461.1554,11067.7292,Translations,2024-08
+1916098,N/A,Unclassified,1.3711,32.9067,Tabbed Browser,2024-09
+1916087,N/A,Unclassified,3.1494,75.5861,Search,2024-09
+1916101,--,Unclassified,2.1019,50.4458,Sidebar,2024-09
+1916188,S3,Lower,11.4847,275.6331,Sidebar,2024-09
+1916195,S4,Lower,3.9608,95.0600,Sidebar,2024-09
+1916230,S4,Lower,67.8416,1628.1994,Sidebar,2024-09
+1916182,S3,Lower,7.0508,169.2197,Sidebar,2024-09
+1916193,--,Unclassified,3.4798,83.5164,File Handling,2024-09
+1916499,N/A,Unclassified,62.1974,1492.7372,Search,2024-09
+1916541,--,Unclassified,9.3423,224.2142,New Tab Page,2024-09
+1916539,--,Unclassified,3.5490,85.1767,New Tab Page,2024-09
+1916401,--,Unclassified,11.0067,264.1611,PDF Viewer,2024-09
+1916410,S4,Lower,583.2110,13997.0631,Address Bar,2024-09
+1916424,N/A,Unclassified,170.3811,4089.1464,General,2024-09
+1916458,S2,High,0.3646,8.7500,Address Bar,2024-09
+1916469,N/A,Unclassified,181.5878,4358.1069,New Tab Page,2024-09
+1916479,S3,Lower,6.9572,166.9739,Sidebar,2024-09
+1916484,--,Unclassified,2.7395,65.7469,New Tab Page,2024-09
+1916486,--,Unclassified,9.5236,228.5661,New Tab Page,2024-09
+1916488,--,Unclassified,9.7593,234.2222,New Tab Page,2024-09
+1916492,S3,Lower,2.7183,65.2400,Session Restore,2024-09
+1916497,N/A,Unclassified,1.4932,35.8369,Tabbed Browser,2024-09
+1916505,N/A,Unclassified,62.1932,1492.6372,Search,2024-09
+1916856,S4,Lower,257.3988,6177.5719,New Tab Page,2024-09
+1916574,--,Unclassified,1.0967,26.3217,Theme,2024-09
+1916622,--,Unclassified,2.0115,48.2750,Tabbed Browser,2024-09
+1916667,--,Unclassified,0.6751,16.2019,PDF Viewer,2024-09
+1916679,S3,Lower,55.6471,1335.5300,Address Bar,2024-09
+1916701,--,Unclassified,0.3229,7.7500,Sidebar,2024-09
+1916706,--,Unclassified,20.3387,488.1281,New Tab Page,2024-09
+1916714,S3,Lower,9.8911,237.3872,PDF Viewer,2024-09
+1916739,--,Unclassified,15.7734,378.5622,Messaging System,2024-09
+1916780,S3,Lower,6.6529,159.6694,Shell Integration,2024-09
+1916804,S3,Lower,12.8520,308.4483,Data Loss Prevention,2024-09
+1916813,S3,Lower,14.0619,337.4858,Settings UI,2024-09
+1916839,--,Unclassified,0.9224,22.1375,Messaging System,2024-09
+1916847,N/A,Unclassified,2.4586,59.0053,Search,2024-09
+1916852,S4,Lower,6.9572,166.9728,Messaging System,2024-09
+1916884,N/A,Unclassified,470.0222,11280.5328,Session Restore,2024-09
+1916946,N/A,Unclassified,4.9822,119.5717,Private Browsing,2024-09
+1916954,--,Unclassified,0.9838,23.6117,Sidebar,2024-09
+1916961,--,Unclassified,0.9590,23.0169,Sidebar,2024-09
+1917030,--,Unclassified,126.7394,3041.7453,New Tab Page,2024-09
+1917036,--,Unclassified,35.1093,842.6236,Messaging System,2024-09
+1917040,--,Unclassified,1.6866,40.4781,Sidebar,2024-09
+1917069,S4,Lower,215.3932,5169.4361,Tabbed Browser,2024-09
+1916866,--,Unclassified,1.2815,30.7564,Search,2024-09
+1916873,N/A,Unclassified,7.2588,174.2103,Address Bar,2024-09
+1916941,--,Unclassified,2.0110,48.2633,Sidebar,2024-09
+1917202,S3,Lower,21.9624,527.0983,Shell Integration,2024-09
+1917342,--,Unclassified,3.5508,85.2197,Sync,2024-09
+1917373,S3,Lower,4.4464,106.7139,Shell Integration,2024-09
+1917287,--,Unclassified,40.7901,978.9633,Distributions,2024-09
+1917292,S4,Lower,4.7560,114.1433,Tabbed Browser,2024-09
+1917161,S4,Lower,161.0043,3864.1028,Translations,2024-09
+1917186,S4,Lower,8.0519,193.2450,Address Bar,2024-09
+1917417,S4,Lower,17.9907,431.7758,Tabbed Browser,2024-09
+1917430,--,Unclassified,1.5416,36.9978,PDF Viewer,2024-09
+1917468,--,Unclassified,5.1962,124.7086,PDF Viewer,2024-09
+1917470,S4,Lower,2.9041,69.6981,Bookmarks & History,2024-09
+1917595,S4,Lower,11.0696,265.6697,Toolbars and Customization,2024-09
+1917631,--,Unclassified,2.2377,53.7056,Data Loss Prevention,2024-09
+1917683,--,Unclassified,7.0802,169.9247,General,2024-09
+1917696,--,Unclassified,53.5261,1284.6256,Translations,2024-09
+1917698,--,Unclassified,10.5097,252.2322,New Tab Page,2024-09
+1917686,--,Unclassified,1.5500,37.2003,PDF Viewer,2024-09
+1917689,--,Unclassified,127.9823,3071.5764,Translations,2024-09
+1917543,S3,Lower,5.0727,121.7442,PDF Viewer,2024-09
+1917551,--,Unclassified,0.9774,23.4578,Sidebar,2024-09
+1917557,--,Unclassified,0.9505,22.8119,Sidebar,2024-09
+1917563,--,Unclassified,3.7409,89.7819,Sidebar,2024-09
+1917588,--,Unclassified,0.8215,19.7169,Theme,2024-09
+1917606,--,Unclassified,9.8119,235.4867,New Tab Page,2024-09
+1917851,--,Unclassified,85.8028,2059.2683,Translations,2024-09
+1917734,--,Unclassified,17.3617,416.6800,PDF Viewer,2024-09
+1917811,S4,Lower,8.4178,202.0278,Bookmarks & History,2024-09
+1917841,--,Unclassified,451.2485,10829.9633,Translations,2024-09
+1917850,--,Unclassified,2.2264,53.4342,Search,2024-09
+1917853,--,Unclassified,451.2244,10829.3844,Translations,2024-09
+1917861,N/A,Unclassified,22.1493,531.5822,Enterprise Policies,2024-09
+1917869,N/A,Unclassified,7.4439,178.6531,Search,2024-09
+1917908,S3,Lower,211.1326,5067.1833,Translations,2024-09
+1917913,N/A,Unclassified,190.4621,4571.0900,Toolbars and Customization,2024-09
+1917928,N/A,Unclassified,41.3699,992.8772,Messaging System,2024-09
+1917937,S3,Lower,86.5636,2077.5264,New Tab Page,2024-09
+1917955,N/A,Unclassified,3.0276,72.6614,Search,2024-09
+1917992,N/A,Unclassified,13.2059,316.9408,Address Bar,2024-09
+1918041,S3,Lower,741.8101,17803.4422,Sidebar,2024-09
+1918043,S2,High,0.1439,3.4528,PDF Viewer,2024-09
+1918085,S4,Lower,673.4081,16161.7944,Migration,2024-09
+1918090,S4,Lower,5.2142,125.1417,Sidebar,2024-09
+1918115,S3,Lower,13.8493,332.3839,PDF Viewer,2024-09
+1918132,--,Unclassified,5.3349,128.0386,Sidebar,2024-09
+1918176,N/A,Unclassified,2.7188,65.2517,Address Bar,2024-09
+1918208,S2,High,33.4487,802.7689,Sidebar,2024-09
+1918217,S3,Lower,58.6477,1407.5447,Sidebar,2024-09
+1918257,S3,Lower,524.0614,12577.4742,PDF Viewer,2024-09
+1918027,S3,Lower,85.1191,2042.8594,Data Loss Prevention,2024-09
+1918028,S3,Lower,6.8620,164.6881,Data Loss Prevention,2024-09
+1918447,--,Unclassified,5.5393,132.9431,New Tab Page,2024-09
+1918448,--,Unclassified,7.7408,185.7794,New Tab Page,2024-09
+1918455,N/A,Unclassified,5.5168,132.4028,Security,2024-09
+1918486,--,Unclassified,12.6549,303.7183,New Tab Page,2024-09
+1918515,--,Unclassified,7.5665,181.5961,New Tab Page,2024-09
+1918498,--,Unclassified,1.1311,27.1456,New Tab Page,2024-09
+1918536,--,Unclassified,35.5063,852.1522,Messaging System,2024-09
+1918518,S4,Lower,340.0862,8162.0697,New Tab Page,2024-09
+1918299,N/A,Unclassified,1.2681,30.4347,Address Bar,2024-09
+1918301,S2,High,8.8332,211.9978,PDF Viewer,2024-09
+1918307,--,Unclassified,1.1796,28.3097,Address Bar,2024-09
+1918322,--,Unclassified,0.4859,11.6606,Theme,2024-09
+1918371,--,Unclassified,1.2009,28.8208,Sidebar,2024-09
+1918425,S2,High,0.5986,14.3653,Sidebar,2024-09
+1918437,S3,Lower,19.0471,457.1311,Address Bar,2024-09
+1918442,--,Unclassified,13.7869,330.8856,New Tab Page,2024-09
+1918444,--,Unclassified,4.7684,114.4425,New Tab Page,2024-09
+1918745,S3,Lower,7.6856,184.4556,Messaging System,2024-09
+1918579,S3,Lower,4.6408,111.3800,Data Loss Prevention,2024-09
+1918606,--,Unclassified,1.5034,36.0811,Untriaged,2024-09
+1918608,--,Unclassified,0.5166,12.3994,Tabbed Browser,2024-09
+1918615,N/A,Unclassified,95.5019,2292.0467,Bookmarks & History,2024-09
+1918618,--,Unclassified,0.2709,6.5008,Sidebar,2024-09
+1918625,S4,Lower,5.9752,143.4050,Address Bar,2024-09
+1918638,--,Unclassified,4.1806,100.3333,Sidebar,2024-09
+1918651,S4,Lower,26.8729,644.9497,Address Bar,2024-09
+1918676,--,Unclassified,4.0909,98.1817,Sidebar,2024-09
+1918681,S2,High,26.3288,631.8900,Toolbars and Customization,2024-09
+1918684,S4,Lower,9.3091,223.4183,Tabbed Browser,2024-09
+1918686,S3,Lower,16.2953,391.0875,Tabbed Browser,2024-09
+1918687,--,Unclassified,27.8611,668.6675,Tabbed Browser,2024-09
+1918710,--,Unclassified,18.7750,450.6003,Tabbed Browser,2024-09
+1918712,N/A,Unclassified,33.2695,798.4689,Tabbed Browser,2024-09
+1918723,--,Unclassified,5.2270,125.4489,General,2024-09
+1918726,--,Unclassified,0.2398,5.7544,Sidebar,2024-09
+1918743,--,Unclassified,12.7074,304.9767,New Tab Page,2024-09
+1918749,--,Unclassified,72.9957,1751.8964,Messaging System,2024-09
+1918765,--,Unclassified,2.1486,51.5667,Sidebar,2024-09
+1918766,--,Unclassified,3.1503,75.6072,New Tab Page,2024-09
+1918796,--,Unclassified,0.5145,12.3486,New Tab Page,2024-09
+1918921,--,Unclassified,1.7665,42.3967,Sidebar,2024-09
+1918942,S3,Lower,1.2650,30.3606,Settings UI,2024-09
+1919041,--,Unclassified,1.6144,38.7450,Sidebar,2024-09
+1919043,S2,High,1.0411,24.9856,Messaging System,2024-09
+1919061,--,Unclassified,0.3210,7.7044,Messaging System,2024-09
+1919068,N/A,Unclassified,203.0684,4873.6406,Address Bar,2024-09
+1919069,--,Unclassified,2.8066,67.3583,New Tab Page,2024-09
+1919071,--,Unclassified,0.5480,13.1519,PDF Viewer,2024-09
+1919101,--,Unclassified,2.1321,51.1706,New Tab Page,2024-09
+1919147,--,Unclassified,9.8276,235.8617,Messaging System,2024-09
+1919108,S4,Lower,1.4509,34.8206,Sidebar,2024-09
+1919035,--,Unclassified,2.3335,56.0033,Sidebar,2024-09
+1919296,S2,High,9.7838,234.8111,Messaging System,2024-09
+1919301,S3,Lower,1.8311,43.9456,Settings UI,2024-09
+1919370,S3,Lower,3.6449,87.4769,Messaging System,2024-09
+1919344,N/A,Unclassified,14.7397,353.7528,Enterprise Policies,2024-09
+1919318,--,Unclassified,1.2563,30.1506,Enterprise Policies,2024-09
+1919363,--,Unclassified,2.6698,64.0750,Private Browsing,2024-09
+1919365,S4,Lower,0.4654,11.1694,Settings UI,2024-09
+1919387,N/A,Unclassified,580.0844,13922.0264,Enterprise Policies,2024-09
+1919403,S3,Lower,10.0203,240.4861,Sidebar,2024-09
+1919180,N/A,Unclassified,22.3679,536.8300,Address Bar,2024-09
+1919183,S4,Lower,682.1124,16370.6983,Sidebar,2024-09
+1919185,--,Unclassified,2.7719,66.5244,Sidebar,2024-09
+1919193,N/A,Unclassified,1.1682,28.0367,Address Bar,2024-09
+1919223,S4,Lower,112.8275,2707.8603,Sidebar,2024-09
+1919230,S3,Lower,9.0243,216.5836,Translations,2024-09
+1919258,--,Unclassified,0.0352,0.8442,Sidebar,2024-09
+1919442,--,Unclassified,90.9271,2182.2497,Tabbed Browser,2024-09
+1919439,S4,Lower,6.6479,159.5500,Theme,2024-09
+1919474,S4,Lower,5.4982,131.9569,Sidebar,2024-09
+1919475,S3,Lower,210.7655,5058.3714,Sidebar,2024-09
+1919513,S3,Lower,6.8747,164.9917,PDF Viewer,2024-09
+1919517,S2,High,8.9462,214.7089,Messaging System,2024-09
+1919537,S3,Lower,5.3463,128.3117,Data Loss Prevention,2024-09
+1919540,N/A,Unclassified,68.8546,1652.5108,Search,2024-09
+1919541,N/A,Unclassified,111.3506,2672.4142,Search,2024-09
+1919549,S3,Lower,79.7894,1914.9450,Address Bar,2024-09
+1919554,S4,Lower,112.5784,2701.8806,Data Loss Prevention,2024-09
+1919562,S4,Lower,343.7739,8250.5736,Profile Backup,2024-09
+1919575,--,Unclassified,2.7494,65.9844,Shell Integration,2024-09
+1919597,S3,Lower,2.6283,63.0803,Messaging System,2024-09
+1919598,S3,Lower,156.6199,3758.8772,Messaging System,2024-09
+1919608,--,Unclassified,58.0741,1393.7786,New Tab Page,2024-09
+1919614,S3,Lower,33.3522,800.4522,Tabbed Browser,2024-09
+1919867,--,Unclassified,3.6398,87.3553,Sidebar,2024-09
+1919873,--,Unclassified,6.6501,159.6031,Messaging System,2024-09
+1919898,--,Unclassified,7.3408,176.1800,New Tab Page,2024-09
+1919703,S3,Lower,161.6243,3878.9828,Data Loss Prevention,2024-09
+1919721,S1,High,13.0406,312.9739,Toolbars and Customization,2024-09
+1919752,S3,Lower,18.6981,448.7556,Data Loss Prevention,2024-09
+1919755,S3,Lower,22.9087,549.8094,Data Loss Prevention,2024-09
+1919790,S3,Lower,6.0984,146.3628,Tabbed Browser,2024-09
+1919813,N/A,Unclassified,6.8225,163.7400,Address Bar,2024-09
+1919815,S3,Lower,7.0242,168.5814,Messaging System,2024-09
+1919829,--,Unclassified,1.2837,30.8092,Address Bar,2024-09
+1919857,N/A,Unclassified,11.9613,287.0708,Address Bar,2024-09
+1919863,--,Unclassified,5.6523,135.6564,Sidebar,2024-09
+1920228,--,Unclassified,0.9950,23.8800,Installer,2024-09
+1920242,S4,Lower,57.9040,1389.6958,Address Bar,2024-09
+1920241,N/A,Unclassified,16.9864,407.6731,Address Bar,2024-09
+1920016,--,Unclassified,60.8986,1461.5664,New Tab Page,2024-09
+1920032,S2,High,21.9732,527.3567,Address Bar,2024-09
+1920062,S3,Lower,25.3847,609.2331,New Tab Page,2024-09
+1920079,S2,High,25.3524,608.4567,New Tab Page,2024-09
+1920119,--,Unclassified,0.7230,17.3514,Messaging System,2024-09
+1920158,--,Unclassified,3.1063,74.5519,Messaging System,2024-09
+1920167,--,Unclassified,0.6039,14.4931,Search,2024-09
+1920235,N/A,Unclassified,83.8056,2011.3356,Sidebar,2024-09
+1920299,--,Unclassified,0.8912,21.3894,Messaging System,2024-09
+1920294,S4,Lower,38.7098,929.0364,Tabbed Browser,2024-09
+1920319,S4,Lower,9.2784,222.6817,Sidebar,2024-09
+1920359,--,Unclassified,1.7757,42.6169,Tabbed Browser,2024-09
+1920360,--,Unclassified,1.7714,42.5133,Tabbed Browser,2024-09
+1920515,S3,Lower,1.7471,41.9297,PDF Viewer,2024-09
+1920421,S3,Lower,2.1239,50.9725,Settings UI,2024-09
+1920423,S2,High,10.1552,243.7256,Site Permissions,2024-09
+1920489,S4,Lower,176.6149,4238.7583,Sidebar,2024-09
+1920493,N/A,Unclassified,0.8364,20.0731,Address Bar,2024-09
+1920542,--,Unclassified,16.8020,403.2483,Translations,2024-09
+1920557,--,Unclassified,0.4108,9.8600,New Tab Page,2024-09
+1920559,--,Unclassified,3.3956,81.4953,Sync,2024-09
+1920563,--,Unclassified,223.5756,5365.8147,Theme,2024-09
+1920575,--,Unclassified,8.5504,205.2106,Sidebar,2024-09
+1920693,--,Unclassified,1.9720,47.3292,Shell Integration,2024-09
+1920700,S3,Lower,1.1130,26.7117,Messaging System,2024-09
+1920731,--,Unclassified,1.7637,42.3283,Tabbed Browser,2024-09
+1920756,--,Unclassified,16.0959,386.3028,Messaging System,2024-09
+1920775,--,Unclassified,6.1241,146.9781,Tabbed Browser,2024-09
+1920788,--,Unclassified,1.6235,38.9647,New Tab Page,2024-09
+1920798,S3,Lower,51.8637,1244.7289,New Tab Page,2024-09
+1920799,--,Unclassified,21.0623,505.4958,Messaging System,2024-09
+1920806,--,Unclassified,2.0194,48.4658,Messaging System,2024-09
+1920656,--,Unclassified,1.0323,24.7744,PDF Viewer,2024-09
+1920666,--,Unclassified,0.4936,11.8456,Tabbed Browser,2024-09
+1920683,N/A,Unclassified,2.3984,57.5606,Theme,2024-09
+1920691,--,Unclassified,2.3580,56.5922,Tabbed Browser,2024-09
+1921126,N/A,Unclassified,27.9667,671.2006,Address Bar,2024-09
+1920958,--,Unclassified,1.4511,34.8253,Sidebar,2024-09
+1920971,--,Unclassified,0.8999,21.5967,Messaging System,2024-09
+1920988,--,Unclassified,0.8516,20.4378,New Tab Page,2024-09
+1921071,--,Unclassified,0.6493,15.5825,PDF Viewer,2024-09
+1920999,--,Unclassified,0.8290,19.8967,Security,2024-09
+1921012,--,Unclassified,1.5641,37.5383,Toolbars and Customization,2024-09
+1921107,S4,Lower,1.3230,31.7514,Translations,2024-09
+1921034,--,Unclassified,118.1968,2836.7228,Tabbed Browser,2024-09
+1921060,--,Unclassified,112.8972,2709.5317,Sidebar,2024-09
+1920852,N/A,Unclassified,7.3608,176.6594,Sync,2024-09
+1921092,S3,Lower,12.5578,301.3881,Address Bar,2024-09
+1921080,--,Unclassified,6.7613,162.2703,Messaging System,2024-09
+1920902,--,Unclassified,1.1045,26.5072,Sidebar,2024-09
+1921079,--,Unclassified,23.4877,563.7039,Data Loss Prevention,2024-09
+1920922,--,Unclassified,1.3592,32.6206,Tabbed Browser,2024-09
+1920926,S4,Lower,496.8719,11924.9264,Search,2024-09
+1921123,N/A,Unclassified,43.8905,1053.3722,Address Bar,2024-09
+1921073,S3,Lower,152.0588,3649.4122,Data Loss Prevention,2024-09
+1921072,N/A,Unclassified,16.6422,399.4117,Address Bar,2024-09
+1921336,S3,Lower,5.5515,133.2361,Sidebar,2024-09
+1921160,S4,Lower,1.6594,39.8258,Sidebar,2024-09
+1921174,S3,Lower,40.8904,981.3697,Address Bar,2024-09
+1921196,--,Unclassified,0.7651,18.3625,Theme,2024-09
+1921199,--,Unclassified,0.4612,11.0681,Theme,2024-09
+1921208,--,Unclassified,0.0982,2.3558,Messaging System,2024-09
+1921218,S3,Lower,112.1486,2691.5669,Settings UI,2024-09
+1921252,N/A,Unclassified,42.3092,1015.4219,Messaging System,2024-09
+1921257,S3,Lower,26.8112,643.4678,Sidebar,2024-09
+1921291,--,Unclassified,11.8388,284.1311,PDF Viewer,2024-09
+1921309,--,Unclassified,1.1513,27.6306,Sidebar,2024-09
+1921323,N/A,Unclassified,4.8682,116.8372,Address Bar,2024-09
+1921326,--,Unclassified,0.6005,14.4117,New Tab Page,2024-09
+1921335,--,Unclassified,26.5490,637.1764,New Tab Page,2024-09
+1921458,S3,Lower,31.3577,752.5842,File Handling,2024-09
+1921536,S3,Lower,166.6315,3999.1564,Sidebar,2024-09
+1921538,S3,Lower,128.8195,3091.6689,Sidebar,2024-09
+1921539,S3,Lower,4.5970,110.3275,Sidebar,2024-09
+1921549,N/A,Unclassified,5.5706,133.6956,Address Bar,2024-09
+1921564,--,Unclassified,0.4616,11.0792,New Tab Page,2024-09
+1921494,--,Unclassified,0.6822,16.3736,New Tab Page,2024-09
+1921617,--,Unclassified,3.0634,73.5219,Toolbars and Customization,2024-09
+1921775,S2,High,1.0599,25.4386,Messaging System,2024-09
+1921789,--,Unclassified,3.2987,79.1697,Sidebar,2024-09
+1921792,S3,Lower,1.0594,25.4264,New Tab Page,2024-09
+1921802,S4,Lower,79.5717,1909.7214,Tabbed Browser,2024-09
+1921811,S2,High,21.7273,521.4547,Address Bar,2024-09
+1921812,--,Unclassified,91.2272,2189.4522,Tabbed Browser,2024-09
+1921814,--,Unclassified,52.1090,1250.6153,Tabbed Browser,2024-09
+1921830,S3,Lower,50.8041,1219.2972,Tabbed Browser,2024-09
+1921835,S4,Lower,233.1756,5596.2136,Tabbed Browser,2024-09
+1921836,S3,Lower,36.6883,880.5203,Sidebar,2024-09
+1921854,--,Unclassified,1.6694,40.0667,Address Bar,2024-09
+1921858,S4,Lower,1.6602,39.8453,Tabbed Browser,2024-09
+1921857,--,Unclassified,79.9222,1918.1328,Tabbed Browser,2024-09
+1921893,S4,Lower,66.8347,1604.0317,Tabbed Browser,2024-09
+1921860,--,Unclassified,10.1616,243.8789,Tabbed Browser,2024-09
+1921719,S3,Lower,1.3620,32.6875,Shell Integration,2024-09
+1921731,S4,Lower,42.0221,1008.5303,Address Bar,2024-09
+1921748,--,Unclassified,2.9452,70.6844,Address Bar,2024-09
+1921761,S3,Lower,8.9106,213.8533,Sidebar,2024-09
+1921762,S3,Lower,1.9068,45.7625,Tabbed Browser,2024-09
+1922036,S3,Lower,17.5513,421.2308,Sidebar,2024-10
+1921951,S3,Lower,95.9885,2303.7250,Sidebar,2024-10
+1921959,S3,Lower,672.4574,16138.9767,Sidebar,2024-10
+1921982,--,Unclassified,4.3087,103.4094,Tabbed Browser,2024-10
+1921997,--,Unclassified,1.1214,26.9144,Sidebar,2024-10
+1922010,S3,Lower,42.2417,1013.7997,Shell Integration,2024-10
+1922024,S4,Lower,15.1980,364.7517,Messaging System,2024-10
+1922037,S4,Lower,8.6690,208.0553,Sidebar,2024-10
+1922043,S3,Lower,504.9628,12119.1078,Messaging System,2024-10
+1922063,--,Unclassified,6.7754,162.6086,PDF Viewer,2024-10
+1922114,S3,Lower,422.2807,10134.7369,Address Bar,2024-10
+1922343,--,Unclassified,16.5772,397.8517,Sidebar,2024-10
+1922398,S3,Lower,380.9957,9143.8978,New Tab Page,2024-10
+1922393,S4,Lower,5.3178,127.6269,Address Bar,2024-10
+1922147,--,Unclassified,2.1834,52.4006,Messaging System,2024-10
+1922217,--,Unclassified,1.4362,34.4697,Messaging System,2024-10
+1922262,--,Unclassified,8.3415,200.1953,Tabbed Browser,2024-10
+1922264,--,Unclassified,8.3398,200.1544,Sidebar,2024-10
+1922265,--,Unclassified,6.8360,164.0644,Tabbed Browser,2024-10
+1922268,S3,Lower,34.6274,831.0586,Tabbed Browser,2024-10
+1922276,--,Unclassified,34.2716,822.5172,Tabbed Browser,2024-10
+1922303,--,Unclassified,1.7983,43.1600,New Tab Page,2024-10
+1922307,S3,Lower,23.7613,570.2711,Theme,2024-10
+1922311,--,Unclassified,21.5309,516.7419,New Tab Page,2024-10
+1922316,--,Unclassified,1.2455,29.8928,Sidebar,2024-10
+1922329,N/A,Unclassified,42.7440,1025.8561,Enterprise Policies,2024-10
+1922664,--,Unclassified,46.4100,1113.8411,New Tab Page,2024-10
+1922596,--,Unclassified,21.4356,514.4536,Private Browsing,2024-10
+1922597,--,Unclassified,11.6575,279.7797,Installer,2024-10
+1922609,--,Unclassified,14.1278,339.0683,General,2024-10
+1922618,S3,Lower,4.4263,106.2303,PDF Viewer,2024-10
+1922646,S3,Lower,152.3780,3657.0725,Messaging System,2024-10
+1922655,--,Unclassified,13.3609,320.6606,Tabbed Browser,2024-10
+1922521,S2,High,8.8620,212.6883,Theme,2024-10
+1922526,--,Unclassified,8.8570,212.5681,Theme,2024-10
+1922535,S4,Lower,62.8399,1508.1581,Address Bar,2024-10
+1922546,S3,Lower,0.8120,19.4878,Sidebar,2024-10
+1922553,--,Unclassified,0.2817,6.7614,Normandy Client,2024-10
+1922570,S3,Lower,18.5024,444.0572,Address Bar,2024-10
+1922594,N/A,Unclassified,16.6461,399.5072,Messaging System,2024-10
+1922766,S3,Lower,23.1089,554.6139,PDF Viewer,2024-10
+1922725,S4,Lower,26.0084,624.2022,Sidebar,2024-10
+1922777,S3,Lower,262.9171,6310.0097,Sidebar,2024-10
+1922718,S4,Lower,302.3016,7255.2381,Sidebar,2024-10
+1922802,S2,High,18.1524,435.6578,Address Bar,2024-10
+1922898,S2,High,5.9010,141.6233,Theme,2024-10
+1923141,S3,Lower,0.7679,18.4300,New Tab Page,2024-10
+1922993,S2,High,15.5133,372.3189,Sidebar,2024-10
+1923029,S3,Lower,0.8358,20.0581,Installer,2024-10
+1923032,S3,Lower,7.2333,173.5992,Sidebar,2024-10
+1923041,S3,Lower,11.5153,276.3675,Sidebar,2024-10
+1923043,S4,Lower,15.3628,368.7064,Sidebar,2024-10
+1923052,S3,Lower,16.4739,395.3733,Sidebar,2024-10
+1923080,S3,Lower,17.6745,424.1881,Sidebar,2024-10
+1923088,--,Unclassified,0.6598,15.8344,PDF Viewer,2024-10
+1923112,S2,High,127.8187,3067.6489,New Tab Page,2024-10
+1923116,S3,Lower,330.6060,7934.5431,New Tab Page,2024-10
+1923125,S4,Lower,2.3027,55.2656,Profile Backup,2024-10
+1923186,--,Unclassified,1.6385,39.3247,New Tab Page,2024-10
+1923187,N/A,Unclassified,3.6599,87.8367,Address Bar,2024-10
+1923212,N/A,Unclassified,12.9856,311.6539,Address Bar,2024-10
+1923238,--,Unclassified,1.4215,34.1167,New Tab Page,2024-10
+1923388,S4,Lower,596.7363,14321.6719,Address Bar,2024-10
+1923448,S3,Lower,35.6170,854.8089,Shell Integration,2024-10
+1923512,--,Unclassified,2.5590,61.4158,Sidebar,2024-10
+1923240,--,Unclassified,1.4186,34.0475,New Tab Page,2024-10
+1923294,--,Unclassified,1.0060,24.1450,Tabbed Browser,2024-10
+1923306,S3,Lower,23.9511,574.8275,Sidebar,2024-10
+1923313,S3,Lower,3.9244,94.1861,New Tab Page,2024-10
+1923316,S2,High,7.0540,169.2964,New Tab Page,2024-10
+1923326,--,Unclassified,0.9122,21.8933,Sidebar,2024-10
+1923342,N/A,Unclassified,13.0991,314.3775,Messaging System,2024-10
+1923345,S4,Lower,62.2073,1492.9750,Messaging System,2024-10
+1923346,S3,Lower,34.1116,818.6781,Messaging System,2024-10
+1923363,S3,Lower,16.5682,397.6378,Toolbars and Customization,2024-10
+1923366,--,Unclassified,1.2962,31.1092,Sidebar,2024-10
+1923367,--,Unclassified,3.7925,91.0197,Theme,2024-10
+1923374,--,Unclassified,0.7941,19.0586,Address Bar,2024-10
+1923381,N/A,Unclassified,106.7745,2562.5892,Address Bar,2024-10
+1923383,S4,Lower,588.7458,14129.8992,Address Bar,2024-10
+1923704,--,Unclassified,160.0996,3842.3894,New Tab Page,2024-10
+1923753,--,Unclassified,21.2661,510.3867,Sidebar,2024-10
+1923752,--,Unclassified,30.4655,731.1719,Sidebar,2024-10
+1923550,S3,Lower,7.7158,185.1789,Address Bar,2024-10
+1923575,S3,Lower,13.3670,320.8083,Sidebar,2024-10
+1923593,S3,Lower,14.4387,346.5286,Tabbed Browser,2024-10
+1923635,--,Unclassified,0.3274,7.8581,Tabbed Browser,2024-10
+1923651,N/A,Unclassified,22.2617,534.2800,Tabbed Browser,2024-10
+1923652,N/A,Unclassified,44.7610,1074.2644,Tabbed Browser,2024-10
+1923653,N/A,Unclassified,43.2976,1039.1431,Tabbed Browser,2024-10
+1923655,S2,High,6.5733,157.7592,File Handling,2024-10
+1923686,S3,Lower,41.7057,1000.9375,Address Bar,2024-10
+1923689,N/A,Unclassified,35.7821,858.7714,Search,2024-10
+1923726,--,Unclassified,54.5532,1309.2764,Messaging System,2024-10
+1923944,S3,Lower,28.1360,675.2650,Messaging System,2024-10
+1923836,--,Unclassified,0.8261,19.8275,Sidebar,2024-10
+1923844,S4,Lower,1.9043,45.7033,Sidebar,2024-10
+1923865,N/A,Unclassified,5.3420,128.2083,Tabbed Browser,2024-10
+1923868,--,Unclassified,46.8322,1123.9722,Messaging System,2024-10
+1923877,S4,Lower,96.1506,2307.6144,Sidebar,2024-10
+1923878,S2,High,3.7665,90.3956,Messaging System,2024-10
+1923897,--,Unclassified,0.8035,19.2842,New Tab Page,2024-10
+1923900,--,Unclassified,1.7493,41.9825,Sidebar,2024-10
+1923946,--,Unclassified,6.1186,146.8469,Sidebar,2024-10
+1923972,--,Unclassified,13.3107,319.4569,Sidebar,2024-10
+1924193,S3,Lower,109.7112,2633.0681,Tabbed Browser,2024-10
+1924228,N/A,Unclassified,5.5678,133.6275,Address Bar,2024-10
+1924254,S4,Lower,0.2171,5.2111,Tabbed Browser,2024-10
+1924001,--,Unclassified,11.3774,273.0572,General,2024-10
+1924004,--,Unclassified,14.1154,338.7689,New Tab Page,2024-10
+1924036,--,Unclassified,1.0914,26.1931,Tabbed Browser,2024-10
+1924041,--,Unclassified,1.0824,25.9775,Tabbed Browser,2024-10
+1924071,N/A,Unclassified,28.1921,676.6108,Search,2024-10
+1924083,S3,Lower,12.1404,291.3706,Sidebar,2024-10
+1924095,S4,Lower,26.6347,639.2325,Profile Backup,2024-10
+1924105,--,Unclassified,3.6013,86.4306,Tabbed Browser,2024-10
+1924107,S2,High,10.5888,254.1322,Sidebar,2024-10
+1924126,S3,Lower,10.5576,253.3833,Sidebar,2024-10
+1924129,--,Unclassified,4.0587,97.4086,Tabbed Browser,2024-10
+1924163,--,Unclassified,0.6970,16.7278,New Tab Page,2024-10
+1924175,--,Unclassified,8.1420,195.4089,Firefox Accounts,2024-10
+1924192,--,Unclassified,7.4549,178.9186,Translations,2024-10
+1924349,--,Unclassified,179.7290,4313.4969,Sidebar,2024-10
+1924591,--,Unclassified,8.5020,204.0486,Messaging System,2024-10
+1924466,--,Unclassified,2.5388,60.9322,General,2024-10
+1924496,--,Unclassified,3.9314,94.3536,Theme,2024-10
+1924532,--,Unclassified,1.2873,30.8950,Tabbed Browser,2024-10
+1924534,--,Unclassified,10.5489,253.1742,Sidebar,2024-10
+1924566,S4,Lower,2.1646,51.9497,Session Restore,2024-10
+1924576,S3,Lower,135.5617,3253.4811,Sidebar,2024-10
+1924597,--,Unclassified,15.2537,366.0883,New Tab Page,2024-10
+1924650,--,Unclassified,1.5516,37.2372,Theme,2024-10
+1924666,S2,High,17.9854,431.6494,Address Bar,2024-10
+1924661,--,Unclassified,1.5144,36.3453,Address Bar,2024-10
+1924614,--,Unclassified,1.8478,44.3481,Messaging System,2024-10
+1924670,--,Unclassified,0.0716,1.7178,Sidebar,2024-10
+1924686,S2,High,0.0530,1.2725,Sidebar,2024-10
+1924693,S2,High,281.4546,6754.9114,Search,2024-10
+1924848,--,Unclassified,9.8717,236.9219,Messaging System,2024-10
+1924873,--,Unclassified,16.7097,401.0319,New Tab Page,2024-10
+1924971,--,Unclassified,15.2717,366.5214,Downloads Panel,2024-10
+1924968,--,Unclassified,1.4747,35.3933,Address Bar,2024-10
+1924926,S4,Lower,63.0343,1512.8242,Address Bar,2024-10
+1925095,--,Unclassified,519.4258,12466.2192,Messaging System,2024-10
+1925129,S3,Lower,4.4842,107.6217,Address Bar,2024-10
+1925004,--,Unclassified,0.8781,21.0733,Security,2024-10
+1924911,--,Unclassified,1.1349,27.2375,Address Bar,2024-10
+1924948,N/A,Unclassified,1.5315,36.7558,Search,2024-10
+1925058,--,Unclassified,1.2077,28.9839,New Tab Page,2024-10
+1925332,S3,Lower,6.4505,154.8122,Address Bar,2024-10
+1925235,S3,Lower,89.4914,2147.7936,Address Bar,2024-10
+1925251,--,Unclassified,0.4278,10.2683,Theme,2024-10
+1925258,--,Unclassified,25.1657,603.9761,Tabbed Browser,2024-10
+1925289,--,Unclassified,688.2702,16518.4842,Messaging System,2024-10
+1925312,S2,High,18.2420,437.8069,Tabbed Browser,2024-10
+1925339,--,Unclassified,1.5220,36.5278,New Tab Page,2024-10
+1925355,--,Unclassified,1.1064,26.5547,Address Bar,2024-10
+1925377,S3,Lower,11.5622,277.4925,Sync,2024-10
+1925380,S3,Lower,32.8071,787.3700,New Tab Page,2024-10
+1925388,--,Unclassified,691.9517,16606.8411,Sync,2024-10
+1925577,S3,Lower,7.7691,186.4592,General,2024-10
+1925643,S2,High,4.6356,111.2539,Address Bar,2024-10
+1925651,--,Unclassified,0.4813,11.5500,Firefox Accounts,2024-10
+1925425,--,Unclassified,20.0384,480.9211,Data Loss Prevention,2024-10
+1925426,N/A,Unclassified,5.9819,143.5653,Address Bar,2024-10
+1925451,S3,Lower,11.8292,283.9008,Sidebar,2024-10
+1925459,S4,Lower,49.0255,1176.6108,Address Bar,2024-10
+1925469,--,Unclassified,5.0039,120.0925,Sidebar,2024-10
+1925479,N/A,Unclassified,10.7577,258.1853,Site Permissions,2024-10
+1925488,--,Unclassified,5.4351,130.4422,General,2024-10
+1925496,S2,High,21.9582,526.9975,Address Bar,2024-10
+1925516,--,Unclassified,1.3711,32.9064,Session Restore,2024-10
+1925532,S3,Lower,25.1472,603.5328,Address Bar,2024-10
+1925543,S3,Lower,13.1604,315.8503,Messaging System,2024-10
+1925544,--,Unclassified,7.0635,169.5236,Tabbed Browser,2024-10
+1925556,S2,High,2.7996,67.1897,Messaging System,2024-10
+1925738,S3,Lower,2.8757,69.0158,Tabbed Browser,2024-10
+1925772,S3,Lower,283.8463,6812.3117,Shell Integration,2024-10
+1925780,--,Unclassified,2.5275,60.6608,Firefox Accounts,2024-10
+1925724,--,Unclassified,5.2664,126.3942,Tabbed Browser,2024-10
+1925734,N/A,Unclassified,3.1784,76.2814,Address Bar,2024-10
+1925735,N/A,Unclassified,4.6489,111.5739,Address Bar,2024-10
+1925743,S3,Lower,2.8337,68.0083,Tabbed Browser,2024-10
+1925823,--,Unclassified,121.0738,2905.7706,Screenshots,2024-10
+1925865,--,Unclassified,3.3502,80.4044,Messaging System,2024-10
+1925843,S2,High,1.6978,40.7472,Tabbed Browser,2024-10
+1925842,--,Unclassified,1.7029,40.8697,Tabbed Browser,2024-10
+1926100,S3,Lower,36.3538,872.4908,Translations,2024-10
+1925948,S2,High,0.1655,3.9719,Messaging System,2024-10
+1925955,S2,High,0.1396,3.3500,Messaging System,2024-10
+1925997,N/A,Unclassified,0.6523,15.6550,Session Restore,2024-10
+1926055,--,Unclassified,14.2153,341.1683,Tabbed Browser,2024-10
+1926056,--,Unclassified,3.9810,95.5450,New Tab Page,2024-10
+1926058,--,Unclassified,0.4873,11.6947,Tabbed Browser,2024-10
+1926065,--,Unclassified,3.4762,83.4297,Sidebar,2024-10
+1926108,S2,High,0.3374,8.0967,Firefox Accounts,2024-10
+1926116,--,Unclassified,18.5455,445.0922,Sidebar,2024-10
+1926118,N/A,Unclassified,184.5206,4428.4936,Address Bar,2024-10
+1926119,S4,Lower,2.0210,48.5050,Sidebar,2024-10
+1926120,S3,Lower,3.0132,72.3161,Toolbars and Customization,2024-10
+1926394,S4,Lower,2.3933,57.4400,Tabbed Browser,2024-10
+1926396,--,Unclassified,86.4263,2074.2308,Tabbed Browser,2024-10
+1926402,S3,Lower,561.9152,13485.9644,Messaging System,2024-10
+1926403,S3,Lower,31.0542,745.3011,Messaging System,2024-10
+1926435,S2,High,8.7632,210.3172,Address Bar,2024-10
+1926239,--,Unclassified,0.5048,12.1153,Address Bar,2024-10
+1926241,N/A,Unclassified,18.0011,432.0275,Address Bar,2024-10
+1926248,N/A,Unclassified,0.4909,11.7806,Tabbed Browser,2024-10
+1926254,N/A,Unclassified,73.4814,1763.5547,Tabbed Browser,2024-10
+1926293,S3,Lower,6.3706,152.8939,Tabbed Browser,2024-10
+1926295,S3,Lower,1.6445,39.4675,Tabbed Browser,2024-10
+1926315,--,Unclassified,1.5720,37.7278,Address Bar,2024-10
+1926343,--,Unclassified,1.7303,41.5264,Messaging System,2024-10
+1926348,--,Unclassified,7.7037,184.8897,Data Loss Prevention,2024-10
+1926354,S3,Lower,16.9648,407.1550,Tabbed Browser,2024-10
+1926359,S3,Lower,7.6995,184.7886,Tabbed Browser,2024-10
+1926360,S3,Lower,45.6688,1096.0514,Sidebar,2024-10
+1926362,--,Unclassified,45.1970,1084.7278,Data Loss Prevention,2024-10
+1926371,S3,Lower,21.1685,508.0431,Tabbed Browser,2024-10
+1926378,S2,High,2.4274,58.2575,Screenshots,2024-10
+1926379,N/A,Unclassified,56.0226,1344.5428,Address Bar,2024-10
+1926381,N/A,Unclassified,2.1308,51.1383,Address Bar,2024-10
+1926382,S3,Lower,24.1218,578.9239,Tabbed Browser,2024-10
+1926151,S3,Lower,10.1853,244.4461,Shell Integration,2024-10
+1926186,S4,Lower,45.4828,1091.5861,Tabbed Browser,2024-10
+1926390,--,Unclassified,27.1187,650.8483,Tabbed Browser,2024-10
+1926562,--,Unclassified,7.0171,168.4108,Messaging System,2024-10
+1926582,--,Unclassified,1.6134,38.7228,Tabbed Browser,2024-10
+1926585,--,Unclassified,1.6031,38.4744,Messaging System,2024-10
+1926647,S3,Lower,1.4476,34.7414,Sidebar,2024-10
+1926683,S3,Lower,267.6859,6424.4619,Sidebar,2024-10
+1926553,--,Unclassified,2.8861,69.2664,PDF Viewer,2024-10
+1926618,--,Unclassified,2.7569,66.1650,New Tab Page,2024-10
+1926554,--,Unclassified,0.1626,3.9033,Sidebar,2024-10
+1926563,S2,High,0.9809,23.5422,Messaging System,2024-10
+1926981,--,Unclassified,17.5840,422.0156,Tabbed Browser,2024-10
+1926788,S4,Lower,27.8459,668.3025,Sidebar,2024-10
+1926815,--,Unclassified,4.4761,107.4261,General,2024-10
+1926831,S4,Lower,27.2448,653.8756,Tabbed Browser,2024-10
+1926834,--,Unclassified,0.6884,16.5214,Tabbed Browser,2024-10
+1926893,S3,Lower,12.5842,302.0214,Sidebar,2024-10
+1926896,S2,High,6.0569,145.3650,Messaging System,2024-10
+1926897,S2,High,6.0537,145.2889,Messaging System,2024-10
+1926904,--,Unclassified,2.9025,69.6589,PDF Viewer,2024-10
+1926909,S2,High,6.0169,144.4064,Messaging System,2024-10
+1926961,S2,High,0.9136,21.9264,Firefox Accounts,2024-10
+1926963,--,Unclassified,1.6300,39.1189,New Tab Page,2024-10
+1926973,--,Unclassified,172.5953,4142.2881,Tabbed Browser,2024-10
+1926979,S3,Lower,34.0510,817.2244,Toolbars and Customization,2024-10
+1926984,S2,High,0.7967,19.1214,Firefox Accounts,2024-10
+1926991,--,Unclassified,1.4886,35.7264,Tabbed Browser,2024-10
+1927004,S3,Lower,5.4230,130.1517,Sync,2024-10
+1927230,S3,Lower,4.2145,101.1472,Sidebar,2024-10
+1927194,--,Unclassified,0.6097,14.6322,New Tab Page,2024-10
+1927207,S3,Lower,348.3035,8359.2833,Messaging System,2024-10
+1927220,S3,Lower,10.0011,240.0258,Address Bar,2024-10
+1927010,N/A,Unclassified,1.3487,32.3697,Address Bar,2024-10
+1927045,N/A,Unclassified,1.1221,26.9306,Address Bar,2024-10
+1927094,N/A,Unclassified,20.4427,490.6250,Tabbed Browser,2024-10
+1927097,S4,Lower,122.3682,2936.8372,Data Loss Prevention,2024-10
+1927101,S3,Lower,10.4274,250.2586,Headless,2024-10
+1927111,S3,Lower,5.4125,129.8989,Address Bar,2024-10
+1927113,S3,Lower,14.8865,357.2750,Address Bar,2024-10
+1927117,--,Unclassified,0.8714,20.9133,Enterprise Policies,2024-10
+1927120,--,Unclassified,16.9155,405.9719,Tabbed Browser,2024-10
+1927124,N/A,Unclassified,3.3642,80.7406,Address Bar,2024-10
+1927129,S3,Lower,45.8954,1101.4897,Data Loss Prevention,2024-10
+1927131,S4,Lower,42.3542,1016.5008,Data Loss Prevention,2024-10
+1927155,--,Unclassified,42.1224,1010.9386,General,2024-10
+1927304,S3,Lower,0.9723,23.3342,Keyboard Navigation,2024-10
+1927258,S3,Lower,130.4441,3130.6572,Sidebar,2024-10
+1927329,S3,Lower,1.8315,43.9561,Theme,2024-10
+1927472,S2,High,1.7916,42.9994,Messaging System,2024-10
+1927369,--,Unclassified,64.4064,1545.7525,Messaging System,2024-10
+1927373,--,Unclassified,29.1872,700.4928,Messaging System,2024-10
+1927385,--,Unclassified,16.3055,391.3328,Messaging System,2024-10
+1927386,--,Unclassified,36.0682,865.6364,Messaging System,2024-10
+1927387,--,Unclassified,12.2621,294.2908,Messaging System,2024-10
+1927408,--,Unclassified,2.3033,55.2781,General,2024-10
+1927421,S4,Lower,50.4789,1211.4925,Search,2024-10
+1927428,S3,Lower,2.4556,58.9339,Sidebar,2024-10
+1927441,--,Unclassified,0.3587,8.6097,General,2024-10
+1927450,S3,Lower,2.3802,57.1247,Messaging System,2024-10
+1927457,S4,Lower,614.3305,14743.9308,Sidebar,2024-10
+1927475,--,Unclassified,3.0576,73.3819,General,2024-10
+1927499,S3,Lower,1.5163,36.3911,Sidebar,2024-10
+1927502,--,Unclassified,9.5271,228.6503,Messaging System,2024-10
+1927504,--,Unclassified,113.5406,2724.9733,Messaging System,2024-10
+1927510,--,Unclassified,35.0767,841.8408,Messaging System,2024-10
+1927514,--,Unclassified,37.7243,905.3831,Messaging System,2024-10
+1927515,--,Unclassified,14.2096,341.0303,Messaging System,2024-10
+1927522,--,Unclassified,38.6721,928.1300,Messaging System,2024-10
+1927527,N/A,Unclassified,155.9440,3742.6567,Session Restore,2024-10
+1927540,S3,Lower,22.7406,545.7742,Tabbed Browser,2024-10
+1927614,--,Unclassified,107.7912,2586.9894,Messaging System,2024-10
+1927615,--,Unclassified,621.2486,14909.9661,Sidebar,2024-10
+1927618,--,Unclassified,322.7713,7746.5103,Messaging System,2024-10
+1927625,--,Unclassified,3.2499,77.9967,New Tab Page,2024-10
+1927917,--,Unclassified,27.5570,661.3678,New Tab Page,2024-10
+1927897,--,Unclassified,9.3598,224.6350,Sidebar,2024-10
+1927900,--,Unclassified,20.8382,500.1172,Tabbed Browser,2024-10
+1927908,--,Unclassified,3.5632,85.5172,New Tab Page,2024-10
+1927910,--,Unclassified,9.8297,235.9119,Tabbed Browser,2024-10
+1927915,--,Unclassified,17.5514,421.2344,New Tab Page,2024-10
+1927916,--,Unclassified,22.3603,536.6481,New Tab Page,2024-10
+1927902,--,Unclassified,9.0685,217.6436,New Tab Page,2024-10
+1927927,S3,Lower,77.0278,1848.6669,Tabbed Browser,2024-10
+1927942,N/A,Unclassified,400.4877,9611.7056,Address Bar,2024-10
+1927951,--,Unclassified,28.2099,677.0372,Search,2024-10
+1927904,--,Unclassified,21.0773,505.8550,New Tab Page,2024-10
+1927903,--,Unclassified,17.5644,421.5450,Tabbed Browser,2024-10
+1927644,--,Unclassified,15.3675,368.8194,Sync,2024-10
+1927750,--,Unclassified,97.6355,2343.2517,Messaging System,2024-10
+1927755,--,Unclassified,6.8269,163.8444,New Tab Page,2024-10
+1927761,--,Unclassified,27.1205,650.8922,Messaging System,2024-10
+1927765,N/A,Unclassified,44.9833,1079.5989,Session Restore,2024-10
+1927767,N/A,Unclassified,62.8241,1507.7772,Session Restore,2024-10
+1927768,N/A,Unclassified,51.8178,1243.6261,Session Restore,2024-10
+1927770,N/A,Unclassified,44.3117,1063.4814,Session Restore,2024-10
+1927774,N/A,Unclassified,27.8106,667.4536,Session Restore,2024-10
+1927776,S3,Lower,1.8074,43.3783,Data Loss Prevention,2024-10
+1927780,--,Unclassified,41.0076,984.1831,Address Bar,2024-10
+1927789,--,Unclassified,0.5445,13.0681,Tabbed Browser,2024-10
+1927796,S3,Lower,37.1236,890.9667,Data Loss Prevention,2024-10
+1927820,S2,High,1.0132,24.3175,Messaging System,2024-10
+1927857,--,Unclassified,3.6598,87.8350,New Tab Page,2024-10
+1927869,--,Unclassified,9.4114,225.8742,New Tab Page,2024-10
+1927870,--,Unclassified,17.6224,422.9386,New Tab Page,2024-10
+1927872,S3,Lower,687.0466,16489.1181,Messaging System,2024-10
+1927878,--,Unclassified,0.6138,14.7300,Messaging System,2024-10
+1927884,--,Unclassified,10.6048,254.5161,Tabbed Browser,2024-10
+1928129,S4,Lower,21.5054,516.1300,Theme,2024-10
+1928064,S4,Lower,117.8358,2828.0603,Data Loss Prevention,2024-10
+1928088,--,Unclassified,9.7959,235.1028,Address Bar,2024-10
+1928073,S2,High,412.1421,9891.4108,Firefox Accounts,2024-10
+1928106,--,Unclassified,0.5633,13.5183,PDF Viewer,2024-10
+1927960,N/A,Unclassified,3.3771,81.0511,Address Bar,2024-10
+1928116,--,Unclassified,9.7418,233.8042,Sidebar,2024-10
+1928107,S3,Lower,36.7546,882.1114,Nimbus Desktop Client,2024-10
+1928125,S3,Lower,37.6868,904.4836,Messaging System,2024-10
+1927994,S3,Lower,37.3922,897.4117,Tabbed Browser,2024-10
+1927992,S4,Lower,112.9728,2711.3461,Data Loss Prevention,2024-10
+1928119,--,Unclassified,1.0077,24.1839,Tabbed Browser,2024-10
