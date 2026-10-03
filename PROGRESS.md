@@ -8,9 +8,9 @@
 
 ## Current state
 
-- **Current step:** STEP 2 complete; STEPS 3–4 in progress (50-row sample inspected, 3,000-row sample pending).
-- **Next step:** Run `scripts/fetch_bugzilla_data.py --limit 3000` to confirm at-scale severity distribution, then decide final pull size.
-- **Blockers / open questions:** PostgreSQL 16 install pending (blocks STEP 5+, not STEPS 2–4).
+- **Current step:** STEPS 2–4 complete. 3,000-row dataset locked in as the project dataset.
+- **Next step:** STEP 5 — create `stg_bugs` in PostgreSQL and `\copy` the raw CSV in. **Needs PostgreSQL installed** (user is handling).
+- **Blockers / open questions:** PostgreSQL 16 install.
 
 ---
 
@@ -20,8 +20,8 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 
 - [x] **STEP 1** Initialize repository and project structure.
 - [x] **STEP 2** Create Bugzilla data-acquisition script.
-- [~] **STEP 3** Download and inspect actual dataset — 50-row sample done; 3,000-row sample pending.
-- [~] **STEP 4** Report real columns, values, missingness and severity distribution — initial findings logged (see Decisions log below).
+- [x] **STEP 3** Download and inspect actual dataset — 3,000-row sample saved to `data/raw/firefox_bugs.csv`.
+- [x] **STEP 4** Report real columns, values, missingness and severity distribution — see Decisions log and `docs/methodology.md`.
 - [ ] **STEP 5** Create PostgreSQL staging table.
 - [ ] **STEP 6** Import raw data.
 - [ ] **STEP 7** Create cleaning/transformation SQL.
@@ -82,6 +82,7 @@ Append each non-trivial decision with date + rationale.
 - **2026-10-03** — Environment: Python 3.12.7, Git 2.51.2, R + RStudio and Power BI Desktop installed. Fresh `.venv` created in-project with `requests`, `pandas`, `python-dateutil`. GitHub remote: `https://github.com/ZohaibRahim/Software_Quality_Verification_Analytics`. **PostgreSQL 16 pending install** (user is handling).
 - **2026-10-03** — 50-row Bugzilla sample inspected (`data/raw/firefox_bugs.csv`). All 12 requested fields returned. Severity values observed: `S2`, `S3`, `S4`, plus `--` and `N/A` (missing-severity, 52% of the sample). `S1` absent in this tiny slice. 50 rows span only 2024-01-01 → 2024-01-09, so a full 2024-01-01→today pull would be very large; a cap is needed. `cf_last_resolved` missing 0/50 in this slice. Priority `--` is common; handled by `COALESCE('Unspecified')`.
 - **2026-10-03** — Severity cleaning decision: map `--` and `N/A` to `severity_group = 'Unclassified'` and KEEP them in `fact_bug` (so dashboard counts/trends aren't biased), but EXCLUDE them from the Wilcoxon test and from the High-Severity % metric. Only genuinely unexpected codes (anything outside `{S1,S2,S3,S4,--,N/A}`) would be quarantined with reason `UNKNOWN_SEVERITY`. See `docs/methodology.md`.
+- **2026-10-03** — 3,000-row sample locked as the project dataset. Rationale: brief §3 says "do not increase dataset size unnecessarily", and we have 1,173 clean S1–S4 defects (139 High + 1,034 Lower) — comfortable for Wilcoxon. Date range of this snapshot: 2024-01-01 → 2024-10-30. **Caveat to call out in the write-up:** S1 count is 1/3,000, so the "High" group is effectively S2 only.
 
 ---
 

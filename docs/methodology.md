@@ -34,7 +34,15 @@ Original severity values are preserved. A derived `severity_group` is added:
 |---|---|
 | S1, S2 | High |
 | S3, S4 | Lower |
-| anything else | Unclassified |
+| `--`, `N/A` | Unclassified |
+| anything else | → quarantined with reason `UNKNOWN_SEVERITY` |
+
+**Observed distribution (3,000-row sample on 2026-10-03):**
+S1 = 1, S2 = 138, S3 = 690, S4 = 344, `--` = 1,298, `N/A` = 529.
+
+**S1 is effectively absent in Firefox FIXED bugs** — the "High-severity" group in the Wilcoxon test is driven ~99% by S2. This is called out in the statistical write-up and in `root_cause_analysis.md`.
+
+Unclassified rows are **kept** in `fact_bug` so dashboard totals and arrival trends reflect the full population. They are **excluded** from the Wilcoxon test and from the High-Severity % metric (which uses `severity_group = 'High'` only).
 
 ## Headline metrics
 

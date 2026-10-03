@@ -26,9 +26,11 @@ UNION ALL
 SELECT 'date',              f.bug_id FROM fact_bug f LEFT JOIN dim_date      dd ON dd.date_key      = f.created_date_key WHERE dd.date_key   IS NULL;
 
 -- QA 4: Severity whitelist
+--     S1-S4 are the analytical categories.
+--     '--' and 'N/A' are Mozilla's "unset" codes; mapped to Unclassified, not quarantined.
 SELECT severity
 FROM dim_severity
-WHERE severity NOT IN ('S1','S2','S3','S4');
+WHERE severity NOT IN ('S1','S2','S3','S4','--','N/A');
 
 -- QA 5: Timestamp integrity in staging
 SELECT bug_id, creation_time, last_resolved_time
