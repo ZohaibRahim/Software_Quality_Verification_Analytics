@@ -96,6 +96,12 @@ Wilcoxon rank-sum test comparing resolution-time distributions of **high-severit
 
 **Result (2026-10-03 snapshot):** High (n=139) median 8.86 d vs Lower (n=1,034) median 13.61 d; **W = 58,544, p = 0.00038** — significant at α = 0.05. Direction is opposite of the naive guess (severe = complex = slow), consistent with triage prioritization. Full write-up in `docs/methodology.md`. Diagnostic plots in `images/hist_resolution_by_severity.png` and `images/box_resolution_by_severity.png`.
 
+## Monte Carlo Backlog Forecast
+
+A simulation layer (`scripts/monte_carlo_backlog.py`) answers an operational planning question: **how many defects remain unfixed at a 90-day ship date under different staffing levels?** Arrivals modeled as a Poisson process (λ = 9.87/day, estimated from throughput); service times bootstrapped from the empirical `resolution_days` distribution (no parametric fit — the real distribution is too heavy-tailed to fit cleanly).
+
+**Result:** At baseline staffing, median **252** defects open at ship (P95 = 279). +25% staffing drops the median by 27, +50% by 48 — diminishing returns driven by the service-time tail. Full write-up: `docs/simulation.md`.
+
 ## Power BI Dashboard
 
 One page: 4 KPI cards + 4 analytical visuals (defect arrival trend, severity mix, resolution by component Top-10-by-volume, resolution by severity) + 4 slicers (Date, Component, Severity, Priority). File: `powerbi/quality_verification_dashboard.pbix`. Screenshot: `images/dashboard.png`.
@@ -136,7 +142,8 @@ software-quality-verification-analytics/
 │   ├── raw/
 │   └── processed/
 ├── scripts/
-│   └── fetch_bugzilla_data.py
+│   ├── fetch_bugzilla_data.py
+│   └── monte_carlo_backlog.py
 ├── sql/
 │   ├── 01_create_staging.sql
 │   ├── 02_clean_transform.sql
@@ -152,6 +159,7 @@ software-quality-verification-analytics/
 │   ├── dashboard_user_guide.md
 │   ├── root_cause_analysis.md
 │   ├── methodology.md
+│   ├── simulation.md
 │   └── resume_bullets.md
 └── images/
     └── dashboard.png
@@ -167,4 +175,4 @@ software-quality-verification-analytics/
 
 ## Technologies
 
-PostgreSQL · SQL · R · Power BI · DAX · Python · REST API · Git/GitHub · Dimensional Modelling · Statistical Hypothesis Testing · Data Quality Validation · Root-Cause Analysis
+PostgreSQL · SQL · R · Power BI · DAX · Python · REST API · Git/GitHub · Dimensional Modelling · Statistical Hypothesis Testing · Data Quality Validation · Root-Cause Analysis · Monte Carlo Simulation

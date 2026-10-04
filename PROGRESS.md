@@ -8,8 +8,8 @@
 
 ## Current state
 
-- **Current step:** ALL STEPS 1–23 COMPLETE. MVP shipped.
-- **Next step:** Optional polish — PDF export of user guide, further Power BI formatting, additional analysis pages. None required.
+- **Current step:** ALL STEPS 1–23 COMPLETE + **STEP 24 (Monte Carlo simulation extension) COMPLETE**.
+- **Next step:** Optional polish only.
 - **Blockers / open questions:** None.
 
 ---
@@ -41,6 +41,7 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 - [x] **STEP 21** Write user guide and methodology — `docs/dashboard_user_guide.md`, `docs/methodology.md`.
 - [x] **STEP 22** Complete README — all sections populated with real numbers.
 - [x] **STEP 23** Generate final evidence/results for resume bullets — `docs/resume_bullets.md`.
+- [x] **STEP 24** Monte Carlo backlog-forecast simulation — `scripts/monte_carlo_backlog.py`, `docs/simulation.md`, results CSV + 2 PNGs.
 
 ---
 
@@ -122,6 +123,14 @@ Append each non-trivial decision with date + rationale.
 - Wilcoxon test statistic W: 58,544
 - p-value: 0.00038
 - Conclusion at α = 0.05: **statistically significant difference**; high-severity defects resolve FASTER (opposite of naive expectation, consistent with triage prioritization). Observational — not causal.
+
+### Monte Carlo backlog forecast (5,000 trials, 90-day horizon)
+- Arrival rate: λ = 9.87 defects/day (from throughput).
+- Service times: bootstrap from empirical `resolution_days` (3,000 obs).
+- Baseline (100% staffing): median 252 open at ship, P95 = 279.
+- +25% staffing: median 225 (−11% vs baseline), P95 = 251.
+- +50% staffing: median 204 (−19% vs baseline), P95 = 227.
+- Diminishing returns driven by heavy-tailed service-time distribution.
 
 ### Root-cause investigation
 - Metric movement observed: median resolution days rose from **8.47 → 14.39 (+69.9%)** between Apr 2024 and May 2024, then returned to 8.16 days in Jun 2024.

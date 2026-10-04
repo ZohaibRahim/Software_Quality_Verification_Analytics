@@ -9,6 +9,7 @@ Based on actual measured results. Verified against `PROGRESS.md` and the SQL / R
 - Modelled **3,000 Mozilla Firefox software defects** into a PostgreSQL star schema (1 fact + 4 conformed dims) and built a Power BI quality dashboard tracking defect arrivals, severity mix, component performance, and median resolution time (**9.56 days**).
 - Tested the relationship between defect severity and resolution time in R using a **Wilcoxon rank-sum test**, finding that high-severity defects (S1+S2) resolved in a median of **8.86 days vs 13.61 days** for lower-severity (**p = 0.00038**, n = 1,173) — consistent with triage prioritization and reported as association rather than causation.
 - Implemented **7 data-quality validation rules**, reconciled Power BI measures against SQL outputs (0 discrepancies), and investigated a **+69.9% month-over-month median resolution spike (Apr→May 2024)** — attributing it to a cross-component, time-based slowdown rather than a mix shift after decomposition by severity and component.
+- Built a **Monte Carlo backlog-forecast simulation** in Python (5,000 trials, bootstrap sampling of empirical resolution times) projecting defects open at a 90-day ship date under four staffing scenarios — baseline forecast median **252 defects (P95 = 279)**, with +25% staffing cutting the median by 11% and showing diminishing returns driven by the heavy-tailed service-time distribution.
 
 ---
 
