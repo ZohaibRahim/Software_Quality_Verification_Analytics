@@ -100,18 +100,18 @@ Wilcoxon rank-sum test comparing resolution-time distributions of **high-severit
 
 A simulation layer (`scripts/monte_carlo_backlog.py`) answers an operational planning question: **how many defects remain unfixed at a 90-day ship date?** Arrivals via **week-block resampling** of observed daily counts (preserves the real var/mean = 5.45 burstiness Poisson misses); service times bootstrapped from empirical `resolution_days`; staffing as `service / k^α` with elasticity α ∈ {0.3 heavy diminishing, 0.6 realistic, 1.0 linear best-case}.
 
-**Forecast:** at baseline staffing, median 248 open at ship (P95 ≈ 286). +50% staffing cuts baseline backlog by **6%–19%** depending on α — reported as a range, not a point estimate, because the project has no operational data to pin α down.
+**Forecast:** at baseline staffing, median 248 open at ship (P95 ≈ 286). +50% staffing cuts baseline backlog by **6%–19%** depending on α — reported as a range because the project has no operational data to pin α down.
 
-**Rolling backtest (`scripts/monte_carlo_backtest.py`):** 4 expanding-train / 3-month-test windows across 2024.
+**Rolling backtest with naive baseline (`scripts/monte_carlo_backtest.py`):** 4 overlapping expanding-train / 3-month-test windows across 2024. Model vs a naive "use last 3 months' actual" persistence forecast.
 
-| Train end | Test window | Actual | Predicted mean | 95% range | Error |
-|---|---|---|---|---|---|
-| Apr 1 | Apr–Jun | 265 | 247 | [202, 296] | −6.7% |
-| May 1 | May–Jul | 265 | 249 | [206, 294] | −6.1% |
-| Jun 1 | Jun–Aug | 233 | 250 | [209, 296] | +7.5% |
-| Jul 1 | Jul–Sep | 231 | 255 | [212, 300] | +10.6% |
+| Test window | Actual | Naive | Model | 95% range | Width | Naive err | Model err | Inside |
+|---|---:|---:|---:|---:|---:|---:|---:|:---:|
+| Apr–Jun | 265 | 272 | 247 | [202, 296] | 38.0% | +2.6% | −6.7% | ✓ |
+| May–Jul | 265 | 269 | 249 | [206, 294] | 35.4% | +1.5% | −6.1% | ✓ |
+| Jun–Aug | 233 | 263 | 250 | [209, 296] | 34.7% | +12.9% | +7.5% | ✓ |
+| Jul–Sep | 231 | 265 | 255 | [212, 300] | 34.5% | +14.7% | +10.6% | ✓ |
 
-**4 of 4 windows inside the predicted 95% range. Mean |% error| = 7.7%.** Full write-up: `docs/simulation.md`.
+**Model |%| error = 7.7% vs naive 7.9%** — model marginally beats a persistence baseline, winning on the two windows where the backlog trends down. All four actuals land inside the predicted 95% range, though the ranges average 36% of the point estimate so coverage is a generous test. The model's real value add over naive is the calibrated uncertainty intervals and the ability to run staffing counterfactuals. Full write-up: `docs/simulation.md`.
 
 ## Power BI Dashboard
 

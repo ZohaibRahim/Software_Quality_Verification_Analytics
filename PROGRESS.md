@@ -43,7 +43,8 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 - [x] **STEP 23** Generate final evidence/results for resume bullets — `docs/resume_bullets.md`.
 - [x] **STEP 24** Monte Carlo backlog-forecast simulation (v1) — Poisson arrivals + bootstrap service.
 - [x] **STEP 25** Simulation upgrade: staffing elasticity α, dispersion diagnostic, 5-seed convergence, single-window backtest.
-- [x] **STEP 26** Week-block arrival resampling (replaces Poisson, preserves var/mean = 5.45 burstiness); rolling 4-window backtest with coverage + mean |% error| reporting; proper Monte Carlo SE in forecast table. Result: 4/4 windows inside 95% range, mean |% error| = 7.7%.
+- [x] **STEP 26** Week-block arrival resampling (replaces Poisson, preserves var/mean = 5.45 burstiness); rolling 4-window backtest with coverage + mean |% error| reporting; proper Monte Carlo SE in forecast table.
+- [x] **STEP 27** Honest backtest: naive persistence baseline (last 3 months' actual); report 95% range width alongside coverage; delete the wrong "upward bias" explanation (it only applied in 2 of 4 windows and the missing-bug effect hits train and test alike). Verdict: model marginally beats naive (7.7% vs 7.9%).
 
 ---
 
@@ -132,7 +133,7 @@ Append each non-trivial decision with date + rationale.
 - Daily-arrival dispersion var/mean = **5.45** (overdispersed vs Poisson = 1).
 - MC SE: baseline median 248.4 ± 0.24, P95 285.8 ± 0.37 across 5 seeds.
 - Staffing elasticity α ∈ {0.3, 0.6, 1.0}: +50% staff cuts baseline (248) by **6% (α=0.3) to 19% (α=1.0)**.
-- **Rolling backtest, 4 windows across 2024:** coverage = **4/4 inside predicted 95% range**; mean |% error| = **7.7%**; errors range −6.7% to +10.6% with slight upward bias in late windows (consistent with the small undercount from unresolved bugs still open at fetch date).
+- **Rolling backtest with naive baseline, 4 overlapping 2024 windows:** model mean |% error| = **7.7%** vs naive persistence (last 3 months' actual) **7.9%** — model wins marginally, driven by the two trending windows. Coverage = 4/4 inside 95% range but range width averages 36% of the point estimate (so coverage is a generous test). Real value add over naive: calibrated intervals + staffing counterfactuals.
 
 ### Root-cause investigation
 - Metric movement observed: median resolution days rose from **8.47 → 14.39 (+69.9%)** between Apr 2024 and May 2024, then returned to 8.16 days in Jun 2024.

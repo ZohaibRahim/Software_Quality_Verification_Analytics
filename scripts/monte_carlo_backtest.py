@@ -1,16 +1,17 @@
 """
 monte_carlo_backtest.py
 
-Rolling walk-forward validation. Four windows: training ends at the first
-of April, May, June, July 2024 respectively; each predicts the following
-three months and compares to actual bugs created in-window still open at
-window end. Reports coverage (how often actual lands in the predicted 95%
-range) and mean |% error|.
+Rolling walk-forward validation with a naive baseline.
 
-Arrivals: week-block resampling of training daily counts (preserves
-    burstiness, matching the main forecast script).
-Service: bootstrap of training resolution_days.
-Staffing: k=1.0, alpha=1.0 (we're predicting actual history, no scenario).
+Four overlapping windows (expanding train, 3-month test, sliding by 1 month).
+For each window: train the simulation on the training data, predict open-at-
+test-end, compare to actual AND to a naive forecast = actual of the 3 months
+immediately preceding the test window.
+
+Reports:
+  - coverage of the model's 95% range
+  - range width (so coverage can be read against band tightness)
+  - mean |% error| of the model vs the naive baseline
 """
 
 from __future__ import annotations
@@ -60,7 +61,8 @@ def main() -> int:
 
     results = []
     print(f"Rolling walk-forward backtest ({TRIALS:,} trials x {len(SEEDS)} seeds per window):\n")
-    header = f"{'window':<34} {'train_n':>7} {'test_n':>7} {'actual':>7} {'pred_mean':>9} {'95% lo':>7} {'95% hi':>7} {'err%':>7} {'inside':>7}"
+    header = (f"{'test window':<22} {'actual':>7} {'naive':>6} {'model':>6} "
+              f"{'95% range':>12} {'width%':>7} {'naive_err%':>10} {'model_err%':>10} {'inside':>7}")
     print(header); print("-" * len(header))
 
     for ts, te, vs, ve in WINDOWS:
@@ -68,36 +70,49 @@ def main() -> int:
         VS, VE = pd.Timestamp(vs, tz="UTC"), pd.Timestamp(ve, tz="UTC")
         tr = df[(df.creation_time >= TS) & (df.creation_time < TE)]
         te_df = df[(df.creation_time >= VS) & (df.creation_time < VE)]
+        horizon = (VE - VS).days
 
+        # Train/predict
         idx = pd.date_range(TS, TE - pd.Timedelta(days=1), freq="D", tz="UTC")
         daily = tr.set_index("creation_time").resample("D").size().reindex(idx, fill_value=0).to_numpy()
         service = tr["res_days"].to_numpy()
-        horizon = (VE - VS).days
-
         all_counts = np.concatenate([
             simulate(service, daily, TRIALS, horizon, np.random.default_rng(s))
             for s in SEEDS
         ])
         pred_mean = all_counts.mean()
         lo, hi = np.percentile(all_counts, [2.5, 97.5])
+
+        # Actual
         actual = int((te_df["resolved"] > VE).sum())
-        err_pct = 100 * (pred_mean - actual) / actual if actual else float("nan")
+
+        # Naive baseline: open-at-end of the 3 months IMMEDIATELY BEFORE the test window
+        NS = VS - pd.Timedelta(days=horizon)
+        naive_df = df[(df.creation_time >= NS) & (df.creation_time < VS)]
+        naive = int((naive_df["resolved"] > VS).sum())
+
+        model_err = 100 * (pred_mean - actual) / actual if actual else float("nan")
+        naive_err = 100 * (naive - actual) / actual if actual else float("nan")
+        width_pct = 100 * (hi - lo) / pred_mean
         inside = int(lo <= actual <= hi)
-        results.append({
-            "train": f"{ts}->{te}", "test": f"{vs}->{ve}",
-            "train_n": len(tr), "test_n": len(te_df), "actual": actual,
-            "pred_mean": pred_mean, "lo": lo, "hi": hi,
-            "err_pct": err_pct, "inside": inside,
-        })
-        w = f"train {ts[5:]}->{te[5:]} test {vs[5:]}->{ve[5:]}"
-        print(f"{w:<34} {len(tr):>7} {len(te_df):>7} {actual:>7} {pred_mean:>9.1f} {lo:>7.0f} {hi:>7.0f} {err_pct:>+7.1f} {inside:>7}")
+
+        results.append({"test": f"{vs}->{ve}", "actual": actual, "naive": naive,
+                        "pred_mean": pred_mean, "lo": lo, "hi": hi,
+                        "width_pct": width_pct, "model_err": model_err,
+                        "naive_err": naive_err, "inside": inside})
+        w = f"{vs[5:]}->{ve[5:]}"
+        print(f"{w:<22} {actual:>7} {naive:>6} {pred_mean:>6.1f} "
+              f"[{lo:>4.0f}, {hi:>4.0f}] {width_pct:>6.1f}% {naive_err:>+9.1f}% {model_err:>+9.1f}% {inside:>7}")
 
     r = pd.DataFrame(results)
-    coverage = r["inside"].mean()
-    mape = np.abs(r["err_pct"]).mean()
-    print(f"\nCoverage: {int(r['inside'].sum())}/{len(r)} windows inside predicted 95% range  "
-          f"(target: ~0.95 under correct uncertainty).")
-    print(f"Mean |% error|: {mape:.1f}%.")
+    print(f"\nCoverage (model):  {int(r['inside'].sum())}/{len(r)} windows inside 95% range "
+          f"(width averages {r['width_pct'].mean():.1f}% of the point estimate).")
+    print(f"Mean |% error|:    model = {r['model_err'].abs().mean():.1f}%   "
+          f"naive = {r['naive_err'].abs().mean():.1f}%.")
+    verdict = ("model BEATS naive" if r['model_err'].abs().mean() < r['naive_err'].abs().mean()
+               else "naive BEATS model" if r['naive_err'].abs().mean() < r['model_err'].abs().mean()
+               else "tied")
+    print(f"Verdict:           {verdict}.")
     return 0
 
 
