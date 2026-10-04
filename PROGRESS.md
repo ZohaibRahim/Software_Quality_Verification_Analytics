@@ -8,8 +8,8 @@
 
 ## Current state
 
-- **Current step:** STEPS 5–11 complete. SQL pipeline end-to-end: staging → clean/quarantine → star schema → QA passing → R-ready export written to `data/processed/analysis_dataset.csv`.
-- **Next step:** STEP 12 — exploratory stats + Wilcoxon test in R. User runs `r/hypothesis_test.R` in RStudio; I'll walk through the output.
+- **Current step:** STEPS 12–14 complete. Wilcoxon ran clean; result is significant and in the opposite direction of the naive guess (high-severity resolves FASTER).
+- **Next step:** STEP 15 — connect Power BI Desktop to the `qa_project` database. User installs the Npgsql connector and sets up the connection; I'll give exact clicks.
 - **Blockers / open questions:** None.
 
 ---
@@ -29,9 +29,9 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 - [x] **STEP 9** Build star schema (`fact_bug` 3000 + 4 dims).
 - [x] **STEP 10** Run QA checks — all 7 passed; metrics: 3000 defects, median 9.56 days, 139 high-severity.
 - [x] **STEP 11** Generate processed analytical dataset for R (`data/processed/analysis_dataset.csv`, 3000 rows).
-- [ ] **STEP 12** Perform exploratory statistics in R.
-- [ ] **STEP 13** Perform Wilcoxon hypothesis test.
-- [ ] **STEP 14** Interpret results.
+- [x] **STEP 12** Perform exploratory statistics in R (summary tibble + histogram + log-boxplot).
+- [x] **STEP 13** Perform Wilcoxon hypothesis test (W=58544, p=0.00038).
+- [x] **STEP 14** Interpret results — see Statistical test block below and README Key Findings.
 - [ ] **STEP 15** Connect Power BI to PostgreSQL.
 - [ ] **STEP 16** Create data model and DAX measures.
 - [ ] **STEP 17** Build dashboard.
@@ -113,13 +113,15 @@ Append each non-trivial decision with date + rationale.
 - Dates with activity: 279 (2024-01-01 → 2024-10-30)
 
 ### Statistical test
-- High-severity n: _TBD_
-- Lower-severity n: _TBD_
-- High-severity median resolution days: _TBD_
-- Lower-severity median resolution days: _TBD_
-- Wilcoxon test statistic: _TBD_
-- p-value: _TBD_
-- Conclusion at α = 0.05: _TBD_
+- High-severity n: 139 (S1=1, S2=138)
+- Lower-severity n: 1,034 (S3=690, S4=344)
+- High-severity median resolution days: 8.86
+- Lower-severity median resolution days: 13.61
+- High-severity mean: 32.3 days (sd 77.8) — right-skewed
+- Lower-severity mean: 70.8 days (sd 153) — right-skewed
+- Wilcoxon test statistic W: 58,544
+- p-value: 0.00038
+- Conclusion at α = 0.05: **statistically significant difference**; high-severity defects resolve FASTER (opposite of naive expectation, consistent with triage prioritization). Observational — not causal.
 
 ### Root-cause investigation
 - Metric movement observed: _TBD_

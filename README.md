@@ -104,7 +104,13 @@ Documented in `docs/root_cause_analysis.md` once a meaningful metric movement is
 
 ## Key Findings
 
-_To be populated from actual results. No fabricated numbers._
+_Based on the 3,000-row Firefox FIXED-defects snapshot (2024-01-01 → 2024-10-30)._
+
+- **Dataset survived QA cleanly:** 3,000 raw records in, 3,000 valid analytical records out, 0 quarantined, all 7 QA rules passing. Dashboard metrics reconcile against SQL.
+- **Headline metrics:** 3,000 defects · median resolution 9.56 days · 139 high-severity (4.63%) · 44 components · 279 active days.
+- **Severity is associated with resolution time (Wilcoxon rank-sum, p = 0.00038):** high-severity defects (S1+S2, n=139) resolve in a median of 8.86 days vs 13.61 days for lower-severity (S3+S4, n=1,034). The direction is **opposite** of the naive expectation that severe = complex = slow — consistent with triage prioritization accelerating high-severity work. Observational finding; no causal claim.
+- **Severity caveat:** S1 is effectively absent in the dataset (1/3,000). The "High" group is driven ~99% by S2.
+- **Distribution shape:** both groups are heavily right-skewed. Mean ≫ median in both (High 32 vs 9; Lower 71 vs 14). Median is the honest headline metric.
 
 ## Limitations
 

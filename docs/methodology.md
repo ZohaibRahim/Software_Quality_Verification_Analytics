@@ -97,6 +97,14 @@ Choice of test:
 
 Interpretation rule: a significant p-value supports a difference in distributions. It does **not** establish causation. Severity is observational, not randomized.
 
+### Observed result (2026-10-03)
+
+- High (S1+S2) n = 139, median = 8.86 days.
+- Lower (S3+S4) n = 1,034, median = 13.61 days.
+- Wilcoxon W = 58,544, p = 0.00038.
+- At α = 0.05 the difference is statistically significant.
+- Direction: high-severity resolves FASTER than lower-severity — consistent with triage prioritization. Not causal.
+
 ## Known limitations
 
 - Mozilla Firefox is a **public proxy**; results do not describe any specific private organization's QA process.
