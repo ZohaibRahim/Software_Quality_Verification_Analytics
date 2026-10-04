@@ -1,10 +1,10 @@
 # Dashboard User Guide — Software Quality Verification Overview
 
-> **Status:** skeleton. Populate concrete numbers and screenshots after the pipeline runs end-to-end.
+One page. Written for a stakeholder opening the dashboard for the first time.
 
 ## Purpose
 
-The Software Quality Verification Overview dashboard summarizes defect-arrival volume, resolution-time performance, and severity mix for Firefox defects, to help QA stakeholders answer:
+Summarizes defect-arrival volume, resolution-time performance, and severity mix for Firefox defects, to help QA stakeholders answer:
 
 - Is defect volume rising?
 - Which components are slowest to resolve?
@@ -13,53 +13,58 @@ The Software Quality Verification Overview dashboard summarizes defect-arrival v
 
 ## Data Source
 
-Mozilla Bugzilla REST API → PostgreSQL star schema. Only Firefox defects resolved as FIXED since 2024-01-01 are included.
+Mozilla Bugzilla REST API → PostgreSQL (`qa_project` on `localhost:5433`) → Power BI (Import mode). Only Firefox defects resolved as FIXED since 2024-01-01 are included. Snapshot captured 2026-10-03 covers 2024-01-01 → 2024-10-30 (3,000 defects).
 
 ## Data Refresh
 
-Manual. Re-run `scripts/fetch_bugzilla_data.py`, reload SQL (01→06), and refresh the Power BI dataset.
+Manual. Re-run `scripts/fetch_bugzilla_data.py`, re-run `sql/01` → `sql/05`, then **Power BI → Home → Refresh**.
 
-## Dashboard KPIs
+## Dashboard KPIs (observed values on this snapshot)
 
-1. **Total Defects**
-2. **Median Resolution Days**
-3. **High-Severity Defects**
-4. **High-Severity %**
-
-See `docs/methodology.md` for definitions.
-
-## Metric Definitions
-
-| Metric | Definition |
-|---|---|
-| Total Defects | Count of valid FIXED Firefox defects after QA filtering. |
-| Median Resolution Days | Median of `resolution_days` across the analytical population. |
-| High-Severity Defects | Count where severity ∈ {S1, S2}. |
-| High-Severity % | High-Severity Defects / Total Defects. |
+| KPI | Value | Definition |
+|---|---|---|
+| Total Defects | 3,000 | Count of valid FIXED Firefox defects after QA filtering. |
+| Median Resolution Days | 9.56 | Median of `resolution_days` across the analytical population. |
+| High-Severity Defects | 139 | Count where severity ∈ {S1, S2}. |
+| High-Severity % | 4.63% | High-Severity Defects / Total Defects. |
 
 ## Available Filters
 
-- Date
-- Component
-- Severity
-- Priority
+- **Date** — range slicer over `dim_date.full_date`.
+- **Component** — dropdown over 44 Firefox components.
+- **Severity** — tiles for S1 / S2 / S3 / S4 / `--` / `N/A`.
+- **Priority** — dropdown for P1–P5 and `--`.
 
-Filters apply to all visuals on the page.
+All filters apply to all visuals.
 
-## How to Interpret the Dashboard
+## How to Interpret
 
-- **Defect Arrival Trend** — monthly defect counts. Watch for sustained changes rather than single-month blips.
-- **Severity Mix** — S1–S4 distribution. Shifts here feed into both the headline metric and the Wilcoxon result.
-- **Resolution by Component** — top 10 by volume. Low-volume components may look extreme and should be interpreted alongside count.
-- **Resolution by Severity** — pairs with the R hypothesis test.
+- **Defect Arrival Trend** — monthly counts (`year_month` on X-axis). Watch for sustained changes rather than single-month blips.
+- **Defects by Severity** — raw S1–S4 counts plus `--` and `N/A` (missing-severity). The missing-severity codes are ~61% of defects — call this out when comparing severity shares.
+- **Median Resolution Days by Component (Top 10 by volume)** — filtered to the 10 components with the most defects. Tooltip shows the count. Low-volume components are deliberately hidden because a single outlier bug can inflate their median.
+- **Median Resolution Days by Severity** — pairs with the statistical finding. S1+S2 bars should be noticeably shorter than S3+S4 (confirmed: median 8.86 vs 13.61 days, Wilcoxon p = 0.00038).
 
 ## Data Quality Checks
 
-Seven QA rules — see `sql/05_qa_checks.sql` and `docs/methodology.md`.
+Seven QA rules implemented in `sql/05_qa_checks.sql`:
+
+1. Unique bug IDs in fact.
+2. No negative `resolution_days`.
+3. All FK references resolve.
+4. Severity ∈ {S1, S2, S3, S4, --, N/A}.
+5. `last_resolved_time ≥ creation_time`.
+6. Raw rows = valid rows + quarantined rows (3,000 = 3,000 + 0).
+7. Power BI headline metrics match SQL outputs (verified: Total, Median, High-Sev, High-Sev %).
 
 ## Known Limitations
 
-- Public proxy data; not representative of any specific organization.
-- Resolution time is wall-clock, not active engineering effort.
-- Associations are observational.
-- Low-volume components can mislead on resolution averages — read with count in view.
+- Mozilla Firefox is a **public proxy**; does not represent any specific organization's QA process.
+- `resolution_days` is wall-clock, not active engineering effort — includes triage/dependency/release waits.
+- Associations are **observational**, not causal.
+- Low-volume components can look extreme; always read volume alongside median.
+- **S1 is effectively absent in the 2024 Firefox FIXED population** (1/3,000). The "High-severity" group is driven ~99% by S2.
+- `--` and `N/A` severities (~61% of defects) are kept in the dashboard counts but excluded from the Wilcoxon test and the High-Severity % metric.
+
+## Exporting
+
+To ship this guide as a PDF, open the markdown in any viewer that prints to PDF (VS Code with the "Markdown PDF" extension, pandoc, or a browser preview + print → Save as PDF). The source stays markdown so it's diffable in git.

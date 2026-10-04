@@ -2,7 +2,7 @@
 
 End-to-end defect analytics project built with **PostgreSQL, R, and Power BI**, using public Mozilla Firefox Bugzilla data as a proxy for internal Quality Verification telemetry.
 
-> Status: **Scaffolding complete — pipeline implementation in progress.** See `PROGRESS.md` for the live checklist.
+> Status: **MVP complete.** See `PROGRESS.md` for the full checklist and measured results.
 
 ---
 
@@ -94,13 +94,17 @@ Seven QA checks are implemented in `sql/05_qa_checks.sql` (unique IDs, non-negat
 
 Wilcoxon rank-sum test comparing resolution-time distributions of **high-severity (S1+S2)** vs **lower-severity (S3+S4)** defects. Observational — results describe association, not causation.
 
+**Result (2026-10-03 snapshot):** High (n=139) median 8.86 d vs Lower (n=1,034) median 13.61 d; **W = 58,544, p = 0.00038** — significant at α = 0.05. Direction is opposite of the naive guess (severe = complex = slow), consistent with triage prioritization. Full write-up in `docs/methodology.md`. Diagnostic plots in `images/hist_resolution_by_severity.png` and `images/box_resolution_by_severity.png`.
+
 ## Power BI Dashboard
 
-One polished page with 4 KPIs and 4 analytical visuals (defect arrival trend, severity mix, resolution by component, resolution by severity). Filters: Date, Component, Severity, Priority.
+One page: 4 KPI cards + 4 analytical visuals (defect arrival trend, severity mix, resolution by component Top-10-by-volume, resolution by severity) + 4 slicers (Date, Component, Severity, Priority). File: `powerbi/quality_verification_dashboard.pbix`. Screenshot: `images/dashboard.png`.
+
+Six DAX measures: `Total Defects`, `Median Resolution Days`, `Average Resolution Days`, `P75 Resolution Days`, `High Severity Defects`, `High Severity %`. All four headline KPIs match the equivalent SQL (QA 7).
 
 ## Root-Cause Investigation
 
-Documented in `docs/root_cause_analysis.md` once a meaningful metric movement is identified in the data.
+Monthly median resolution time jumped from **8.47 days in April 2024 to 14.39 in May 2024 (+69.9%)** then returned to 8.16 in June. Decomposition ruled out severity-mix (moved the wrong direction) and component-mix (shifts too small to explain). The surviving pattern is a **cross-component time-based slowdown** — multiple top components had their per-component median double or triple in May simultaneously. Consistent with a time-bound capacity effect (holiday / release / staffing); flagged as hypothesis, not causal conclusion. Full write-up: `docs/root_cause_analysis.md`.
 
 ## Key Findings
 
@@ -147,7 +151,8 @@ software-quality-verification-analytics/
 ├── docs/
 │   ├── dashboard_user_guide.md
 │   ├── root_cause_analysis.md
-│   └── methodology.md
+│   ├── methodology.md
+│   └── resume_bullets.md
 └── images/
     └── dashboard.png
 ```

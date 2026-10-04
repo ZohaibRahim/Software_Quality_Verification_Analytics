@@ -8,8 +8,8 @@
 
 ## Current state
 
-- **Current step:** STEPS 19–20 complete. April→May median spike (+69.9%) investigated; it's a cross-component time-based slowdown, not a mix shift. Write-up in `docs/root_cause_analysis.md`.
-- **Next step:** STEPS 21–22 (polish user guide + README) and STEP 23 (resume bullets with real numbers).
+- **Current step:** ALL STEPS 1–23 COMPLETE. MVP shipped.
+- **Next step:** Optional polish — PDF export of user guide, further Power BI formatting, additional analysis pages. None required.
 - **Blockers / open questions:** None.
 
 ---
@@ -38,38 +38,38 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 - [x] **STEP 18** Reconcile dashboard values against SQL — Total=3000, Median=9.56, HiSev=139, HiSev%=4.63% all match.
 - [x] **STEP 19** Identify one meaningful metric movement — Apr→May median +69.9% (8.47d → 14.39d).
 - [x] **STEP 20** Perform root-cause investigation — cross-component time-based slowdown; written up in `docs/root_cause_analysis.md`.
-- [ ] **STEP 21** Write user guide and methodology.
-- [ ] **STEP 22** Complete README.
-- [ ] **STEP 23** Generate final evidence/results for resume bullets.
+- [x] **STEP 21** Write user guide and methodology — `docs/dashboard_user_guide.md`, `docs/methodology.md`.
+- [x] **STEP 22** Complete README — all sections populated with real numbers.
+- [x] **STEP 23** Generate final evidence/results for resume bullets — `docs/resume_bullets.md`.
 
 ---
 
 ## MVP success criteria (from master brief §48)
 
-- [ ] Bugzilla data successfully retrieved
-- [ ] Approximately 2,000–3,000 valid defects available
-- [ ] Raw dataset preserved
-- [ ] PostgreSQL staging table created
-- [ ] Cleaning logic implemented
-- [ ] Invalid records transparently identified
-- [ ] Resolution time calculated
-- [ ] Severity groups created
-- [ ] Star schema working
-- [ ] QA checks passing
-- [ ] Row counts reconciled
-- [ ] R analysis reproducible
-- [ ] Hypothesis test completed
-- [ ] Statistical finding interpreted correctly
-- [ ] Power BI model working
-- [ ] Four headline metrics implemented
-- [ ] Four useful visuals created
-- [ ] Filters working
-- [ ] Power BI numbers reconciled against SQL
-- [ ] Root-cause investigation completed
-- [ ] User guide completed
-- [ ] README completed
-- [ ] Dashboard screenshot captured
-- [ ] Resume bullets based only on actual results
+- [x] Bugzilla data successfully retrieved
+- [x] Approximately 2,000–3,000 valid defects available (3,000)
+- [x] Raw dataset preserved (`data/raw/firefox_bugs.csv`)
+- [x] PostgreSQL staging table created
+- [x] Cleaning logic implemented
+- [x] Invalid records transparently identified (0 quarantined; 5 reason codes defined)
+- [x] Resolution time calculated
+- [x] Severity groups created (High / Lower / Unclassified)
+- [x] Star schema working (1 fact + 4 dims)
+- [x] QA checks passing (7/7)
+- [x] Row counts reconciled (3000 raw = 3000 valid + 0 quarantined)
+- [x] R analysis reproducible (`r/hypothesis_test.R`)
+- [x] Hypothesis test completed (Wilcoxon W=58544, p=0.00038)
+- [x] Statistical finding interpreted correctly (association, not causation)
+- [x] Power BI model working (Import mode, 1:many single-direction relationships, dim_date marked)
+- [x] Four headline metrics implemented
+- [x] Four useful visuals created
+- [x] Filters working
+- [x] Power BI numbers reconciled against SQL (all 4 match)
+- [x] Root-cause investigation completed (`docs/root_cause_analysis.md`)
+- [x] User guide completed (`docs/dashboard_user_guide.md`)
+- [x] README completed
+- [x] Dashboard screenshot captured (`images/dashboard.png`)
+- [x] Resume bullets based only on actual results (`docs/resume_bullets.md`)
 
 ---
 
