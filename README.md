@@ -96,11 +96,18 @@ Wilcoxon rank-sum test comparing resolution-time distributions of **high-severit
 
 **Result (2026-10-03 snapshot):** High (n=139) median 8.86 d vs Lower (n=1,034) median 13.61 d; **W = 58,544, p = 0.00038** — significant at α = 0.05. Direction is opposite of the naive guess (severe = complex = slow), consistent with triage prioritization. Full write-up in `docs/methodology.md`. Diagnostic plots in `images/hist_resolution_by_severity.png` and `images/box_resolution_by_severity.png`.
 
-## Monte Carlo Backlog Forecast
+## Monte Carlo Backlog Forecast + Backtest
 
-A simulation layer (`scripts/monte_carlo_backlog.py`) answers an operational planning question: **how many defects remain unfixed at a 90-day ship date under different staffing levels?** Arrivals modeled as a Poisson process (λ = 9.87/day, estimated from throughput); service times bootstrapped from the empirical `resolution_days` distribution (no parametric fit — the real distribution is too heavy-tailed to fit cleanly).
+A simulation layer (`scripts/monte_carlo_backlog.py`) answers an operational planning question: **how many defects remain unfixed at a 90-day ship date under different staffing scenarios?** Arrivals as Poisson(λ=9.87/day); service times bootstrapped from empirical `resolution_days` (no parametric fit); staffing modeled as `service / k^α` with elasticity α ∈ {0.3, 0.6, 1.0} to report a defensible *range* rather than a point estimate.
 
-**Result:** At baseline staffing, median **252** defects open at ship (P95 = 279). +25% staffing drops the median by 27, +50% by 48 — diminishing returns driven by the service-time tail. Full write-up: `docs/simulation.md`.
+**Diagnostics:** Daily-arrival dispersion var/mean = **4.58** → Poisson understates burstiness; results are a floor on real uncertainty. Seed convergence: baseline median range [252, 252] across 5 seeds → 5,000 trials is enough.
+
+**Forecast:** +50% staffing cuts median open-at-ship by **6%–19%** depending on elasticity (α=0.3 → 237, α=1.0 → 203 vs baseline 252).
+
+**Backtest (`scripts/monte_carlo_backtest.py`):** train Jan–Jun 2024, predict Jul–Sep 2024, compare to actual.
+Predicted median **260** (95% range [230, 293]) vs actual **231** — **actual sits inside the predicted 95% range** (error −12.8%). Model validates on held-out data.
+
+Full write-up: `docs/simulation.md`.
 
 ## Power BI Dashboard
 
