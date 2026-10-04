@@ -8,8 +8,8 @@
 
 ## Current state
 
-- **Current step:** STEPS 15–18 complete. Power BI dashboard built, 4 KPIs reconcile against SQL, screenshot captured.
-- **Next step:** STEP 19 — identify one meaningful month-over-month metric movement, then STEP 20 (root-cause investigation write-up).
+- **Current step:** STEPS 19–20 complete. April→May median spike (+69.9%) investigated; it's a cross-component time-based slowdown, not a mix shift. Write-up in `docs/root_cause_analysis.md`.
+- **Next step:** STEPS 21–22 (polish user guide + README) and STEP 23 (resume bullets with real numbers).
 - **Blockers / open questions:** None.
 
 ---
@@ -36,8 +36,8 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 - [x] **STEP 16** Create data model and DAX measures (6 measures, star relationships verified).
 - [x] **STEP 17** Build dashboard (1 page: 4 KPIs + 4 visuals + 4 slicers).
 - [x] **STEP 18** Reconcile dashboard values against SQL — Total=3000, Median=9.56, HiSev=139, HiSev%=4.63% all match.
-- [ ] **STEP 19** Identify one meaningful metric movement.
-- [ ] **STEP 20** Perform root-cause investigation.
+- [x] **STEP 19** Identify one meaningful metric movement — Apr→May median +69.9% (8.47d → 14.39d).
+- [x] **STEP 20** Perform root-cause investigation — cross-component time-based slowdown; written up in `docs/root_cause_analysis.md`.
 - [ ] **STEP 21** Write user guide and methodology.
 - [ ] **STEP 22** Complete README.
 - [ ] **STEP 23** Generate final evidence/results for resume bullets.
@@ -124,8 +124,8 @@ Append each non-trivial decision with date + rationale.
 - Conclusion at α = 0.05: **statistically significant difference**; high-severity defects resolve FASTER (opposite of naive expectation, consistent with triage prioritization). Observational — not causal.
 
 ### Root-cause investigation
-- Metric movement observed: _TBD_
-- Contributing factors identified: _TBD_
+- Metric movement observed: median resolution days rose from **8.47 → 14.39 (+69.9%)** between Apr 2024 and May 2024, then returned to 8.16 days in Jun 2024.
+- Contributing factors identified: not primarily severity or component mix. Within-component medians rose simultaneously across most top components (Profile Backup ×2.2, Translations ×3.3, Messaging System ×2.0, Sidebar ×1.8, PDF Viewer ×4.1). Pattern consistent with a **time-based, cross-component capacity effect** (e.g. holiday/release/staffing). Hypotheses, not causal conclusions — the Bugzilla fields in scope cannot test them.
 
 ---
 
