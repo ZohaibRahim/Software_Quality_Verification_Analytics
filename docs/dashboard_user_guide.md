@@ -26,7 +26,7 @@ Manual. Re-run `scripts/fetch_bugzilla_data.py`, re-run `sql/01` → `sql/05`, t
 | Total Defects | 3,000 | Count of valid FIXED Firefox defects after QA filtering. |
 | Median Resolution Days | 9.56 | Median of `resolution_days` across the analytical population. |
 | High-Severity Defects | 139 | Count where severity ∈ {S1, S2}. |
-| High-Severity % | 4.63% | High-Severity Defects / Total Defects. |
+| High-Severity % | 11.85% | High-Severity Defects / (High-Severity + Lower-Severity Defects). Excludes `--`/`N/A` from the denominator. |
 
 ## Available Filters
 

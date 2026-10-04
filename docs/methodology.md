@@ -58,7 +58,11 @@ Chosen over the mean because defect-resolution times are typically right-skewed.
 Count of `fact_bug` rows whose `severity_group = 'High'` (i.e. severity ∈ {S1, S2}).
 
 ### High-Severity %
-`High-Severity Defects / Total Defects`.
+`High-Severity Defects / (High-Severity + Lower-Severity Defects)`.
+
+Denominator **excludes Unclassified** (severity in {`--`, `N/A`}). Rationale: ~61% of the raw population has no severity set; including that bulk in the denominator understates the real high-severity share ~2.5×. The metric answers *"of defects where severity was assigned, what fraction are high-severity?"* — matching the Wilcoxon-test scope.
+
+Observed value on the 3,000-row snapshot: **139 / 1,173 = 11.85%** (not 4.63% which would be 139 / 3,000).
 
 ## Supporting metrics
 

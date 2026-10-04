@@ -35,7 +35,7 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 - [x] **STEP 15** Connect Power BI to PostgreSQL (Import mode, 127.0.0.1:5433).
 - [x] **STEP 16** Create data model and DAX measures (6 measures, star relationships verified).
 - [x] **STEP 17** Build dashboard (1 page: 4 KPIs + 4 visuals + 4 slicers).
-- [x] **STEP 18** Reconcile dashboard values against SQL — Total=3000, Median=9.56, HiSev=139, HiSev%=4.63% all match.
+- [x] **STEP 18** Reconcile dashboard values against SQL — Total=3000, Median=9.56, HiSev=139, HiSev%=11.85% (classified-only denominator; was initially 4.63% using full-population denominator — fixed to match methodology).
 - [x] **STEP 19** Identify one meaningful metric movement — Apr→May median +69.9% (8.47d → 14.39d).
 - [x] **STEP 20** Perform root-cause investigation — cross-component time-based slowdown; written up in `docs/root_cause_analysis.md`.
 - [x] **STEP 21** Write user guide and methodology — `docs/dashboard_user_guide.md`, `docs/methodology.md`.
@@ -109,7 +109,7 @@ Append each non-trivial decision with date + rationale.
 - Median resolution days: 9.56
 - Average resolution days: _see 06_analysis_queries.sql_
 - High-severity defects (S1+S2): 139
-- High-severity %: 4.63%
+- High-severity %: **11.85%** (139 / 1,173 classified; denominator excludes `--`/`N/A` per methodology)
 - Unique components: 44
 - Dates with activity: 279 (2024-01-01 → 2024-10-30)
 
