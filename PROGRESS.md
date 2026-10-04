@@ -8,8 +8,8 @@
 
 ## Current state
 
-- **Current step:** STEPS 12–14 complete. Wilcoxon ran clean; result is significant and in the opposite direction of the naive guess (high-severity resolves FASTER).
-- **Next step:** STEP 15 — connect Power BI Desktop to the `qa_project` database. User installs the Npgsql connector and sets up the connection; I'll give exact clicks.
+- **Current step:** STEPS 15–18 complete. Power BI dashboard built, 4 KPIs reconcile against SQL, screenshot captured.
+- **Next step:** STEP 19 — identify one meaningful month-over-month metric movement, then STEP 20 (root-cause investigation write-up).
 - **Blockers / open questions:** None.
 
 ---
@@ -32,10 +32,10 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 - [x] **STEP 12** Perform exploratory statistics in R (summary tibble + histogram + log-boxplot).
 - [x] **STEP 13** Perform Wilcoxon hypothesis test (W=58544, p=0.00038).
 - [x] **STEP 14** Interpret results — see Statistical test block below and README Key Findings.
-- [ ] **STEP 15** Connect Power BI to PostgreSQL.
-- [ ] **STEP 16** Create data model and DAX measures.
-- [ ] **STEP 17** Build dashboard.
-- [ ] **STEP 18** Reconcile dashboard values against SQL.
+- [x] **STEP 15** Connect Power BI to PostgreSQL (Import mode, 127.0.0.1:5433).
+- [x] **STEP 16** Create data model and DAX measures (6 measures, star relationships verified).
+- [x] **STEP 17** Build dashboard (1 page: 4 KPIs + 4 visuals + 4 slicers).
+- [x] **STEP 18** Reconcile dashboard values against SQL — Total=3000, Median=9.56, HiSev=139, HiSev%=4.63% all match.
 - [ ] **STEP 19** Identify one meaningful metric movement.
 - [ ] **STEP 20** Perform root-cause investigation.
 - [ ] **STEP 21** Write user guide and methodology.

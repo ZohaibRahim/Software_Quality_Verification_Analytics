@@ -23,17 +23,21 @@ WHERE severity IS NOT NULL;
 INSERT INTO dim_priority (priority)
 SELECT DISTINCT priority FROM v_bugs_clean;
 
--- ---------- dim_date --------------------------------------------------------
+-- ---------- dim_date (contiguous calendar; no gaps so Power BI accepts it) --
 INSERT INTO dim_date (date_key, full_date, year, quarter, month_number, month_name, year_month)
-SELECT DISTINCT
-    TO_CHAR(created_date, 'YYYYMMDD')::INT AS date_key,
-    created_date                           AS full_date,
-    created_year,
-    created_quarter,
-    created_month,
-    TRIM(created_month_name),
-    TO_CHAR(created_date, 'YYYY-MM')
-FROM v_bugs_clean;
+SELECT
+    TO_CHAR(d, 'YYYYMMDD')::INT  AS date_key,
+    d::DATE                      AS full_date,
+    EXTRACT(YEAR    FROM d)::INT,
+    EXTRACT(QUARTER FROM d)::INT,
+    EXTRACT(MONTH   FROM d)::INT,
+    TRIM(TO_CHAR(d, 'Month')),
+    TO_CHAR(d, 'YYYY-MM')
+FROM generate_series(
+    (SELECT MIN(created_date) FROM v_bugs_clean),
+    (SELECT MAX(created_date) FROM v_bugs_clean),
+    '1 day'::interval
+) d;
 
 -- ---------- fact_bug --------------------------------------------------------
 INSERT INTO fact_bug (
