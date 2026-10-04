@@ -42,7 +42,8 @@ Tick as each step completes. Keep this honest — do not tick ahead of real work
 - [x] **STEP 22** Complete README — all sections populated with real numbers.
 - [x] **STEP 23** Generate final evidence/results for resume bullets — `docs/resume_bullets.md`.
 - [x] **STEP 24** Monte Carlo backlog-forecast simulation (v1) — Poisson arrivals + bootstrap service.
-- [x] **STEP 25** Simulation upgrade: staffing elasticity α, dispersion diagnostic, 5-seed convergence, walk-forward backtest — `scripts/monte_carlo_backtest.py`. Actual (231) within predicted 95% range [230, 293].
+- [x] **STEP 25** Simulation upgrade: staffing elasticity α, dispersion diagnostic, 5-seed convergence, single-window backtest.
+- [x] **STEP 26** Week-block arrival resampling (replaces Poisson, preserves var/mean = 5.45 burstiness); rolling 4-window backtest with coverage + mean |% error| reporting; proper Monte Carlo SE in forecast table. Result: 4/4 windows inside 95% range, mean |% error| = 7.7%.
 
 ---
 
@@ -125,13 +126,13 @@ Append each non-trivial decision with date + rationale.
 - p-value: 0.00038
 - Conclusion at α = 0.05: **statistically significant difference**; high-severity defects resolve FASTER (opposite of naive expectation, consistent with triage prioritization). Observational — not causal.
 
-### Monte Carlo backlog forecast + backtest (5,000 trials × 5 seeds, 90-day horizon)
-- Arrival rate: λ = 9.87 defects/day (from throughput).
-- Service times: bootstrap from empirical `resolution_days` (3,000 obs).
-- Seed convergence: baseline median range [252, 252] across 5 seeds — 5,000 trials sufficient.
-- Daily-arrival dispersion var/mean = **4.58** — strongly overdispersed vs Poisson; results are a lower bound on real uncertainty.
-- Staffing elasticity α ∈ {0.3, 0.6, 1.0}: +50% staff cuts median open-at-ship by **6% (α=0.3) to 19% (α=1.0)**.
-- **Backtest:** train Jan–Jun 2024 → predict Jul–Sep 2024. Predicted median 260, 95% range [230, 293]. Actual = **231 — inside the predicted range** (error −12.8%).
+### Monte Carlo backlog forecast + rolling backtest (5,000 trials × 5 seeds, 90-day horizon)
+- Arrivals: week-block resampling of observed daily counts (preserves burstiness).
+- Service: bootstrap of empirical `resolution_days`.
+- Daily-arrival dispersion var/mean = **5.45** (overdispersed vs Poisson = 1).
+- MC SE: baseline median 248.4 ± 0.24, P95 285.8 ± 0.37 across 5 seeds.
+- Staffing elasticity α ∈ {0.3, 0.6, 1.0}: +50% staff cuts baseline (248) by **6% (α=0.3) to 19% (α=1.0)**.
+- **Rolling backtest, 4 windows across 2024:** coverage = **4/4 inside predicted 95% range**; mean |% error| = **7.7%**; errors range −6.7% to +10.6% with slight upward bias in late windows (consistent with the small undercount from unresolved bugs still open at fetch date).
 
 ### Root-cause investigation
 - Metric movement observed: median resolution days rose from **8.47 → 14.39 (+69.9%)** between Apr 2024 and May 2024, then returned to 8.16 days in Jun 2024.

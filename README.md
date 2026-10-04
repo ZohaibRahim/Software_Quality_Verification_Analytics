@@ -96,18 +96,22 @@ Wilcoxon rank-sum test comparing resolution-time distributions of **high-severit
 
 **Result (2026-10-03 snapshot):** High (n=139) median 8.86 d vs Lower (n=1,034) median 13.61 d; **W = 58,544, p = 0.00038** — significant at α = 0.05. Direction is opposite of the naive guess (severe = complex = slow), consistent with triage prioritization. Full write-up in `docs/methodology.md`. Diagnostic plots in `images/hist_resolution_by_severity.png` and `images/box_resolution_by_severity.png`.
 
-## Monte Carlo Backlog Forecast + Backtest
+## Monte Carlo Backlog Forecast + Rolling Backtest
 
-A simulation layer (`scripts/monte_carlo_backlog.py`) answers an operational planning question: **how many defects remain unfixed at a 90-day ship date under different staffing scenarios?** Arrivals as Poisson(λ=9.87/day); service times bootstrapped from empirical `resolution_days` (no parametric fit); staffing modeled as `service / k^α` with elasticity α ∈ {0.3, 0.6, 1.0} to report a defensible *range* rather than a point estimate.
+A simulation layer (`scripts/monte_carlo_backlog.py`) answers an operational planning question: **how many defects remain unfixed at a 90-day ship date?** Arrivals via **week-block resampling** of observed daily counts (preserves the real var/mean = 5.45 burstiness Poisson misses); service times bootstrapped from empirical `resolution_days`; staffing as `service / k^α` with elasticity α ∈ {0.3 heavy diminishing, 0.6 realistic, 1.0 linear best-case}.
 
-**Diagnostics:** Daily-arrival dispersion var/mean = **4.58** → Poisson understates burstiness; results are a floor on real uncertainty. Seed convergence: baseline median range [252, 252] across 5 seeds → 5,000 trials is enough.
+**Forecast:** at baseline staffing, median 248 open at ship (P95 ≈ 286). +50% staffing cuts baseline backlog by **6%–19%** depending on α — reported as a range, not a point estimate, because the project has no operational data to pin α down.
 
-**Forecast:** +50% staffing cuts median open-at-ship by **6%–19%** depending on elasticity (α=0.3 → 237, α=1.0 → 203 vs baseline 252).
+**Rolling backtest (`scripts/monte_carlo_backtest.py`):** 4 expanding-train / 3-month-test windows across 2024.
 
-**Backtest (`scripts/monte_carlo_backtest.py`):** train Jan–Jun 2024, predict Jul–Sep 2024, compare to actual.
-Predicted median **260** (95% range [230, 293]) vs actual **231** — **actual sits inside the predicted 95% range** (error −12.8%). Model validates on held-out data.
+| Train end | Test window | Actual | Predicted mean | 95% range | Error |
+|---|---|---|---|---|---|
+| Apr 1 | Apr–Jun | 265 | 247 | [202, 296] | −6.7% |
+| May 1 | May–Jul | 265 | 249 | [206, 294] | −6.1% |
+| Jun 1 | Jun–Aug | 233 | 250 | [209, 296] | +7.5% |
+| Jul 1 | Jul–Sep | 231 | 255 | [212, 300] | +10.6% |
 
-Full write-up: `docs/simulation.md`.
+**4 of 4 windows inside the predicted 95% range. Mean |% error| = 7.7%.** Full write-up: `docs/simulation.md`.
 
 ## Power BI Dashboard
 

@@ -1,74 +1,75 @@
-# Monte Carlo Backlog Forecast + Walk-Forward Backtest
+# Monte Carlo Backlog Forecast + Rolling Backtest
 
 ## Question
 
-Given current defect arrival volume and resolution-time behavior, how many Firefox defects remain unfixed at a 90-day ship date under different staffing scenarios — and does the model actually predict reality?
+Given current defect arrival volume and resolution-time behavior, how many Firefox defects remain unfixed at a 90-day ship date under different staffing scenarios — and does the model predict a period held out from training?
 
 ## Model
 
-- **Arrivals:** Poisson(λ) with λ = **9.87 defects/day** (3,000 / 304 days).
+- **Arrivals:** week-block resampling of observed daily counts. Preserves the day-to-day burstiness that a Poisson model misses (daily var/mean = **5.45** in this dataset).
 - **Service times:** bootstrap samples from empirical `resolution_days` (3,000 obs). No parametric fit — the real distribution is heavy-tailed in a way lognormal/exponential don't capture.
-- **Staffing:** service time divided by `k^α` where `k` ∈ {0.75, 1.0, 1.25, 1.5} and α ∈ {0.3, 0.6, 1.0} is the returns-to-scale exponent (1.0 = perfect scaling, 0.3 = heavy diminishing returns).
-- **Servers:** infinite (no queue contention — see Limitations).
-- **Trials:** 5,000 × 5 seeds per cell. Convergence verified.
+- **Staffing:** service time divided by `k^α`, where `k` is the headcount multiplier and `α` is the returns-to-scale exponent:
+  - **α = 1.0** — linear best-case (double the staff → half the time).
+  - **α = 0.6** — realistic team scaling with coordination overhead.
+  - **α = 0.3** — heavy diminishing returns (Brooks's-law regime).
+- **Servers:** infinite (no queue contention — the big-upgrade path; see Limitations).
+- **Trials:** 5,000 × 5 seeds per cell.
 
 ## Diagnostics
 
-**Convergence (baseline, k=1.0, α=1.0, 5 seeds × 5,000 trials):**
-- Median range across seeds: **[252, 252]** — zero spread.
-- P95 range across seeds: [278, 279] — one bug spread.
-- 5,000 trials is enough; Monte Carlo noise is negligible.
+**Monte Carlo standard error (baseline, k=1.0, α=1.0):**
+- Median: 248.4 ± 0.24 across 5 seeds.
+- P95: 285.8 ± 0.37.
+- At 5,000 trials × 5 seeds, estimator noise is ~0.1% of the point estimates. More trials would not change the headline.
 
 **Arrival dispersion:**
-- Daily mean = 10.75, variance = 49.24, **variance/mean = 4.58**.
-- Strongly overdispersed vs Poisson (where variance/mean = 1). Real arrivals cluster (release days, triage days, weekday-vs-weekend).
-- **Consequence:** the Poisson model understates day-to-day burstiness. A week-block resampling model (keeping observed weekday patterns intact) would produce wider confidence intervals. Treat the ±ranges below as lower bounds on real uncertainty.
+- Daily mean = 9.87, variance = 53.75 → **var/mean = 5.45** (Poisson = 1).
+- Strongly overdispersed. Week-block resampling uses the empirical daily sequence directly, so the resulting prediction intervals reflect the real clustering (release days, triage days) rather than Poisson's smoother spread.
 
-## Forecast results — open at 90-day ship
+## Forecast — open defects at 90-day ship
 
-Median defects open at ship, by (staffing, α):
+Median defects open at ship (mean ± MC SE in parentheses):
 
 | Staffing | α=0.3 | α=0.6 | α=1.0 |
 |---|---|---|---|
-| 75% | 263 | 275 | 291 |
-| 100% (baseline) | 252 | 252 | 252 |
-| 125% | 243 | 235 | 225 |
-| 150% | 237 | 222 | 203 |
+| 75% | 259.6 (±0.24) | 271.6 (±0.24) | 287.6 (±0.24) |
+| **100% (baseline)** | **248.4** | **248.4** | **248.4** |
+| 125% | 240.4 (±0.24) | 231.8 (±0.20) | 221.4 (±0.24) |
+| 150% | 233.4 (±0.24) | 219.0 (±0.32) | 200.2 (±0.20) |
 
-**Headline claim:** +50% staffing cuts the backlog by somewhere between **6%** (α=0.3, heavy diminishing returns) and **19%** (α=1.0, perfect scaling). The true number depends on how much a given team's throughput scales with headcount, which this project doesn't have operational data to pin down.
+**Headline (defensible claim):** +50% staffing cuts the baseline backlog (248) by somewhere between **6%** (α=0.3) and **19%** (α=1.0). The true number depends on how much a given team's throughput actually scales with headcount — operational data this project doesn't have.
 
-Plots: `images/mc_backlog_boxplot.png` (α=0.6 across staffing), `images/mc_backlog_summary.png` (all three α values).
+P95 forecasts (planning target — budget for the bad case, not the median):
 
-## Backtest (walk-forward validation)
+| Staffing | α=0.3 | α=0.6 | α=1.0 |
+|---|---|---|---|
+| 75% | 298.0 | 311.0 | 329.0 |
+| 100% | 285.8 | 285.8 | 285.8 |
+| 125% | 276.8 | 267.6 | 255.8 |
+| 150% | 269.2 | 253.2 | 232.4 |
 
-The single most important test. If the model can't predict a period we already know the answer for, nothing else matters.
+Plots: `images/mc_backlog_boxplot.png` (α=0.6 across staffing), `images/mc_backlog_summary.png` (all three α values with ±SE error bars).
 
-- **Train:** 2024-01-01 → 2024-06-30 (182 days, 1,809 bugs). Fit λ_train = 9.94/day and empirical `resolution_days`_train (median = 9.71 d).
-- **Test:** 2024-07-01 → 2024-09-30 (92 days, 848 bugs created). Predict how many of those bugs are still open at Sep 30 2024.
-- **Simulation:** 5,000 trials × 5 seeds; k=1.0, α=1.0 (no staffing counterfactual — we're predicting actual history).
-- **Compared to actual:** bugs created in the test window whose `cf_last_resolved > 2024-09-30`.
+## Rolling walk-forward backtest
 
-| | Open at Sep 30 2024 |
-|---|---|
-| Predicted mean | 260.6 |
-| Predicted median | 260 |
-| Predicted 95% range | **[230, 293]** |
-| **Actual** | **231** |
-| Error (actual − pred mean) | −29.6 bugs (−12.8%) |
-| Actual inside 95% range? | **Yes** |
+Four expanding-train / 3-month-test windows. Each predicts bugs *created in* the test window that remain open at test end; compared to the actual count from raw data.
 
-**Interpretation.** Actual (231) sits near the lower bound of the predicted range. The model slightly over-predicts the backlog, which is consistent with two known biases:
+| Train window | Test window | Train bugs | Test bugs | **Actual** | Predicted mean | 95% range | Error | Inside? |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2024-01-01 → 2024-04-01 | 2024-04-01 → 2024-07-01 | 866 | 943 | 265 | 247.2 | [202, 296] | −6.7% | ✓ |
+| 2024-01-01 → 2024-05-01 | 2024-05-01 → 2024-08-01 | 1,186 | 936 | 265 | 248.7 | [206, 294] | −6.1% | ✓ |
+| 2024-01-01 → 2024-06-01 | 2024-06-01 → 2024-09-01 | 1,458 | 901 | 233 | 250.4 | [209, 296] | +7.5% | ✓ |
+| 2024-01-01 → 2024-07-01 | 2024-07-01 → 2024-10-01 | 1,809 | 848 | 231 | 255.4 | [212, 300] | +10.6% | ✓ |
 
-1. Our dataset is `resolution=FIXED` only, snapshotted 2026-10-03. A bug created in Jul-Sep 2024 that was never resolved (still open 2+ years later) is absent from the "actual" count — the actual is a very mild underestimate.
-2. The Poisson arrival model understates clustering (var/mean = 4.58). Real arrivals are more concentrated around release windows, so some real bugs arrive late in the window and don't get a chance to finish, but others cluster early and do. Net effect is modest.
+**Coverage: 4 of 4 windows inside the predicted 95% range. Mean |% error|: 7.7%.**
 
-Despite those caveats, the actual value lands inside the predicted 95% range — the model is doing meaningful work.
+Honest reading: this is a working forecast, not a "validated" model. One sign the uncertainty bands are still generous: coverage is 4/4 rather than the 3-4/4 we'd expect under correctly calibrated 95% intervals. The mean error has a slight upward bias in late windows (model over-predicts the backlog by ~8–11% in Jun–Sep), which is consistent with the dataset undercount — bugs created in those months that remained unresolved at the 2026-10-03 fetch date are missing from "actual." A full backlog model would need to re-pull all resolutions including still-open bugs.
 
 ## Limitations (ordered by impact)
 
-- **Service times are from `FIXED` bugs only.** Bugs that got WONTFIX, DUPLICATE, or were never resolved are missing from the service distribution — biasing it toward bugs that *can* be fixed. The medium-tier upgrade is a Kaplan–Meier survival fit on all bugs, including right-censored (still-open) ones.
-- **Infinite-server abstraction.** Real teams have finite capacity; the elasticity α approximates diminishing returns but doesn't model queue contention. A true M/G/c queue with `c` = active fixers per month (`assigned_to` field, hashed for privacy) is the big-upgrade path.
-- **Poisson arrivals are overdispersed in the real data** (var/mean = 4.58). Week-block resampling would be a cleaner fit without picking a parametric distribution.
-- **No warm-up.** The forecast assumes zero open bugs at day 0 of the horizon; realistic ship forecasts should layer the current open-bug count on top. For the backtest this is handled implicitly because we count only bugs created *in* the test window.
+- **Service times are from `FIXED` bugs only.** Bugs that got WONTFIX, DUPLICATE, or were never resolved are missing — biasing the service distribution toward "fixable" bugs. The medium-tier upgrade is a Kaplan–Meier survival fit on all bugs including right-censored (still-open) ones.
+- **Infinite-server abstraction.** Real teams have finite capacity; elasticity α approximates diminishing returns but doesn't model queue contention. A true M/G/c queue with `c` fixers (from Bugzilla's `assigned_to`, hashed for privacy) is the big-upgrade path.
+- **Still only one project-year of data.** Rolling backtest results come from four overlapping test windows within 2024. More history (or Firefox 2025 data) would strengthen the coverage claim.
+- **No warm-up (initial backlog).** Forecasts count only bugs that arrive *within* the horizon. Realistic ship forecasts should add the current open-bug count on top. For the backtest this is correct by construction (we compare like with like).
 - **Staffing-as-elasticity** is a first-order approximation. Real staffing changes affect prioritization and parallelism, not just raw speed.
 - **Observational.** This is a forecasting exercise under modeled assumptions, not a causal statement about staffing policy.

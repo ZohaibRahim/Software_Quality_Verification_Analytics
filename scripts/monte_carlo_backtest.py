@@ -1,19 +1,16 @@
 """
 monte_carlo_backtest.py
 
-Walk-forward validation of the Monte Carlo backlog model.
+Rolling walk-forward validation. Four windows: training ends at the first
+of April, May, June, July 2024 respectively; each predicts the following
+three months and compares to actual bugs created in-window still open at
+window end. Reports coverage (how often actual lands in the predicted 95%
+range) and mean |% error|.
 
-Train window: 2024-01-01 to 2024-06-30 (fit lambda and empirical
-    resolution_days distribution using only training bugs).
-Test window:  2024-07-01 to 2024-09-30 (92 days). Predict how many
-    bugs CREATED in the test window are still open at the test end.
-Actual: same count computed from the raw data.
-
-Limitation: our fetch was 2026-10-03, resolution=FIXED only. Bugs
-created in Jul-Sep 2024 and still unresolved as of 2026-10-03 are
-missing, so the actual count is a (very small) undercount of the
-true backlog. Fine for walk-forward sanity-check; a complete backtest
-needs the medium-tier upgrade (K-M survival on all resolutions).
+Arrivals: week-block resampling of training daily counts (preserves
+    burstiness, matching the main forecast script).
+Service: bootstrap of training resolution_days.
+Staffing: k=1.0, alpha=1.0 (we're predicting actual history, no scenario).
 """
 
 from __future__ import annotations
@@ -25,66 +22,82 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw" / "firefox_bugs.csv"
 
-TRAIN_START = pd.Timestamp("2024-01-01", tz="UTC")
-TRAIN_END   = pd.Timestamp("2024-07-01", tz="UTC")   # exclusive
-TEST_START  = TRAIN_END
-TEST_END    = pd.Timestamp("2024-10-01", tz="UTC")   # exclusive
-
 TRIALS = 5000
 SEEDS = [42, 7, 1337, 2024, 99]
 
+WINDOWS = [
+    ("2024-01-01", "2024-04-01", "2024-04-01", "2024-07-01"),
+    ("2024-01-01", "2024-05-01", "2024-05-01", "2024-08-01"),
+    ("2024-01-01", "2024-06-01", "2024-06-01", "2024-09-01"),
+    ("2024-01-01", "2024-07-01", "2024-07-01", "2024-10-01"),
+]
 
-def simulate(service: np.ndarray, lam: float, trials: int, horizon: float,
+
+def simulate(service: np.ndarray, daily: np.ndarray, trials: int, horizon: int,
              rng: np.random.Generator) -> np.ndarray:
-    arrivals = rng.poisson(lam * horizon, size=trials)
+    full = len(daily) // 7
+    week = daily[:full * 7].reshape(full, 7)
+    n_blocks = -(-horizon // 7)
+    week_idx = rng.integers(0, full, size=(trials, n_blocks))
+    day_counts = week[week_idx].reshape(trials, -1)[:, :horizon]
+    arrivals = day_counts.sum(axis=1)
     n = int(arrivals.sum())
-    trial_id = np.repeat(np.arange(trials), arrivals)
-    t_arrive = rng.uniform(0, horizon, n)
+    trial_ids = np.repeat(np.arange(trials), arrivals)
+    day_of_arrival = np.repeat(np.tile(np.arange(horizon), trials), day_counts.ravel())
+    t_arrive = day_of_arrival + rng.uniform(0, 1, n)
     t_service = rng.choice(service, size=n, replace=True)
     open_mask = (t_arrive + t_service) > horizon
-    return np.bincount(trial_id[open_mask], minlength=trials)
+    return np.bincount(trial_ids[open_mask], minlength=trials)
 
 
 def main() -> int:
-    df = pd.read_csv(RAW, parse_dates=["creation_time", "cf_last_resolved"])
-    df = df.rename(columns={"cf_last_resolved": "resolved"})
+    df = pd.read_csv(RAW, usecols=["creation_time", "cf_last_resolved"])
+    df["creation_time"] = pd.to_datetime(df["creation_time"], utc=True)
+    df["resolved"] = pd.to_datetime(df["cf_last_resolved"], utc=True)
     df = df.dropna(subset=["creation_time", "resolved"])
-    df["resolution_days"] = (df["resolved"] - df["creation_time"]).dt.total_seconds() / 86400.0
-    df = df[df["resolution_days"] > 0]
+    df["res_days"] = (df["resolved"] - df["creation_time"]).dt.total_seconds() / 86400.0
+    df = df[df["res_days"] > 0]
 
-    train = df[(df["creation_time"] >= TRAIN_START) & (df["creation_time"] < TRAIN_END)]
-    test  = df[(df["creation_time"] >= TEST_START)  & (df["creation_time"] < TEST_END)]
+    results = []
+    print(f"Rolling walk-forward backtest ({TRIALS:,} trials x {len(SEEDS)} seeds per window):\n")
+    header = f"{'window':<34} {'train_n':>7} {'test_n':>7} {'actual':>7} {'pred_mean':>9} {'95% lo':>7} {'95% hi':>7} {'err%':>7} {'inside':>7}"
+    print(header); print("-" * len(header))
 
-    train_days = (TRAIN_END - TRAIN_START).days
-    test_days  = (TEST_END  - TEST_START).days
-    lam_train = len(train) / train_days
-    service_train = train["resolution_days"].to_numpy()
+    for ts, te, vs, ve in WINDOWS:
+        TS, TE = pd.Timestamp(ts, tz="UTC"), pd.Timestamp(te, tz="UTC")
+        VS, VE = pd.Timestamp(vs, tz="UTC"), pd.Timestamp(ve, tz="UTC")
+        tr = df[(df.creation_time >= TS) & (df.creation_time < TE)]
+        te_df = df[(df.creation_time >= VS) & (df.creation_time < VE)]
 
-    print(f"Train: {TRAIN_START.date()} -> {TRAIN_END.date()}  "
-          f"({train_days}d, {len(train):,} bugs, lambda={lam_train:.2f}/day, "
-          f"median_service={np.median(service_train):.2f}d)")
-    print(f"Test:  {TEST_START.date()} -> {TEST_END.date()}  "
-          f"({test_days}d, {len(test):,} bugs created)")
+        idx = pd.date_range(TS, TE - pd.Timedelta(days=1), freq="D", tz="UTC")
+        daily = tr.set_index("creation_time").resample("D").size().reindex(idx, fill_value=0).to_numpy()
+        service = tr["res_days"].to_numpy()
+        horizon = (VE - VS).days
 
-    per_seed = np.array([
-        simulate(service_train, lam_train, TRIALS, test_days, np.random.default_rng(s))
-        for s in SEEDS
-    ])
-    pred_all = per_seed.flatten()
-    pred_median = np.median(pred_all)
-    pred_mean = pred_all.mean()
-    pred_lo, pred_hi = np.percentile(pred_all, [2.5, 97.5])
+        all_counts = np.concatenate([
+            simulate(service, daily, TRIALS, horizon, np.random.default_rng(s))
+            for s in SEEDS
+        ])
+        pred_mean = all_counts.mean()
+        lo, hi = np.percentile(all_counts, [2.5, 97.5])
+        actual = int((te_df["resolved"] > VE).sum())
+        err_pct = 100 * (pred_mean - actual) / actual if actual else float("nan")
+        inside = int(lo <= actual <= hi)
+        results.append({
+            "train": f"{ts}->{te}", "test": f"{vs}->{ve}",
+            "train_n": len(tr), "test_n": len(te_df), "actual": actual,
+            "pred_mean": pred_mean, "lo": lo, "hi": hi,
+            "err_pct": err_pct, "inside": inside,
+        })
+        w = f"train {ts[5:]}->{te[5:]} test {vs[5:]}->{ve[5:]}"
+        print(f"{w:<34} {len(tr):>7} {len(te_df):>7} {actual:>7} {pred_mean:>9.1f} {lo:>7.0f} {hi:>7.0f} {err_pct:>+7.1f} {inside:>7}")
 
-    actual_open = int((test["resolved"] > TEST_END).sum())
-    inside = pred_lo <= actual_open <= pred_hi
-
-    print(f"\nPREDICTED open at test end:  median={pred_median:.0f}, "
-          f"mean={pred_mean:.1f}, 95% range=[{pred_lo:.0f}, {pred_hi:.0f}]")
-    print(f"ACTUAL open at test end:     {actual_open}")
-    err = actual_open - pred_mean
-    pct = 100 * err / actual_open if actual_open else float("nan")
-    print(f"Error (actual - predicted mean): {err:+.1f} bugs ({pct:+.1f}% of actual). "
-          f"Actual {'IS' if inside else 'is NOT'} within predicted 95% range.")
+    r = pd.DataFrame(results)
+    coverage = r["inside"].mean()
+    mape = np.abs(r["err_pct"]).mean()
+    print(f"\nCoverage: {int(r['inside'].sum())}/{len(r)} windows inside predicted 95% range  "
+          f"(target: ~0.95 under correct uncertainty).")
+    print(f"Mean |% error|: {mape:.1f}%.")
     return 0
 
 
